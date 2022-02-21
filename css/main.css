@@ -1,0 +1,208 @@
+:root {
+    --main-color: #0eff6e;
+    --bg-color: #fff;
+    --border-width: 2px;
+    --bg-color-night: #000;
+}
+
+body {
+    font-family: 'GT America Regular', monospace;
+    color: var(--main-color);
+    background-color: var(--bg-color);
+    margin: 0 auto;
+    transition: background-color 1s linear;
+    min-height: 100vh;
+}
+
+.container {
+    padding: 15vh 15vw 0;
+    margin: auto;
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.flex-justify-space-around {
+    justify-content: space-around;
+}
+
+.flex-item {
+    flex-flow: column;
+}
+
+.eden {
+    position: relative;
+    text-align: center;
+    background-size: cover;
+    flex: 1;
+    height: 60vh;
+    background: url("../img/eden.svg") no-repeat scroll center;
+    background-size: contain;
+}
+
+.pre-order {
+    text-align: center;
+    height: 15vh;
+}
+
+h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+input, button {
+    border-radius: 20px;
+    padding: 5px 10px;
+    font-size: 26px;
+    border: var(--border-width) solid var(--main-color);
+    background-color: transparent;
+    color: var(--main-color);
+    font-weight: normal;
+    line-height: 33px;
+    transition: all 0.4s ease-in-out;
+}
+
+button {
+    text-transform: uppercase;
+}
+
+input::placeholder {
+    color: #0eff6e;
+    text-transform: uppercase;
+}
+
+button.reverse {
+    border: var(--border-width) solid var(--main-color);
+    background-color: var(--main-color);
+    color: var(--bg-color);
+}
+
+.mail {
+    min-width: 460px;
+}
+
+.light {
+    position: relative;
+    padding-left: 60px;
+    display: block;
+    height: 47px;
+    background: url("../img/light-on.svg") 10px 0 no-repeat;
+}
+
+.light-switch {
+    position: relative;
+    display: inline-block;
+    width: 110px;
+    height: 47px;
+    cursor: pointer;
+}
+
+.light-switch input {
+    display: none;
+}
+
+.light-switch .slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90px;
+    height: 33px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: var(--border-width) solid var(--main-color);
+    color: var(--main-color);
+    transition: all 0.4s ease-in-out;
+}
+
+.light-switch .slider::before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 27px;
+    height: 27px;
+    border-radius: 12px;
+    border: var(--border-width) solid var(--main-color);
+    background-color: var(--main-color);
+    transition: all 0.4s ease-in-out;
+}
+
+.light-switch input:checked + .slider {
+    border: var(--border-width) solid var(--main-color);
+}
+
+.light-switch input:checked + .slider::before {
+    border: var(--border-width) solid var(--main-color);
+    background-color: var(--main-color);
+    box-shadow: 0 0 20px 1px var(--main-color);
+    transform: translateX(66px);
+}
+
+.light-switch .labels {
+    position: absolute;
+    top: 6px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: var(--main-color);
+    font-size: 26px;
+    transition: all 0.4s ease-in-out;
+}
+
+.light-switch .labels::after {
+    content: attr(data-on);
+    position: absolute;
+    right: 15px;
+    top: 2px;
+    opacity: 1;
+    transition: all 0.4s ease-in-out;
+}
+
+.light-switch .labels::before {
+    content: attr(data-off);
+    position: absolute;
+    left: 15px;
+    top: 2px;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+}
+
+.light-switch input:checked ~ .labels::after {
+    opacity: 0;
+}
+
+.light-switch input:checked ~ .labels::before {
+    opacity: 1;
+}
+
+body.night .eden:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: url("../img/eden-glow.svg") no-repeat scroll center;
+    background-size: contain;
+    transition: all 0.4s ease-in-out;
+}
+
+body.night {
+    background: var(--bg-color-night);
+}
+
+body.night .light {
+    background-image: url("../img/light-off.svg");
+}
+
+body.night button.reverse {
+    color: var(--bg-color-night);
+    box-shadow: 0 0 20px 1px var(--main-color);
+}

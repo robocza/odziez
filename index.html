@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <title>Odzież robocza</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="odzież robocza">
+        <meta name="keywords" content="odzież robocza, polska tekstylia">
+        <meta name="author" content="Grupa Robocza">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- @todo favicon -->
+        <!-- <link rel="icon" type="image/png" href="favicon.png" />-->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/font.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <main class="container">
+            <div class="eden">
+                <div class="flex-container">
+                    <div class="flex-item">
+                        <a href="https://odziez.robocza.org/">
+                            <img class="logo" src="img/or glow.svg" alt="Odzież Robocza - Logo"/>
+                        </a>
+                    </div>
+                    <div class="flex-item"></div>
+                    <div class="flex-item">
+                        <a href="https://mvu.pl/">
+                            <img class="logo" src="img/mvu glow.svg" alt="Minimum Viable Utopia - Logo"/>
+                        </a>
+                    </div>
+                    <div class="flex-item">
+                        <a href="https://grupa.robocza.org/">
+                            <img class="logo" src="img/powered by glow.svg" alt="Grupa Robocza - Logo"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="pre-order">
+                <h2>Pre-order wkrótce</h2>
+                <div class="flex-container flex-justify-space-around">
+                    <div class="flex-item">
+                        <label>
+                            <input class="mail" type="email" required placeholder="Podaj mail, żeby być na bieżąco"/>
+                        </label>
+                        <button type="button" class="reverse">Wyślij</button>
+                    </div>
+                    <div class="flex-item">
+                        <div class="light">
+                            <label class="light-switch">
+                                <input type="checkbox" id="toggle-light" data-light-switch="1">
+                                <span class="slider"></span>
+                                <span class="labels" data-on="ON" data-off="OFF"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const lightSwitch = document.getElementById('toggle-light');
+                const body = document.querySelector('body');
+
+                if(lightSwitch.checked){
+                    body.classList.add('night');
+                } else {
+                    body.classList.remove('night');
+                }
+
+                lightSwitch.addEventListener(
+                    'change', (e) => {
+                    const body = document.querySelector('body');
+
+                    if(e.target.checked){
+                        body.classList.add('night');
+                    } else {
+                        body.classList.remove('night');
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>
