@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Odzież Robocza</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="odzież robocza">
+	<meta name="keywords" content="odzież robocza, polska tekstylia">
+	<meta name="author" content="Grupa Robocza">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link href="fonts/fonts.css" rel="stylesheet">
+<style>
+
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap');
+
+body {
+	font-family: 'GT America Regular', sans-serif;
+  color:#FFF;
+  background-color: #1D1D1B;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  padding: 40px;
+}
+
+
+h1, h2, h3, h4 {
+  font-weight: 400;
+  display: block;
+  font-family:'GT America Expanded';
+}
+
+a {
+  color: #ff8000;
+  text-decoration: none;
+}
+
+
+a:visited {
+  color: #ff8000;
+}
+
+li {
+  padding-top: 10px;
+}
+p, ul, ol {
+  font-size: 1.5rem;
+  line-height: 1.6;
+ 
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 8%;
+  margin-top: 3%;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+.main {
+  padding: 40px;
+}
+
+.container {
+  margin: 0;
+  width: 100%;
+  max-width: 2400px;
+  padding: 0;
+}
+
+.content {
+  margin-left: 15%;
+  width: 80%;
+  padding: 1%;
+}
+
+.iframe {
+  padding-top: 4%;
+  width:640px; 
+  margin:0 auto;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex-basis: 100%;
+}
+
+.title_section {
+  border-bottom: solid 2px #000;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.title_section_horizontal {
+  border-right: solid 2px #000;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.dotted {
+  background: url(dotted.svg);
+}
+
+.no-border {
+  border: 0;
+}
+
+.right {
+  background-color: #fff/*#341D4B*/;
+  z-index: 2;
+}
+
+.left {
+}
+
+.text_container {
+  position: absolute;
+  width: 33%;
+}
+
+
+
+#dresiwo img {
+  position: fixed;
+  width: 43%;
+
+}
+
+#wss_title {
+  margin-top: 15%;
+
+  height: 100%;
+
+
+}
+
+#logo {
+  top: 2%;
+  left: 1%;
+  position: fixed;
+  width: 70%;
+}
+
+#logo img {
+  width: 10%;
+}
+
+#data {
+  margin-top: 3%;
+  margin-right: 2%;
+  text-align: right;
+}
+
+#data img {
+  width: 200px;
+}
+
+.baner {
+  background-color: #FFF;
+  border: solid #1D1D1B 2px;
+  color: #1d1d1b;
+}
+
+
+
+.opis {
+  text-align: left;
+  margin-top: 25%;
+  margin-bottom: 10%;
+}
+
+.opis p {
+  font-size: 2rem;
+  padding: 0;
+  margin: 0;
+}
+
+#koszty {
+  width: 100%;
+}
+
+.adnotacja p{
+  font-size: 1.25rem;
+}
+
+#CTA {
+  border: solid 2px black;
+  text-align: center;
+  width: 250px;
+  position: fixed;
+  bottom: 20px;
+  right: 50px;
+  color: #000;
+  padding: 20px;
+  background-color:#FFF;
+  font-weight: 400;
+  display: block;
+  font-family:'GT America Expanded';
+  font-size: 1.5rem;
+
+}
+
+.CTA_black {
+  border: solid 2px #FFF;
+  text-align: center;
+  width: 250px;
+  color: #fff;
+  padding: 20px;
+  font-weight: 400;
+  display: block;
+  font-family:'GT America Expanded';
+  font-size: 1.5rem;
+}
+
+.CTA_black:hover {
+  text-decoration: none !important;
+  color: #000;
+  background-color: #fff;
+}
+
+
+
+.marquee h2 {
+    color: #000;
+    border: solid black 1px;
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 10s linear infinite;
+}
+
+
+@keyframes marquee {
+    0%   { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0); }
+}
+
+.date {
+  margin-bottom: 3%;
+  margin-right: 5%;
+  border: dotted 1px #FFF;
+  text-align: center;
+  padding: 5px;
+}
+
+@media screen and (min-width: 800px) {
+  .column {
+    flex: 1;
+  }
+  ._25 {
+    flex: 2.5;
+  }
+  ._55 {
+    flex: 5.5;
+  }
+  ._20 {
+    flex: 2;
+  }
+   ._15 {
+    flex: 1.5;
+  }
+     ._05 {
+    flex: 0.5;
+  }
+       ._03 {
+    flex: 0.3;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #logo {
+    display: block;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    margin-bottom: 30%;
+  }
+
+  #logo img {
+    width: 40%;
+  }
+  .right {
+    display: block;
+  }
+  .row {
+    border-bottom: 0px;
+    border-top: 0px;
+  }
+ #dresiwo {
+   display: block;
+ }
+ #dresiwo img {
+  position: absolute;
+  width: 100%;
+ }
+
+ p, .opis p, .timeline p, ol {
+   font-size: 1.25rem;
+ }
+ h1 {
+  font-size: 1.5rem;
+  margin-bottom: 8%;
+  margin-top: 3%;
+}
+
+h2 {
+  font-size: 1.25rem;
+}
+ .opis {
+   margin: 0;
+   margin-top: 15%;
+ }
+
+.content {
+  margin: 0;
+  margin-left:5%;
+  position: relative;
+  display: block;
+  width: 80%;
+  padding: 4%;
+}
+
+.date {
+  margin-top: 10%;
+}
+
+}
+
+
+
+
+</style>
+
+
+
+</head>
+<body>
+<div class="container">
+<div class="row">
+  <div class="column left _15">
+    <div id="logo"><img src="logo.svg" alt="odzież robocza"></div>
+      
+    <div class="content">
+    <h1>DRES BASIC #01</h1> 
+    <p>W pierwszym dropie Odzieży Roboczej mamy do zaoferowania znakomity komplet dresowy do pracy przed komputerem.</p>
+    <p>Wygodne i elegancke dresiwo zdobione haftowanym logiem <a href="http://mvu.pl">Minimum Viable Utopia</a> sprawi, że zawsze z nadzieją będziesz spoglądać w przyszłość. Nasza odzież to niezapomniany prezent pod choinkę dla przyjaciół i rodziny.</p>
+    <div class="CTA_black">ZAPISY ZAMKNIĘTE</div>
+    
+    <div class="opis">
+      <p>POLSKA DZIANINA Z ŁODZI</p>
+      <p>280 G/DRAPANA</p>
+      <p>90% BAWEŁNA</p>
+      <p>10% POLIESTER</p>
+      <p>SZYTE W KRAKOWIE</p>
+      <p>HAFT SITO TEŻ W KRAKOWIE</p>
+    </div>
+    <div class="opis">
+      <h1>CENA: 140 PLN</h1>
+    <img src="koszty.svg" id="koszty" alt="51% produkcja spodni, 44% produkcja bluzy, 5% amortyzacja"/>
+    <p>Poznaj  <a href="wyliczenia.pdf" target="_blank">dokładne wyliczenia [PDF]</a>.</p>
+  </div>
+  <div class="opis">
+    <h2>JAK DZIAŁA DROP?</h2>
+    <ol>
+      <li><del>Wypełniasz formularz i wybierasz rozmiar dresów.</del></li>
+      <li>Po zamknięciu zapisów, otrzymasz maila z informacją o płatności.</li>
+      <li>Rozpoczynamy współpracę ze szwalnią.</li>
+      <li>Kiedy komplet jest już gotowy, kontaktujemy się z tobą i dogadujemy odbiór.</li> 
+    </ol>
+  </div>
+  <div class="opis">
+    <h2>TIMELINE</h2>
+    <div class="row timeline">
+      <div class="column date"><p>27/11/2020</p></div>
+      <div class="column adnotacja"><p>Otwarcie zapisów.</p></div>
+    </div>
+    <div class="row timeline">
+      <div class="column date"><p>01/12/2020</p></div>
+      <div class="column adnotacja"><p>Zamknięcie zapisów.</p></div>
+    </div>
+    <div class="row timeline">
+      <div class="column date"><p>do 04/12/2020</p></div>
+      <div class="column adnotacja"><p>Potwierdzenie zamówienia poprzez dokonanie płatności.</p></div>
+    </div>
+    <div class="row timeline">
+      <div class="column date"><p>~08/12/2020</p></div>
+      <div class="column adnotacja"><p>Przesłanie dokładnych wymiarów </br>i doprecyzowanie zamówienia.</p></div>
+    </div>
+    <div class="row timeline">
+      <div class="column date"><p>~18/12/2020</p></div>
+      <div class="column adnotacja"><p>Dres gotowy - organizujemy przekazanie!</p></div>
+    </div>
+
+  </div>
+
+    <h2>FAQ</h2>
+    <div class="row">
+    <p><i>Czy dresiwo jest znakomite?</i></br>Dresiwo jest znakomite.</p>
+    </div>
+    <div class="row">
+    <p><i>Ile kompletów mogę zamówić?</i></br>Możesz zamówić dowolną ilość kompletów w różnych rozmiarach.</p>
+    </div>
+    <div class="row">
+      <p><i>Czy mogę zamówić tylko bluzę?</i></br>W tym dropie tylko komplety.</p>
+      </div>
+      
+    <div class="opis">
+      <h2>KONTAKT</h2>
+      <p>Jakby co, wiesz gdzie nas znaleźć.</p>
+      <p>Jeżeli nie, napisz maila na <a href="mailto:grupa@robocza.org">grupa@robocza.org</a>.</p>
+
+    </div>
+      </div>
+    </div>
+  <div class="column right">
+    <div id="dresiwo"><img src="dresiwo2.png" alt="ciuchy" /></div>
+    <div id="CTA">ZAPISY ZAMKNIĘTE</div>
+    
+  </div>
+</div>
+
+</div>
+
+
+
+
+</body>
+
+</HTML>
