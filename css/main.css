@@ -19,18 +19,9 @@ body {
     margin: auto;
 }
 
-.flex-container {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-}
-
-.flex-justify-space-around {
-    justify-content: space-around;
-}
-
-.flex-item {
-    flex-flow: column;
+.logo {
+    position: relative;
+    transition: all 0.4s ease-in-out;
 }
 
 .eden {
@@ -41,6 +32,17 @@ body {
     height: 60vh;
     background: url("../img/eden.svg") no-repeat scroll center;
     background-size: contain;
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.eden .flex-item {
+    flex-grow: 1;
+    width: 25%;
 }
 
 .pre-order {
@@ -71,6 +73,7 @@ input, button {
 
 button {
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 input::placeholder {
@@ -82,6 +85,11 @@ button.reverse {
     border: var(--border-width) solid var(--main-color);
     background-color: var(--main-color);
     color: var(--bg-color);
+}
+
+button.reverse:hover, button.reverse:active {
+    background-color: var(--bg-color);
+    color: var(--main-color);
 }
 
 .mail {
@@ -206,3 +214,21 @@ body.night button.reverse {
     color: var(--bg-color-night);
     box-shadow: 0 0 20px 1px var(--main-color);
 }
+
+body.night button.reverse:hover, button.reverse:active {
+    background-color: var(--bg-color-night);
+    color: var(--main-color);
+}
+
+body.night .logo-odziez-robocza {
+    background: url("../img/odziez-robocza-glow.svg") no-repeat center center;
+}
+
+body.night .logo-grupa-robocza {
+    background: url("../img/powered-by-grupa-robocza-glow.svg") no-repeat center center;
+}
+
+body.night .logo-mvu {
+    background: url("../img/mvu-glow.svg") no-repeat center center;
+}
+
