@@ -39,10 +39,12 @@
                 <h2>Pre-order wkrótce</h2>
                 <div class="flex-container flex-justify-space-around">
                     <div class="flex-item">
-                        <label>
-                            <input class="mail" type="email" required placeholder="Podaj mail, żeby być na bieżąco"/>
-                        </label>
-                        <button type="button" class="reverse">Wyślij</button>
+                        <form name="pre-order" method="POST" data-netlify="true">
+                            <label>
+                                <input class="mail" name="mail" type="email" required placeholder="Podaj mail, żeby być na bieżąco"/>
+                            </label>
+                            <button type="submit" class="reverse">Wyślij</button>
+                        </form>
                     </div>
                     <div class="flex-item">
                         <div class="light">
