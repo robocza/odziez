@@ -2,3 +2,4 @@
   from = "/"
   to = "/drop/1"
   status = 302
+  force = true
