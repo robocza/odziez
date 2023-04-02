@@ -1,0 +1,15 @@
+---
+export interface Props {
+	title: string;
+	body: string;
+	href: string;
+}
+
+const { href, title, body } = Astro.props;
+---
+
+<div class="text-center">
+	<h2>{title}</h2>
+    <p>Jakiś opis i zdjęcie</p>
+    <button class="bg-black text-white py-2 px-4 rounded-full uppercase">Zamów</button>
+</div>

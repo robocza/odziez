@@ -30,7 +30,7 @@ body {
     background-size: cover;
     flex: 1;
     height: 75vh;
-    background: url("../img/eden.svg") no-repeat scroll center 0px;
+    background: url("/drop/img/eden.svg") no-repeat scroll center 0px;
     background-size: contain;
 }
 
@@ -133,7 +133,7 @@ button.reverse:hover, button.reverse:active {
     padding-left: 60px;
     display: block;
     height: 47px;
-    background: url("../img/light-on.svg") 10px 0 no-repeat;
+    background: url("/drop/img/light-on.svg") 10px 0 no-repeat;
 }
 
 .light-switch {
@@ -229,7 +229,7 @@ body.night .eden:after {
     right: 0;
     top: 0;
     bottom: 0;
-    background: url("../img/eden-glow.svg") no-repeat scroll center 0px;
+    background: url("/drop/img/eden-glow.svg") no-repeat scroll center 0px;
     background-size: contain;
     transition: all 0.4s ease-in-out;
     z-index: -1;
@@ -240,7 +240,7 @@ body.night {
 }
 
 body.night .light {
-    background-image: url("../img/light-off.svg");
+    background-image: url("/drop/img/light-off.svg");
 }
 
 body.night button.reverse {
@@ -254,14 +254,14 @@ body.night button.reverse:hover, button.reverse:active {
 }
 
 body.night .logo-odziez-robocza {
-    background: url("../img/odziez-robocza-glow.svg") no-repeat center center;
+    background: url("odziez-robocza-glow.svg") no-repeat center center;
 }
 
 body.night .logo-grupa-robocza {
-    background: url("../img/powered-by-grupa-robocza-glow.svg") no-repeat center center;
+    background: url("powered-by-grupa-robocza-glow.svg") no-repeat center center;
 }
 
 body.night .logo-mvu {
-    background: url("../img/mvu-glow.svg") no-repeat center center;
+    background: url("mvu-glow.svg") no-repeat center center;
 }
 
