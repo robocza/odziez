@@ -29,8 +29,8 @@ body {
     text-align: center;
     background-size: cover;
     flex: 1;
-    height: 60vh;
-    background: url("../img/eden.svg") no-repeat scroll center;
+    height: 75vh;
+    background: url("../img/eden.svg") no-repeat scroll center 0px;
     background-size: contain;
 }
 
@@ -41,8 +41,37 @@ body {
 }
 
 .eden .flex-item {
-    flex-grow: 1;
+}
+
+.flex-item-logo{
     width: 25%;
+    flex-grow: 1;
+    align-self: stretch;
+}
+.flex-item-logo-spacer{
+    width: 25%;
+    flex-grow: 1;
+    align-self: stretch;
+}
+.flex-item-pre-order{
+    width: 100%;
+    align-self: flex-end;
+    padding-top: 35vh;
+}
+.flex-item-mail{
+    align-self: flex-end;
+}
+.flex-item-light{
+    align-self: flex-end;
+}
+
+
+.flex-item-stretch {
+    align-self: stretch;
+}
+
+.flex-item-end {
+    align-self: flex-end;
 }
 
 .eden-link {
@@ -51,7 +80,6 @@ body {
 
 .pre-order {
     text-align: center;
-    height: 15vh;
 }
 
 h2 {
@@ -201,7 +229,7 @@ body.night .eden:after {
     right: 0;
     top: 0;
     bottom: 0;
-    background: url("../img/eden-glow.svg") no-repeat scroll center;
+    background: url("../img/eden-glow.svg") no-repeat scroll center 0px;
     background-size: contain;
     transition: all 0.4s ease-in-out;
     z-index: -1;

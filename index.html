@@ -15,45 +15,43 @@
     </head>
     <body>
         <main class="container">
-            <div class="eden">
-                <div class="flex-container">
-                    <div class="flex-item">
-                        <a class="eden-link" href="https://odziez.robocza.org/">
-                            <img class="logo logo-odziez-robocza" src="img/odziez-robocza.svg" alt="Odzież Robocza - Logo"/>
-                        </a>
-                    </div>
-                    <div class="flex-item"></div>
-                    <div class="flex-item">
-                        <a class="eden-link" href="https://mvu.pl/">
-                            <img class="logo logo-mvu" src="img/mvu.svg" alt="Minimum Viable Utopia - Logo"/>
-                        </a>
-                    </div>
-                    <div class="flex-item">
-                        <a class="eden-link" href="https://grupa.robocza.org/">
-                            <img class="logo logo-grupa-robocza" src="img/powered-by-grupa-robocza.svg" alt="Grupa Robocza - Logo"/>
-                        </a>
-                    </div>
+            <div class="flex-container eden">
+                <div class="flex-item flex-item-logo">
+                    <a class="eden-link" href="https://odziez.robocza.org/">
+                        <img class="logo logo-odziez-robocza" src="img/odziez-robocza.svg" alt="Odzież Robocza - Logo"/>
+                    </a>
                 </div>
-            </div>
-            <div class="pre-order">
-                <h2>Pre-order wkrótce</h2>
-                <div class="flex-container">
-                    <div class="flex-item">
-                        <form name="pre-order" method="POST" data-netlify="true">
-                            <label>
-                                <input class="mail" name="mail" type="email" required placeholder="Podaj mail, żeby być na bieżąco"/>
-                            </label>
-                            <button type="submit" class="reverse">Wyślij</button>
-                        </form>
-                    </div>
-                    <div class="flex-item">
-                        <div class="light">
-                            <label class="light-switch">
-                                <input type="checkbox" id="toggle-light" data-light-switch="1">
-                                <span class="slider"></span>
-                                <span class="labels" data-on="ON" data-off="OFF"></span>
-                            </label>
-                        </div>
+                <div class="flex-item flex-item-logo-spacer"></div>
+                <div class="flex-item flex-item-logo">
+                    <a class="eden-link" href="https://mvu.pl/">
+                        <img class="logo logo-mvu" src="img/mvu.svg" alt="Minimum Viable Utopia - Logo"/>
+                    </a>
+                </div>
+                <div class="flex-item flex-item-logo">
+                    <a class="eden-link" href="https://grupa.robocza.org/">
+                        <img class="logo logo-grupa-robocza" src="img/powered-by-grupa-robocza.svg" alt="Grupa Robocza - Logo"/>
+                    </a>
+                </div>
+
+                <div class="flex-item pre-order flex-item-pre-order">
+                    <h2>Pre-order wkrótce</h2>
+                </div>
+
+                <div class="flex-item flex-item-mail">
+                    <form name="pre-order" method="POST" data-netlify="true">
+                        <label>
+                            <input class="mail" name="mail" type="email" required placeholder="Podaj mail, żeby być na bieżąco"/>
+                        </label>
+                        <button type="submit" class="reverse">Wyślij</button>
+                    </form>
+                </div>
+                <div class="flex-item flex-item-light">
+                    <div class="light">
+                        <label class="light-switch">
+                            <input type="checkbox" id="toggle-light" data-light-switch="1">
+                            <span class="slider"></span>
+                            <span class="labels" data-on="ON" data-off="OFF"></span>
+                        </label>
                     </div>
                 </div>
             </div>
@@ -64,7 +62,7 @@
                 const lightSwitch = document.getElementById('toggle-light');
                 const body = document.querySelector('body');
 
-                if(lightSwitch.checked){
+                if (lightSwitch.checked) {
                     body.classList.add('night');
                 } else {
                     body.classList.remove('night');
@@ -72,14 +70,14 @@
 
                 lightSwitch.addEventListener(
                     'change', (e) => {
-                    const body = document.querySelector('body');
+                        const body = document.querySelector('body');
 
-                    if(e.target.checked){
-                        body.classList.add('night');
-                    } else {
-                        body.classList.remove('night');
-                    }
-                });
+                        if (e.target.checked) {
+                            body.classList.add('night');
+                        } else {
+                            body.classList.remove('night');
+                        }
+                    });
             });
         </script>
     </body>
