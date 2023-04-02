@@ -1,0 +1,14 @@
+---
+import ListItemProduct from "./ListItemProduct.astro";
+import {getCollection} from 'astro:content';
+
+const products = await getCollection('product');
+---
+
+{
+    products.map(product => (
+        <div class="bg-white">
+            <ListItemProduct product={product}/>
+        </div>
+    ))
+}
