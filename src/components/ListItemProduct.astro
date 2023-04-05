@@ -1,5 +1,6 @@
 ---
 import type {CollectionEntry} from 'astro:content';
+import QuickAddToCartButton from "./QuickAddToCartButton.astro";
 
 interface Props {
     product: CollectionEntry<'product'>;
@@ -11,35 +12,7 @@ const {product} = Astro.props;
 <div class="text-center">
     <h2>{product.data.name}</h2>
     <img src={product.data.image} alt={product.data.name} class="max-h-48"/>
-    <button class="bg-black text-white py-2 px-4 rounded-full uppercase"
-            data-add-to-cart
-            data-cart-drawer-show
-            data-item-id={product.data.id}
-            data-item-name={product.data.name}
-            data-item-image={product.data.image}>
-        Zamów
-    </button>
+    <a class="uppercase block underline" href={`/product/${product.slug}`}>Zobacz szczegóły</a>
+
+    <QuickAddToCartButton productId={product.data.id}/>
 </div>
-
-<script>
-    import {addCartItem} from '../cartStore';
-
-    const addToCartButtons = document.querySelectorAll('button[data-add-to-cart]');
-
-    addToCartButtons.forEach((button) => {
-        button.addEventListener('click', (event) => {
-            addToCart(event);
-        });
-    });
-
-    function addToCart(event) {
-        event.preventDefault();
-        addCartItem(
-            {
-                id: event.target.dataset.itemId,
-                name: event.target.dataset.itemName,
-                imageSrc: event.target.dataset.itemImage
-            }
-        );
-    }
-</script>

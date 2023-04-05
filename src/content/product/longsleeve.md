@@ -1,6 +1,8 @@
 ---
 id: "longsleeve"
-name: "Longsleeve"
+name: "Fajny Longsleeve"
 image: "/assets/product/longsleeve.png"
 ---
-Opis produktu longsleeve
+Opis produktu longsleeve.
+
+Dodatkowa linia tekstu.

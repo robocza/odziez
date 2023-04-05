@@ -1,0 +1,86 @@
+[
+  {
+    "id": "longsleeve",
+    "name": "Longsleeve",
+    "image": "/assets/product/longsleeve.png",
+    "variants": [
+      {
+        "size": "M",
+        "stripe": {
+          "productId": "prod_NewTevSizKig4F",
+          "priceId": "price_1MtcaTCvOTfFxYT2Bfum7NB7"
+        }
+      },
+      {
+        "size": "L",
+        "stripe": {
+          "productId": "prod_NewTevSizKig4F",
+          "priceId": "price_1MtcaTCvOTfFxYT2Bfum7NB7"
+        }
+      },
+      {
+        "size": "XL",
+        "stripe": {
+          "productId": "prod_NewTevSizKig4F",
+          "priceId": "price_1MtcaTCvOTfFxYT2Bfum7NB7"
+        }
+      }
+    ]
+  },
+  {
+    "id": "t-shirt",
+    "name": "T-shirt",
+    "image": "/assets/product/t-shirt.png",
+    "variants": [
+      {
+        "size": "M",
+        "stripe": {
+          "productId": "prod_NZHadwxkNuYbg4",
+          "priceId": "price_1Mo90wCvOTfFxYT2dob2b3RI"
+        }
+      },
+      {
+        "size": "L",
+        "stripe": {
+          "productId": "prod_NZHadwxkNuYbg4",
+          "priceId": "price_1Mo90wCvOTfFxYT2dob2b3RI"
+        }
+      },
+      {
+        "size": "XL",
+        "stripe": {
+          "productId": "prod_NZHadwxkNuYbg4",
+          "priceId": "price_1Mo90wCvOTfFxYT2dob2b3RI"
+        }
+      }
+    ]
+  },
+  {
+    "id": "bluza",
+    "name": "Bluza",
+    "image": "/assets/product/bluza.png",
+    "variants": [
+      {
+        "size": "M",
+        "stripe": {
+          "productId": "prod_NZH7oiK8h48Ccg",
+          "priceId": "price_1Mo8Z4CvOTfFxYT2NnJp9W2Z"
+        }
+      },
+      {
+        "size": "L",
+        "stripe": {
+          "productId": "prod_NZH7oiK8h48Ccg",
+          "priceId": "price_1Mo8Z4CvOTfFxYT2NnJp9W2Z"
+        }
+      },
+      {
+        "size": "XL",
+        "stripe": {
+          "productId": "prod_NZH7oiK8h48Ccg",
+          "priceId": "price_1Mo8Z4CvOTfFxYT2NnJp9W2Z"
+        }
+      }
+    ]
+  }
+]
