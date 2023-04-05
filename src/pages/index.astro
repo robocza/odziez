@@ -1,23 +1,30 @@
 ---
-import Layout from '@layouts/Layout.astro';
+import Layout from '../layouts/Layout.astro';
+import CartDrawerToggle from "../components/CartDrawerToggle.astro";
+import CartDrawer from "../components/CartDrawer.vue";
+import ListProducts from "../components/ListProducts.astro";
 ---
 
-<Layout title="Odzież Robocza - drop N°.2">
-    <main class="px-4 grid grid-cols w-screen bg-black text-white h-screen content-center">
-        <div class="bg-black text-white">
-            <img class="mx-auto max-w-full" src="/assets/drop.svg" alt="Odzież Robocza - drop N°.2">
-            <div class="text-4xl text-center mt-20">
-                <form name="pre-order-syzyf" method="POST" data-netlify="true" action="/success">
-                    <label class="pr-4">
-                        <input class="border-2 border-white w-48 sm:w-72 md:w-96 text-lg bg-white text-black py-2 px-5 max-w-full"
-                               name="mail" type="email" required
-                               placeholder="Wpisz adres email, jeśli chcesz dostać info">
-                    </label>
-                    <button type="submit"
-                            class="border-2 border-white bg-black text-white text-lg py-2 px-5 uppercase hover:text-black hover:bg-white">
-                        Zapisz się
-                    </button>
-                </form>
+<Layout title="Odzież Robocza">
+    <main class="grid grid-cols-2 h-screen">
+        <div class="bg-black text-white flex">
+            <div class="grid content-center grow">
+                <div class="text-4xl text-center">Tu będzie jakieś zajebiste coś</div>
+            </div>
+        </div>
+        <div class="flex flex-col">
+            <div class="bg-white">
+                <h1 class="text-9xl uppercase text-justify">Pre-Order</h1>
+            </div>
+            <div class="grid grid-cols-2 bg-black gap-px grow border-t border-black">
+                <ListProducts/>
+                <div class="bg-white">
+                    <div class="text-center">Timer</div>
+                    <div>
+                        <CartDrawerToggle/>
+                    </div>
+                    <CartDrawer client:load/>
+                </div>
             </div>
         </div>
     </main>
