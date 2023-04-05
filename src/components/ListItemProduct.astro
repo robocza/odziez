@@ -11,6 +11,7 @@ const {product} = Astro.props;
 <div class="text-center">
     <h2>{product.data.name}</h2>
     <img src={product.data.image} alt={product.data.name} class="max-h-48"/>
+    <a class="uppercase block underline" href={`/product/${product.slug}`}>Zobacz szczegóły</a>
     <button class="bg-black text-white py-2 px-4 rounded-full uppercase"
             data-add-to-cart
             data-cart-drawer-show
