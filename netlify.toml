@@ -1,9 +1,3 @@
 [build]
   publish = "dist"
   command = "astro build"
-
-[[redirects]]
-  from = "/"
-  to = "/drop/1"
-  status = 302
-  force = true

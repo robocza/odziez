@@ -1,0 +1,20 @@
+---
+import Layout from '@layouts/Layout.astro';
+---
+
+<Layout title="Odzież Robocza - drop N°.2">
+    <main class="grid grid-cols w-screen bg-black text-white  h-screen content-center">
+        <div class="bg-black text-white">
+            <img class="mx-auto" src="/assets/drop.svg" alt="Odzież Robocza - drop N°.2">
+            <div class="text-4xl text-center mt-20">
+                <form name="pre-order-syzyf" method="POST" data-netlify="true" action="/success">
+                    <label class="pr-4">
+                        <input class="border-2 border-white w-96 text-lg bg-white text-black py-2 px-5" name="mail" type="email" required
+                               placeholder="Wpisz adres email, jeśli chcesz dostać info">
+                    </label>
+                    <button type="submit" class="border-2 border-white bg-black text-white text-lg py-2 px-5 uppercase hover:text-black hover:bg-white">Zapisz się</button>
+                </form>
+            </div>
+        </div>
+    </main>
+</Layout>
