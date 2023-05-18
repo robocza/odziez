@@ -3,6 +3,10 @@
     "id": "longsleeve",
     "name": "Longsleeve",
     "image": "/assets/product/longsleeve.png",
+    "price": {
+      "amount": "12900",
+      "currency": "PLN"
+    },
     "variants": [
       {
         "size": "M",
@@ -31,6 +35,10 @@
     "id": "t-shirt",
     "name": "T-shirt",
     "image": "/assets/product/t-shirt.png",
+    "price": {
+      "amount": "10900",
+      "currency": "PLN"
+    },
     "variants": [
       {
         "size": "M",
@@ -59,6 +67,10 @@
     "id": "bluza",
     "name": "Bluza",
     "image": "/assets/product/bluza.png",
+    "price": {
+      "amount": "11900",
+      "currency": "PLN"
+    },
     "variants": [
       {
         "size": "M",

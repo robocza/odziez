@@ -1,19 +1,13 @@
-import {getProductVariant, ProductVariantOptionSize} from "./productRepository";
+import {getProductVariant} from "./productRepository";
 import {stripeApi} from "./stripeApi";
-
-declare var process: {
-    env: {
-        STRIPE_SECRET_KEY: string
-    }
-}
 
 export type CartItem = {
     id: string;
-    size: ProductVariantOptionSize,
+    size: string,
     quantity: number;
 };
 
-export async function getStripePaymentLinkUrl(cartItems: CartItem[]) {
+export async function getStripePaymentLinkUrl(cartItems: CartItem[], successUrl: string) {
     const lineItems = cartItems.map((cartItem) => {
         const variant = getProductVariant(cartItem.id, cartItem.size);
 
@@ -30,7 +24,10 @@ export async function getStripePaymentLinkUrl(cartItems: CartItem[]) {
 
     const paymentLink = await stripeApi.paymentLinks.create({
         line_items: lineItems,
-        // after_completion: {type: 'redirect', redirect: {url: 'https://example.com'}} // @todo handle redirect on success
+        shipping_address_collection: {
+            allowed_countries: ['PL']
+        },
+        after_completion: {type: 'redirect', redirect: {url: successUrl}}
     });
 
     return paymentLink.url;

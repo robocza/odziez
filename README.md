@@ -20,3 +20,8 @@ Run project (inside docker)
 ```bash
 yarn dev
 ```
+
+Test locally Netlify functions (using Netlify CLI)
+```bash
+netlify dev -c "yarn dev" --targetPort 3001
+```

@@ -1,9 +1,7 @@
 import productsData from './data/products.json';
 
-export type ProductVariantOptionSize = 'M' | 'L' | 'XL';
-
 interface ProductVariant {
-    size: ProductVariantOptionSize;
+    size: string;
     stripe: {
         productId: string,
         priceId: string
@@ -28,7 +26,7 @@ export function getProduct(id: string): Product {
     return product;
 }
 
-export function getProductVariant(id: string, size: ProductVariantOptionSize): ProductVariant {
+export function getProductVariant(id: string, size: string): ProductVariant {
     const product = getProduct(id);
 
     const variant = product.variants.find((variant) => variant.size === size);

@@ -1,0 +1,68 @@
+---
+interface Props {
+    productId: string;
+}
+
+const {productId} = Astro.props;
+
+---
+<div class="mb-6">
+    <label for="product-size"
+           class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Rozmiar</label>
+    <select
+            id="product-size"
+            name="size"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            required
+    >
+        <option value="M">M</option>
+        <option value="L">L</option>
+        <option value="XL">XL</option>
+    </select>
+</div>
+<div class="mb-6">
+    <label for="product-quantity"
+           class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Ilość</label>
+    <input id="product-quantity"
+           value="1"
+           type="number"
+           class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+           required
+           name="quantity"
+           min="1"
+           max="10"
+    >
+</div>
+<button class="bg-black text-white py-2 px-4 rounded-full uppercase"
+        data-add-to-cart
+        data-cart-drawer-show
+        data-product-id={productId}>
+    Zamów
+</button>
+
+<script>
+    import {addProductToCart} from '../store/cart';
+
+    const addToCartButtons = document.querySelectorAll('button[data-add-to-cart]');
+
+    addToCartButtons.forEach((button) => {
+        button.addEventListener('click', (event) => {
+            addToCart(event);
+        });
+    });
+
+    function addToCart(event) {
+        event.preventDefault();
+
+        const quantity = document.getElementById('product-quantity') as HTMLInputElement;
+        const size = document.getElementById('product-size') as HTMLSelectElement;
+
+        addProductToCart(
+            {
+                id: event.target.dataset.productId,
+                size: size.value,
+            },
+            Number(quantity.value)
+        );
+    }
+</script>

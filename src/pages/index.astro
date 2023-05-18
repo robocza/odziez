@@ -1,7 +1,6 @@
 ---
 import Layout from '@layouts/Layout.astro';
 import CartDrawerToggle from "@components/CartDrawerToggle.astro";
-import CartDrawer from "@components/CartDrawer.vue";
 import ListProducts from "@components/ListProducts.astro";
 ---
 
@@ -23,7 +22,6 @@ import ListProducts from "@components/ListProducts.astro";
                     <div>
                         <CartDrawerToggle/>
                     </div>
-                    <CartDrawer client:load/>
                 </div>
             </div>
         </div>
