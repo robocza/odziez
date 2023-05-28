@@ -3,19 +3,12 @@ import Layout from '@layouts/Layout.astro';
 import CartDrawerToggle from "@components/CartDrawerToggle.astro";
 import ListProducts from "@components/ListProducts.astro";
 import Heading from "@components/Heading.astro";
-import ArticleTitle from "@components/ArticleTitle.astro";
+import Story from "@components/Story.astro";
 ---
 
 <Layout title="Odzież Robocza">
     <main class="grid grid-cols-2 h-screen">
-        <div class="bg-black text-white flex">
-            <div class="grid content-center grow">
-                <ArticleTitle text="Lorem ipsum dolor sit amet, consectetuer."/>
-                <div>
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
-                </div>
-            </div>
-        </div>
+        <Story/>
         <div class="flex flex-col">
             <div class="bg-white">
                 <Heading/>
