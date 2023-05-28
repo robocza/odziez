@@ -13,6 +13,16 @@ const { title } = Astro.props;
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<title>{title}</title>
+		<style>
+			@font-face {
+				font-family: 'GT America';
+				src: url('/fonts/GT-America-Standard-Regular.woff2') format('woff2');
+				font-weight: normal;
+				font-style: normal;
+				font-display: swap;
+			}
+		</style>
+		<link rel="stylesheet" href="https://use.typekit.net/xwk1wkl.css"/>
 	</head>
 	<body>
 		<slot />
