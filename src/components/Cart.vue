@@ -32,7 +32,7 @@
                 </li>
             </ul>
             <div class="grid grid-cols-2 gap-4">
-                <button @click.stop.prevent="goToCheckout" class="bg-black text-white py-2 px-4 rounded-full uppercase"
+                <button @click.stop.prevent="goToCheckout" class="inline-block bg-black text-white py-2 px-4 rounded-full uppercase hover:opacity-50"
                         type="submit">Do kasy
                 </button>
             </div>
