@@ -1,2 +1,44 @@
-<!-- @todo finalize -->
-<div class="text-center">Timer</div>
+---
+const preOrderEndDate = new Date('2023-06-23 00:00:00+02:00');
+
+const now = new Date().getTime();
+const countdownDate = preOrderEndDate.getTime();
+const distance = countdownDate - now;
+
+const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+
+const initialCountdownText = days + 'd:' + hours + 'h:' + minutes + 'm';
+---
+<div class="p-2">
+    <div class="underline text-5xl uppercase">Do zamknięcia preorderu zostało:</div>
+    <div class="font-pixel text-6xl uppercase pt-4" id="pre-order-timer">{initialCountdownText}</div>
+</div>
+
+<script>
+    const countdownTargetDate =  new Date('2023-06-23 00:00:00+02:00').getTime();
+
+    const preOrderCountdownTimer = setInterval(function () {
+        const preOrderTimerElement = document.getElementById('pre-order-timer');
+
+        const now = new Date().getTime();
+        const distance = countdownTargetDate - now;
+        if (distance < 0) {
+            preOrderTimerElement.innerHTML = 'Preorder zakończony';
+            clearInterval(preOrderCountdownTimer);
+
+            return;
+        }
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+
+        const timerText = days + 'd:' + hours + 'h:' + minutes + 'm';
+
+        if( preOrderTimerElement.innerHTML !== timerText){
+            preOrderTimerElement.innerHTML = timerText;
+        }
+    }, 1000);
+</script>
