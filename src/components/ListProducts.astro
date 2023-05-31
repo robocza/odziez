@@ -1,5 +1,5 @@
 ---
-import ListItemProduct from "./ListItemProduct.astro";
+import ListItemProduct from "@components/ListItemProduct.astro";
 import {getCollection} from 'astro:content';
 
 const products = await getCollection('product');
@@ -7,7 +7,7 @@ const products = await getCollection('product');
 
 {
     products.map(product => (
-        <div class="bg-white">
+        <div class="bg-white grid items-center">
             <ListItemProduct product={product}/>
         </div>
     ))
