@@ -1,22 +1,15 @@
 ---
 import Layout from '@layouts/Layout.astro';
 import ListProducts from "@components/ListProducts.astro";
-import Story from "@components/Story.astro";
 import Timer from "@components/Timer.astro";
 import Header from "@components/Header.astro";
 ---
-
 <Layout title="Odzież Robocza">
-    <main class="grid grid-cols-2 h-screen">
-        <Story/>
-        <div class="flex flex-col">
-            <Header/>
-            <div class="grid grid-cols-2 bg-black gap-px grow border-t border-black">
-                <ListProducts/>
-                <div class="bg-white">
-                    <Timer/>
-                </div>
-            </div>
+    <Header/>
+    <div class="grid grid-cols-2 bg-black gap-px border-t border-black">
+        <ListProducts/>
+        <div class="bg-white">
+            <Timer/>
         </div>
-    </main>
+    </div>
 </Layout>

@@ -23,31 +23,26 @@ const {entry} = Astro.props;
 const images = [entry.data.image, entry.data.image, entry.data.image, entry.data.image] // @todo fetch product images
 const {Content} = await entry.render();
 ---
-<Layout title="Odzież Robocza">
-    <main class="grid grid-cols-2 h-screen">
-        <Story/>
-        <div>
-            <Header/>
-            <div class="flex border-t border-black pt-2 px-4">
-                <div class="flex w-24 bg-white">
-                    <div class="grid content-center grow">
-                        <BackButton/>
-                    </div>
-                </div>
-                <div class="flex-1 bg-white text-right">
-                    <ProductTitle title={entry.data.name}/>
-                </div>
+<Layout title={`Odzież Robocza - ${entry.data.name}`}>
+    <Header/>
+    <div class="flex border-t border-black pt-2 px-4">
+        <div class="flex w-24 bg-white">
+            <div class="grid content-center grow">
+                <BackButton/>
             </div>
-            <ProductSectionDivider/>
-            <ProductImageGallery product={entry} images={images}/>
-            <ProductSectionDivider/>
-            <ProductPrice/>
-            <ProductSectionDivider/>
-            <ProductForm productId={entry.data.id}/>
-            <ProductSectionDivider/>
-            <Content/>
-            <ProductSectionDivider/>
-            <ProductSizing/>
         </div>
-    </main>
+        <div class="flex-1 bg-white text-right">
+            <ProductTitle title={entry.data.name}/>
+        </div>
+    </div>
+    <ProductSectionDivider/>
+    <ProductImageGallery product={entry} images={images}/>
+    <ProductSectionDivider/>
+    <ProductPrice/>
+    <ProductSectionDivider/>
+    <ProductForm productId={entry.data.id}/>
+    <ProductSectionDivider/>
+    <Content/>
+    <ProductSectionDivider/>
+    <ProductSizing/>
 </Layout>
