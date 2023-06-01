@@ -2,7 +2,6 @@
 import {getCollection} from 'astro:content';
 import Layout from '@layouts/Layout.astro';
 import ProductForm from "@components/ProductForm.astro";
-import Story from "@components/Story.astro";
 import ProductImageGallery from "@components/ProductImageGallery.astro";
 import BackButton from "@components/BackButton.astro";
 import ProductSectionDivider from "@components/ProductSectionDivider.astro";
@@ -42,7 +41,9 @@ const {Content} = await entry.render();
     <ProductSectionDivider/>
     <ProductForm productId={entry.data.id}/>
     <ProductSectionDivider/>
-    <Content/>
+    <div class="mx-auto max-w-xl w-full px-8">
+        <Content/>
+    </div>
     <ProductSectionDivider/>
     <ProductSizing/>
 </Layout>

@@ -15,7 +15,7 @@ const {product, images} = Astro.props;
 
     </div>
     <!-- Slider indicators -->
-    <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+    <div class="absolute z-30 flex items-center space-x-3 -translate-x-1/2 bottom-5 left-1/2">
         {images.map((image, key) =>
                 <button data-product-image-gallery-item-indicator type="button" class="bg-black rounded-full"></button>)}
     </div>
@@ -66,8 +66,8 @@ const {product, images} = Astro.props;
 
     const options: CarouselOptions = {
         indicators: {
-            activeClasses: 'w-6 h-6',
-            inactiveClasses: 'w-4 h-4 hover:bg-gray-800',
+            activeClasses: 'w-4 h-4',
+            inactiveClasses: 'w-2 h-2 hover:bg-gray-800',
             items: carouselIndicators
         },
     };

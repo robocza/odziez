@@ -25,7 +25,7 @@
                     <input :value=cartItemProduct.cartItem.product.id type="hidden" name="id"/>
                     <input :value=cartItemProduct.cartItem.product.size type="hidden" name="size"/>
 
-                    <a class="text-sm block underline"
+                    <a class="block text-sm underline hover:opacity-50"
                        href="#"
                        :data-cart-item-id=cartItemProduct.cartItem.id
                        @click.stop.prevent="removeCartItem">Usuń</a>

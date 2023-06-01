@@ -6,40 +6,44 @@ interface Props {
 const {productId} = Astro.props;
 
 ---
-<div class="mb-6">
-    <label for="product-quantity"
-           class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Ilość</label>
-    <input id="product-quantity"
-           value="1"
-           type="number"
-           class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-           required
-           name="quantity"
-           min="1"
-           max="10"
-    >
+<div class="flex items-center space-x-12 mx-auto place-items-center">
+    <div class="flex place-items-center">
+        <label class="pr-4 uppercase text-lg" for="product-quantity">Ilość</label>
+        <input id="product-quantity"
+               value="1"
+               type="number"
+               class="bg-white border border-black text-black text-lg rounded-lg inline-block p-2.5 w-[80px]"
+               required
+               name="quantity"
+               min="1"
+               max="10"
+        >
+    </div>
+    <div class="flex place-items-center my-4">
+        <div class="inline-block pr-4 ">
+            <label class="uppercase text-lg block" for="product-size">Rozmiar</label>
+            <a href="#tabela-rozmiarow" class="block underline text-sm hover:opacity-50">Tabela rozmiarów</a>
+        </div>
+        <select
+                id="product-size"
+                name="size"
+                class="bg-white border border-black text-black text-lg rounded-lg inline-block p-2.5 w-[80px]"
+                required
+        >
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+        </select>
+    </div>
+    <div class="flex place-items-center">
+        <button class="bg-black text-white py-4 px-6 text-lg rounded-full uppercase hover:opacity-50"
+                data-add-to-cart
+                data-cart-drawer-show
+                data-product-id={productId}>
+            Dodaj do koszyka
+        </button>
+    </div>
 </div>
-<div class="mb-6">
-    <label for="product-size"
-           class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Rozmiar</label>
-    <select
-            id="product-size"
-            name="size"
-            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-            required
-    >
-        <option value="M">M</option>
-        <option value="L">L</option>
-        <option value="XL">XL</option>
-    </select>
-    <a href="#tabela-rozmiarow" class="">Tabela rozmiarów</a>
-</div>
-<button class="inline-block bg-black text-white py-2 px-4 rounded-full uppercase hover:opacity-50"
-        data-add-to-cart
-        data-cart-drawer-show
-        data-product-id={productId}>
-    Zamów
-</button>
 
 <script>
     import {addProductToCart} from '../store/cart';
