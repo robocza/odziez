@@ -36,7 +36,6 @@
                         type="submit">Do kasy
                 </button>
             </div>
-
         </form>
     </template>
     <template v-else>

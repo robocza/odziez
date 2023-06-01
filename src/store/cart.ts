@@ -19,43 +19,71 @@ export const cart = persistentAtom<CartItem[]>('cart', [], {
 export function addProductToCart(product: CartProduct, quantity: number) {
     const existingCartItemEntry = findCartItemForProduct(product);
 
+    const updatedCartItemId = getCartItemIdFromProduct(product);
+
     if (existingCartItemEntry) {
-        // @todo keep existing order of cart items in the collection.
-        removeCartItemById(existingCartItemEntry.id);
+        const updatedCartItem = {
+            id: updatedCartItemId,
+            product: product,
+            quantity: quantity + existingCartItemEntry.quantity
+        };
 
-        quantity += existingCartItemEntry.quantity;
-    }
+        let newCart = cart.get().map(
+            item => {
+                if (item.id !== updatedCartItemId) {
+                    return item;
+                }
 
-    cart.set(
-        [
-            ...cart.get(),
-            {
-                id: getCartItemIdFromProduct(product),
-                product: product,
-                quantity: quantity
+                return updatedCartItem;
             }
-        ]
-    )
+        );
+
+        cart.set(newCart);
+    } else {
+        cart.set(
+            [
+                ...cart.get(),
+                {
+                    id: updatedCartItemId,
+                    product: product,
+                    quantity: quantity
+                }
+            ]
+        )
+    }
 }
 
 export function updateCartItemQuantity(product: CartProduct, newQuantity: number) {
     const existingCartItemEntry = findCartItemForProduct(product);
 
-    if (existingCartItemEntry) {
-        // @todo keep existing order of cart items in the collection.
-        removeCartItemById(existingCartItemEntry.id);
-    }
+    const updatedCartItemId = getCartItemIdFromProduct(product);
 
-    cart.set(
-        [
-            ...cart.get(),
-            {
-                id: getCartItemIdFromProduct(product),
-                product: product,
-                quantity: newQuantity
+    const updatedCartItem = {
+        id: updatedCartItemId,
+        product: product,
+        quantity: newQuantity
+    };
+
+    if (existingCartItemEntry) {
+        let newCart = cart.get().map(
+            item => {
+                if (item.id !== updatedCartItemId) {
+                    return item;
+                }
+
+                return updatedCartItem;
             }
-        ]
-    )
+        );
+
+        cart.set(newCart);
+    } else {
+        cart.set(
+            [
+                ...cart.get(),
+                updatedCartItem
+            ]
+        )
+    }
 }
 
 export function removeCartItemById(id: string) {
