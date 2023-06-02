@@ -1,10 +1,10 @@
 ---
-import Layout from '@layouts/Layout.astro';
+import Sisyphus from '@layouts/Sisyphus.astro';
 import ListProducts from "@components/ListProducts.astro";
 import Timer from "@components/Timer.astro";
 import Header from "@components/Header.astro";
 ---
-<Layout title="Odzież Robocza">
+<Sisyphus title="Odzież Robocza">
     <Header/>
     <div class="grid grid-cols-2 grow bg-black gap-px border-t border-black">
         <ListProducts/>
@@ -12,4 +12,4 @@ import Header from "@components/Header.astro";
             <Timer/>
         </div>
     </div>
-</Layout>
+</Sisyphus>

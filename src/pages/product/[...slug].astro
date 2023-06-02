@@ -1,6 +1,6 @@
 ---
 import {getCollection} from 'astro:content';
-import Layout from '@layouts/Layout.astro';
+import Sisyphus from '@layouts/Sisyphus.astro';
 import ProductForm from "@components/ProductForm.astro";
 import ProductImageGallery from "@components/ProductImageGallery.astro";
 import BackButton from "@components/BackButton.astro";
@@ -22,7 +22,7 @@ const {entry} = Astro.props;
 const images = [entry.data.image, entry.data.image, entry.data.image, entry.data.image] // @todo fetch product images
 const {Content} = await entry.render();
 ---
-<Layout title={`Odzież Robocza - ${entry.data.name}`}>
+<Sisyphus title={`Odzież Robocza - ${entry.data.name}`}>
     <Header/>
     <div class="flex border-t border-black pt-2 px-4">
         <div class="flex w-24 bg-white">
@@ -46,4 +46,4 @@ const {Content} = await entry.render();
     </div>
     <ProductSectionDivider/>
     <ProductSizing/>
-</Layout>
+</Sisyphus>

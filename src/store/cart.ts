@@ -105,3 +105,7 @@ export function findCartItemForProduct(product: CartProduct): CartItem | undefin
 export function findCartItem(cartItemId: string): CartItem | undefined {
     return cart.get().find(item => cartItemId === item.id);
 }
+
+export function emptyCart():void {
+    cart.set([]);
+}

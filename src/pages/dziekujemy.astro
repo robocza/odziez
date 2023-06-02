@@ -1,0 +1,37 @@
+---
+import Layout from '@layouts/Layout.astro';
+import Central from "../components/layout/Central.astro";
+---
+
+<Layout title="Odzież Robocza - drop N°.2">
+    <main class="h-screen bg-black text-white">
+        <div class="max-w-screen-xl h-full mx-auto px-10 bg-right-top relative text-base">
+            <div class="absolute left-0 top-0 bottom-0 bg-[url('/assets/chain.png')] bg-repeat-y w-10 bg-right-top"/>
+            <div class="absolute right-0 top-0 bottom-0 bg-[url('/assets/chain.png')] bg-repeat-y w-10 bg-left-top"/>
+            <Central>
+                <img class="inline-flex transition-transform hover:rotate-90 " src="/assets/ball2.png"
+                     alt="Drop Siła Robocza Kula"/>
+                <div class="block font-pixel text-7xl uppercase my-4">Dziękujemy,</div>
+                <div class="block my-4">że toczysz z nami ten kamień.</div>
+                <div class="my-4">
+                    Przygotowujemy Twoje zamówienie i wyślemy je najszybciej jak potrafimy.<br>
+                    O postępie będziemy pisać na Twój adres e-mail.
+                </div>
+                <a class="inline-block bg-white text-black py-2 px-4 rounded-full uppercase hover:opacity-50"
+                   href="/"><!-- @todo set link to article -->
+                    Przeczytaj artykuł <!-- @todo set article title -->
+                </a>
+                <div class="mt-8">
+                    Problem z zamówieniem?
+                    <a class="block underline hover:opacity-50" href="mailto:grupa@robocza.org">grupa@robocza.org</a>
+                </div>
+            </Central>
+        </div>
+    </main>
+</Layout>
+
+<script>
+    import {emptyCart} from '../store/cart';
+
+    emptyCart();
+</script>
