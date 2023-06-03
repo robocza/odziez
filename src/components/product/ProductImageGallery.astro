@@ -1,5 +1,5 @@
 ---
-import ProductImageGalleryItem from "@components/ProductImageGalleryItem.astro";
+import ProductImageGalleryItem from "./ProductImageGalleryItem.astro";
 
 interface Props {
     images: string[];
@@ -15,7 +15,7 @@ const {product, images} = Astro.props;
 
     </div>
     <!-- Slider indicators -->
-    <div class="absolute z-30 flex items-center space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+    <div class="absolute z-30 flex items-center space-x-3 -translate-x-1/2 bottom-2 left-1/2">
         {images.map((image, key) =>
                 <button data-product-image-gallery-item-indicator type="button" class="bg-black rounded-full"></button>)}
     </div>

@@ -1,14 +1,13 @@
 ---
 import Title from "@components/PageTitle.astro";
-import CartDrawerToggle from "@components/CartDrawerToggle.astro";
+import CartDrawerToggle from "@components/cart/CartDrawerToggle.astro";
 ---
-<div class="flex bg-black gap-px">
-    <div class="flex-1 bg-white">
-        <Title/>
-    </div>
-    <div class="flex w-24 bg-white">
-        <div class="grid content-center grow">
-            <CartDrawerToggle/>
-        </div>
+
+<div class="flex-1 bg-white">
+    <Title/>
+</div>
+<div class="flex w-24 bg-white">
+    <div class="grid content-center grow w-24">
+        <CartDrawerToggle/>
     </div>
 </div>

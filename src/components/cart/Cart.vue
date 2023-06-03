@@ -47,10 +47,10 @@
 
 <script setup>
 
-import {removeCartItemById, updateCartItemQuantity} from '../store/cart';
-import {cartProducts} from "../store/cartProducts";
+import {removeCartItemById, updateCartItemQuantity} from '@store/cart';
+import {cartProducts} from "@store/cartProducts";
 import {useStore} from '@nanostores/vue';
-import {stripeCartItems} from "../store/stripeCartItems";
+import {stripeCartItems} from "@store/stripeCartItems";
 
 function updateQuantity(event) {
     updateCartItemQuantity(

@@ -1,19 +1,14 @@
----
-import CartDrawer from "./CartDrawer.astro";
----
-
 <button type="button"
         class="hover:opacity-50"
         data-drawer-target="cart-drawer"
         data-cart-drawer-show data-drawer-placement="right"
 >
-    <img class="mx-auto" src="/assets/cart.png" alt="Koszyk"/>
+    <img class="mx-auto max-h-12 sm:max-h-16" src="/assets/cart.png" alt="Koszyk"/>
     <span class="sr-only">Koszyk</span>
 </button>
-<CartDrawer/>
 
 <script>
-    import {initCartDrawer} from '../cartDrawer';
+    import {initCartDrawer} from '../../cartDrawer';
 
     const cartDrawerElement = document.getElementById('cart-drawer');
 

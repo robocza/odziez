@@ -11,9 +11,9 @@ const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
 
 const initialCountdownText = days + 'd:' + hours + 'h:' + minutes + 'm';
 ---
-<div class="p-2 max-w-xs mx-auto">
-    <div class="underline text-5xl uppercase">Do zamknięcia preorderu zostało:</div>
-    <div class="font-pixel text-5xl uppercase pt-4" id="pre-order-timer">{initialCountdownText}</div>
+<div class="p-2 max-w-xs mx-auto hidden sm:block">
+    <div class="underline text-5xl lg:text-3xl xl:text-5xl uppercase">Do zamknięcia preorderu zostało:</div>
+    <div class="font-pixel text-5xl lg:text-4xl xl:text-5xl uppercase pt-4" id="pre-order-timer">{initialCountdownText}</div>
 </div>
 
 <script>
