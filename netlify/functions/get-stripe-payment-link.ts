@@ -3,7 +3,9 @@ import {getStripePaymentLinkUrl, CartItem} from "../../src/getStripePaymentLinkU
 
 declare var process: {
     env: {
-        URL: string
+        URL: string,
+        DEPLOY_PRIME_URL: string, // @see https://docs.netlify.com/configure-builds/environment-variables/#deploy-urls-and-metadata
+        CONTEXT: string // @see https://docs.netlify.com/site-deploys/overview/#deploy-contexts
     }
 }
 
@@ -18,7 +20,7 @@ const handler: Handler = async (event: HandlerEvent, context: HandlerContext) =>
 
     const cartItems: CartItem[] = JSON.parse(body);
 
-    const successUrl = process.env.URL + '/success';
+    const successUrl = process.env.CONTEXT === 'production' ? process.env.URL + '/dziekujemy' : process.env.DEPLOY_PRIME_URL + '/dziekujemy';
 
     const paymentLinkUrl = await getStripePaymentLinkUrl(cartItems, successUrl);
 
