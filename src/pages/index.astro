@@ -7,6 +7,8 @@ import Story from "@components/Story.astro";
 import ArticleTitle from "@components/ArticleTitle.astro";
 import Header from "@components/Header.astro";
 import Animation from "@components/story/Animation.astro";
+import CartDrawerToggle from "../components/cart/CartDrawerToggle.astro";
+import PageTitleAnimated from "../components/PageTitleAnimated.astro";
 ---
 <Layout title="Odzież Robocza">
     <div class="grid lg:grid-cols-2">
@@ -30,7 +32,14 @@ import Animation from "@components/story/Animation.astro";
             </div>
         </div>
         <div class="order-1 flex bg-black gap-px lg:hidden lg:order-none">
-            <Header/>
+            <div class="flex-1 bg-white pt-2">
+                <PageTitleAnimated/>
+            </div>
+            <div class="flex w-24 bg-white">
+                <div class="grid content-center grow w-24">
+                    <CartDrawerToggle/>
+                </div>
+            </div>
         </div>
         <div class="order-3 lg:order-2 flex flex-col lg:h-screen lg:overflow-y-auto scroll-smooth">
             <div class="hidden lg:flex bg-black gap-px">

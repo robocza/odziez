@@ -1,0 +1,21 @@
+---
+import CartDrawerToggle from "./cart/CartDrawerToggle.astro";
+import Central from "../layouts/elements/arrangement/Central.astro";
+import BackButton from "./BackButton.astro";
+import PageTitleAnimated from "./PageTitleAnimated.astro";
+---
+<div class="grid grid-cols-8 md:grid-cols-12 bg-black gap-px">
+    <div class="bg-white">
+        <Central>
+            <BackButton/>
+        </Central>
+    </div>
+    <div class="col-span-6 md:col-span-10 bg-white pt-2">
+        <PageTitleAnimated/>
+    </div>
+    <div class="bg-white">
+        <Central>
+            <CartDrawerToggle/>
+        </Central>
+    </div>
+</div>
