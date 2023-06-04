@@ -1,0 +1,73 @@
+---
+interface Props {
+    productId: string;
+}
+
+const {productId} = Astro.props;
+
+---
+<div class="md:flex lg:block 2xl:flex md:items-center md:space-x-12 lg:space-x-0 2xl:space-x-12 md:mx-auto md:place-items-center">
+    <div class="flex place-items-center mt-4 md:mt-0 lg:mt-4 2xl:mt-0">
+        <label class="w-1/2 md:w-auto lg:w-1/2 2xl:w-1/2 text-right pr-4 uppercase text-lg" for="product-quantity">Ilość</label>
+        <input id="product-quantity"
+               value="1"
+               type="number"
+               class="bg-white border border-black text-black text-center text-lg rounded-lg inline-block p-2.5 w-[80px]"
+               required
+               name="quantity"
+               min="1"
+               max="10"
+        >
+    </div>
+    <div class="flex place-items-center my-4">
+        <div class="w-1/2 md:w-auto lg:w-1/2 2xl:w-auto text-right inline-block pr-4">
+            <label class="uppercase text-lg block" for="product-size">Rozmiar</label>
+            <a href="#tabela-rozmiarow" class="block underline text-sm hover:opacity-50">Tabela rozmiarów</a>
+        </div>
+        <select
+                id="product-size"
+                name="size"
+                class="bg-white border border-black text-black text-lg rounded-lg inline-block p-2.5 w-[80px]"
+                required
+        >
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+        </select>
+    </div>
+    <div class="md:flex lg:block 2xl:flex md:place-items-center mt-8 mb-4 md:mt-0 md:mb-0 lg:mt-8 lg:mb-4 2xl:mt-0 2xl:mb-0 px-4">
+        <button class="mx-auto block bg-black text-white py-4 px-6 text-lg rounded-full uppercase hover:opacity-50"
+                data-add-to-cart
+                data-cart-drawer-show
+                data-product-id={productId}>
+            Dodaj do koszyka
+        </button>
+    </div>
+</div>
+
+<script>
+    import {addProductToCart} from '@store/cart';
+
+    const addToCartButtons = document.querySelectorAll('button[data-add-to-cart]');
+
+    addToCartButtons.forEach((button) => {
+        button.addEventListener('click', (event) => {
+            addToCart(event);
+        });
+    });
+
+    function addToCart(event) {
+        event.preventDefault();
+
+        const quantity = document.getElementById('product-quantity') as HTMLInputElement;
+        const size = document.getElementById('product-size') as HTMLSelectElement;
+
+        addProductToCart(
+            {
+                id: event.target.dataset.productId,
+                size: size.value,
+            },
+            Number(quantity.value)
+        );
+    }
+</script>

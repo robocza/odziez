@@ -1,0 +1,14 @@
+---
+export interface Props {
+    action: string;
+    alternativeText: string
+}
+
+const {action, alternativeText} = Astro.props;
+---
+
+<button type="button" data-action={action}
+        class="hover:opacity-50">
+    <slot/>
+    <span class="sr-only">{alternativeText}</span>
+</button>

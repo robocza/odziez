@@ -1,0 +1,25 @@
+---
+import CartDrawerToggle from "@components/cart/CartDrawerToggle.astro";
+import PageTitleAnimated from "@components/PageTitleAnimated.astro";
+import Central from "@layouts/elements/arrangement/Central.astro";
+import HeaderBackButton from "@components/HeaderBackButton.astro";
+
+interface Props {
+    showBackButton?: boolean;
+}
+
+const {showBackButton=false} = Astro.props;
+---
+<div class="flex bg-black gap-px">
+    {showBackButton && <HeaderBackButton/>}
+    <div class="grow h-12 sm:h-14 lg:h-20 xl:h-24 bg-white">
+        <PageTitleAnimated/>
+    </div>
+    <div class="w-12 h-12 sm:h-14 sm:w-14 lg:h-20 lg:w-20 xl:h-24 xl:w-24 bg-white">
+        <Central>
+            <div class="p-2">
+                <CartDrawerToggle/>
+            </div>
+        </Central>
+    </div>
+</div>
