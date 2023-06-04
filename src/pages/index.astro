@@ -7,8 +7,6 @@ import Story from "@components/Story.astro";
 import ArticleTitle from "@components/ArticleTitle.astro";
 import Header from "@components/Header.astro";
 import Animation from "@components/story/Animation.astro";
-import CartDrawerToggle from "../components/cart/CartDrawerToggle.astro";
-import PageTitleAnimated from "../components/PageTitleAnimated.astro";
 ---
 <Layout title="Odzież Robocza">
     <div class="grid lg:grid-cols-2">
@@ -16,10 +14,10 @@ import PageTitleAnimated from "../components/PageTitleAnimated.astro";
             <div class="lg:h-full lg:overflow-y-auto">
                 <Animation/>
                 <div class="px-10 pt-10">
-                    <div class="mx-auto max-w-2xl">
+                    <div class="mx-auto max-w-2xl text-center lg:text-left ">
                         <ArticleTitle text="Lorem ipsum dolor sit amet, consectetuer."/>
                         <div class="lg:hidden mx-auto text-center my-10">
-                            <a class="inline-block bg-white text-black py-2 px-4 rounded-full uppercase hover:opacity-50"
+                            <a class="inline-block bg-white text-black py-2 px-4 text-sm sm:text-base rounded-full uppercase hover:opacity-50"
                                href="/opowiesc">
                                 Przeczytaj artykuł
                             </a>
@@ -31,19 +29,12 @@ import PageTitleAnimated from "../components/PageTitleAnimated.astro";
                 </div>
             </div>
         </div>
-        <div class="order-1 flex bg-black gap-px lg:hidden lg:order-none">
-            <div class="flex-1 bg-white pt-2">
-                <PageTitleAnimated/>
-            </div>
-            <div class="flex w-24 bg-white">
-                <div class="grid content-center grow w-24">
-                    <CartDrawerToggle/>
-                </div>
-            </div>
+        <div class="order-1 lg:order-none lg:hidden">
+            <Header showBackButton={false} />
         </div>
         <div class="order-3 lg:order-2 flex flex-col lg:h-screen lg:overflow-y-auto scroll-smooth">
-            <div class="hidden lg:flex bg-black gap-px">
-                <Header/>
+            <div class="hidden lg:block">
+                <Header showBackButton={false} />
             </div>
             <div class="grid grid-cols sm:grid-cols-2 grow bg-black gap-px border-t border-black">
                 <ListProducts/>
