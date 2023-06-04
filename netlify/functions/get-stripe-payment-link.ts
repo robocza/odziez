@@ -4,8 +4,6 @@ import {getStripePaymentLinkUrl, CartItem} from "../../src/getStripePaymentLinkU
 declare var process: {
     env: {
         URL: string,
-        DEPLOY_PRIME_URL: string, // @see https://docs.netlify.com/configure-builds/environment-variables/#deploy-urls-and-metadata
-        CONTEXT: string // @see https://docs.netlify.com/site-deploys/overview/#deploy-contexts
     }
 }
 
@@ -20,7 +18,9 @@ const handler: Handler = async (event: HandlerEvent, context: HandlerContext) =>
 
     const cartItems: CartItem[] = JSON.parse(body);
 
-    const successUrl = process.env.CONTEXT === 'production' ? process.env.URL + '/dziekujemy' : process.env.DEPLOY_PRIME_URL + '/dziekujemy';
+    const siteUrl = extractSiteUrlFromContext(context) ?? process.env.URL;
+
+    const successUrl = siteUrl + '/dziekujemy';
 
     const paymentLinkUrl = await getStripePaymentLinkUrl(cartItems, successUrl);
 
@@ -29,5 +29,24 @@ const handler: Handler = async (event: HandlerEvent, context: HandlerContext) =>
         body: JSON.stringify({redirectUrl: paymentLinkUrl}),
     };
 };
+
+function extractSiteUrlFromContext(context: HandlerContext) {
+    const clientContext = context.clientContext;
+    if (clientContext === undefined) {
+        return;
+    }
+
+    const data = clientContext.custom.netlify;
+    if (data === undefined) {
+        return;
+    }
+
+    const decodedData = JSON.parse(Buffer.from(data, 'base64').toString("utf-8"))
+    if (decodedData.site_url === undefined) {
+        return;
+    }
+
+    return decodedData.site_url;
+}
 
 export {handler};
