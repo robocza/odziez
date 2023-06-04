@@ -1,0 +1,88 @@
+---
+import ProductImageGalleryItem from "./ProductImageGalleryItem.astro";
+
+interface Props {
+    images: string[];
+}
+
+const {product, images} = Astro.props;
+---
+<div class="relative w-full">
+    <!-- Carousel wrapper -->
+    <div class="relative h-56 overflow-hidden rounded-lg sm:h-64 xl:h-80 2xl:h-96">
+        {images.map((image, key) =>
+                <ProductImageGalleryItem image={image} position={key}/>)}
+
+    </div>
+    <!-- Slider indicators -->
+    <div class="absolute z-30 flex items-center space-x-3 -translate-x-1/2 bottom-2 left-1/2">
+        {images.map((image, key) =>
+                <button data-product-image-gallery-item-indicator type="button" class="bg-black rounded-full"></button>)}
+    </div>
+    <!-- Slider controls -->
+    <button id="data-carousel-prev" type="button"
+            class="hover:opacity-50 absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none">
+        <svg width="39" height="72" viewBox="0 0 39 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="1.29289" y1="36.2929" x2="36.2929" y2="1.29289" stroke="black" stroke-width="2"/>
+            <line x1="2.70711" y1="36.2929" x2="37.7071" y2="71.2929" stroke="black" stroke-width="2"/>
+        </svg>
+        <span class="hidden">Poprzednie</span>
+    </button>
+    <button id="data-carousel-next" type="button"
+            class="hover:opacity-50 absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none">
+        <svg width="39" height="72" viewBox="0 0 39 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="37.7071" y1="35.7071" x2="2.7071" y2="70.7071" stroke="black" stroke-width="2"/>
+            <line x1="36.2929" y1="35.7071" x2="1.2929" y2="0.707104" stroke="black" stroke-width="2"/>
+        </svg>
+        <span class="hidden">Następne</span>
+    </button>
+</div>
+
+<script>
+    import {Carousel, IndicatorItem} from "flowbite";
+    import type {CarouselItem, CarouselOptions, CarouselInterface} from "flowbite";
+
+    let carouselItems: CarouselItem[] = [];
+
+    document.querySelectorAll('[data-product-image-gallery-item]').forEach((element: HTMLElement, key) => {
+        carouselItems.push(
+            {
+                position: key,
+                el: element
+            }
+        )
+    });
+
+    let carouselIndicators: IndicatorItem[] = [];
+
+    document.querySelectorAll('[data-product-image-gallery-item-indicator]').forEach((element: HTMLElement, key) => {
+        carouselIndicators.push(
+            {
+                position: key,
+                el: element
+            }
+        )
+    });
+
+    const options: CarouselOptions = {
+        indicators: {
+            activeClasses: 'w-4 h-4',
+            inactiveClasses: 'w-2 h-2 hover:bg-gray-800',
+            items: carouselIndicators
+        },
+    };
+
+    const carousel: CarouselInterface = new Carousel(carouselItems, options);
+
+    // set event listeners for prev and next buttons
+    const $prevButton = document.getElementById('data-carousel-prev');
+    const $nextButton = document.getElementById('data-carousel-next');
+
+    $prevButton.addEventListener('click', () => {
+        carousel.prev();
+    });
+
+    $nextButton.addEventListener('click', () => {
+        carousel.next();
+    });
+</script>
