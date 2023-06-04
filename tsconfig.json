@@ -1,6 +1,8 @@
 {
   "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
     "strictNullChecks": true,
     "baseUrl": "src",
     "paths": {
@@ -16,6 +18,10 @@
       "@pages/*": [
         "pages/*"
       ],
-    }
+      "@store/*": [
+        "store/*"
+      ]
+    },
+    "jsx": "preserve"
   }
 }
