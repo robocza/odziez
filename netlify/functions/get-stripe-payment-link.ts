@@ -20,7 +20,10 @@ const handler: Handler = async (event: HandlerEvent, context: HandlerContext) =>
 
     const cartItems: CartItem[] = JSON.parse(body);
 
-    const successUrl = process.env.CONTEXT === 'production' ? process.env.URL + '/dziekujemy' : process.env.DEPLOY_PRIME_URL + '/dziekujemy';
+    console.log(context.clientContext);
+    console.log(process.env);
+
+    const successUrl = process.env.URL + '/dziekujemy';
 
     const paymentLinkUrl = await getStripePaymentLinkUrl(cartItems, successUrl);
 
