@@ -1,21 +1,22 @@
 ---
 import ProductImageGalleryItem from './ProductImageGalleryItem.astro';
+import { Product } from '../../productRepository';
 
 interface Props {
-    images: string[];
+    product: Product;
 }
 
-const { product, images } = Astro.props;
+const { product } = Astro.props;
 ---
 
 <div class="relative w-full">
     <!-- Carousel wrapper -->
     <div class="relative mb-10 h-56 overflow-hidden sm:h-64 xl:h-80 2xl:h-96">
-        {images.map((image, key) => <ProductImageGalleryItem image={image} position={key} />)}
+        {product.images.map((image, key) => <ProductImageGalleryItem product={product} image={image} position={key} />)}
     </div>
     <!-- Slider indicators -->
     <div class="absolute bottom-2 left-1/2 z-30 flex -translate-x-1/2 items-center space-x-3">
-        {images.map((image, key) => <button data-product-image-gallery-item-indicator type="button" class="rounded-full bg-black" />)}
+        {product.images.map(() => <button data-product-image-gallery-item-indicator type="button" class="rounded-full bg-black" />)}
     </div>
     <!-- Slider controls -->
     <button

@@ -1,4 +1,5 @@
 import { getProductVariant } from './productRepository';
+import { allEnabled as allEnabledShippingRates } from './shippingRateRepository';
 import { stripeApi } from './stripeApi';
 
 export type CartItem = {
@@ -22,11 +23,18 @@ export async function getStripePaymentLinkUrl(cartItems: CartItem[], successUrl:
         };
     });
 
+    const shippingOptions = allEnabledShippingRates().map((shippingRate) => {
+        return {
+            shipping_rate: shippingRate.id,
+        };
+    });
+
     const paymentLink = await stripeApi.paymentLinks.create({
         line_items: lineItems,
         shipping_address_collection: {
             allowed_countries: ['PL'],
         },
+        shipping_options: shippingOptions,
         after_completion: { type: 'redirect', redirect: { url: successUrl } },
     });
 

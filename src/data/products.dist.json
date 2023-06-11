@@ -2,9 +2,20 @@
   {
     "id": "longsleeve",
     "name": "Longsleeve",
-    "image": "/assets/product/longsleeve.png",
+    "images": [
+      "/assets/product/longsleeve.png",
+      "/assets/product/longsleeve.png",
+      "/assets/product/longsleeve.png"
+    ],
+    "sizes": [
+      "M",
+      "L",
+      "X",
+      "XL",
+      "XXL"
+    ],
     "price": {
-      "amount": "12900",
+      "amount": 12951,
       "currency": "PLN"
     },
     "variants": [
@@ -34,9 +45,18 @@
   {
     "id": "t-shirt",
     "name": "T-shirt",
-    "image": "/assets/product/t-shirt.png",
+    "images": [
+      "/assets/product/t-shirt.png",
+      "/assets/product/t-shirt.png",
+      "/assets/product/t-shirt.png"
+    ],
+    "sizes": [
+      "M",
+      "L",
+      "X"
+    ],
     "price": {
-      "amount": "10900",
+      "amount": 10900,
       "currency": "PLN"
     },
     "variants": [
@@ -66,9 +86,20 @@
   {
     "id": "bluza",
     "name": "Bluza",
-    "image": "/assets/product/bluza.png",
+    "images": [
+      "/assets/product/bluza.png",
+      "/assets/product/bluza.png",
+      "/assets/product/bluza.png"
+    ],
+    "sizes": [
+      "M",
+      "L",
+      "X",
+      "XL",
+      "XXL"
+    ],
     "price": {
-      "amount": "11900",
+      "amount": 11900,
       "currency": "PLN"
     },
     "variants": [

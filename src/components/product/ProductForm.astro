@@ -1,9 +1,11 @@
 ---
+import { Product } from '../../productRepository';
+
 interface Props {
-    productId: string;
+    product: Product;
 }
 
-const { productId } = Astro.props;
+const { product } = Astro.props;
 ---
 
 <div class="md:mx-auto md:flex md:place-items-center md:items-center md:space-x-12 lg:block lg:space-x-0 2xl:flex 2xl:space-x-12">
@@ -40,10 +42,9 @@ const { productId } = Astro.props;
             <label class="block text-lg uppercase" for="product-size">Rozmiar:</label>
             <a href="#tabela-rozmiarow" class="block text-sm underline hover:opacity-50">Tabela rozmiarów</a>
         </div>
+        <!-- @todo bind correct values -->
         <select id="product-size" name="size" class="inline-block w-[80px] rounded-lg border border-black bg-white p-2.5 text-lg text-black" required>
-            <option value="M">M</option>
-            <option value="L">L</option>
-            <option value="XL">XL</option>
+            {product.sizes.map((size) => <option value={size}>{size}</option>)}
         </select>
     </div>
     <div class="mb-4 mt-8 px-4 md:mb-0 md:mt-0 md:flex md:place-items-center lg:mb-4 lg:mt-8 lg:block 2xl:mb-0 2xl:mt-0 2xl:flex">
@@ -51,7 +52,7 @@ const { productId } = Astro.props;
             class="mx-auto block rounded-2xl bg-black px-6 py-2 text-lg uppercase text-white hover:opacity-50 md:rounded-3xl lg:py-4"
             data-add-to-cart
             data-cart-drawer-show
-            data-product-id={productId}
+            data-product-id={product.id}
         >
             Dodaj do koszyka
         </button>

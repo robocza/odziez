@@ -1,2 +1,12 @@
-<!-- @todo bind and format price -->
-<div class="text-center text-3xl sm:text-4xl lg:text-6xl">129 zł</div>
+---
+import { formatMoney, Money } from '../../money';
+
+interface Props {
+    price: Money;
+}
+
+const { price } = Astro.props;
+const formattedPrice = formatMoney(price, 'pl');
+---
+
+<div class="text-center text-3xl sm:text-4xl lg:text-6xl">{formattedPrice}</div>

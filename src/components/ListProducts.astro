@@ -8,7 +8,7 @@ const products = await getCollection('product');
 {
     products.map((product) => (
         <div class="grid items-center bg-white">
-            <ListItemProduct product={product} />
+            <ListItemProduct productCollectionEntry={product} />
         </div>
     ))
 }

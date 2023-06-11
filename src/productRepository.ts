@@ -1,4 +1,6 @@
-import productsData from './data/products.json';
+import productsData from './data/products.dist.json';
+
+import type { Money } from './money';
 
 interface ProductVariant {
     size: string;
@@ -8,14 +10,16 @@ interface ProductVariant {
     };
 }
 
-interface Product {
+export interface Product {
     id: string;
     name: string;
-    image: string;
+    images: string[];
+    sizes: string[];
+    price: Money;
     variants: ProductVariant[];
 }
 
-export const products: Product[] = productsData as Product[];
+const products: Product[] = productsData as Product[];
 
 export function getProduct(id: string): Product {
     const product = products.find((product) => product.id === id);
