@@ -1,29 +1,32 @@
 ---
-import ListProducts from "@components/ListProducts.astro";
-import Timer from "@components/Timer.astro";
-import Layout from "@layouts/Layout.astro";
-import CartDrawer from "@components/cart/CartDrawer.astro";
-import Story from "@components/Story.astro";
-import ArticleTitle from "@components/ArticleTitle.astro";
-import Header from "@components/Header.astro";
-import Animation from "@components/story/Animation.astro";
+import ListProducts from '@components/ListProducts.astro';
+import Timer from '@components/Timer.astro';
+import Layout from '@layouts/Layout.astro';
+import CartDrawer from '@components/cart/CartDrawer.astro';
+import Story from '@components/Story.astro';
+import ArticleTitle from '@components/ArticleTitle.astro';
+import Header from '@components/Header.astro';
+import Animation from '@components/story/Animation.astro';
 ---
+
 <Layout title="Odzież Robocza">
     <div class="grid lg:grid-cols-2">
-        <div class="order-2 lg:order-1 lg:h-screen lg:overflow-hidden bg-neutral-900 text-white">
+        <div class="order-2 bg-neutral-900 text-white lg:order-1 lg:h-screen lg:overflow-hidden">
             <div class="lg:h-full lg:overflow-y-auto">
-                <Animation/>
+                <Animation />
                 <div class="px-10 pt-10">
-                    <div class="mx-auto max-w-2xl text-center lg:text-left ">
-                        <ArticleTitle text="Lorem ipsum dolor sit amet, consectetuer."/>
-                        <div class="lg:hidden mx-auto text-center my-10">
-                            <a class="inline-block bg-white text-black py-2 px-4 text-sm sm:text-base rounded-xl uppercase hover:opacity-50 w-48"
-                               href="/opowiesc">
+                    <div class="mx-auto max-w-2xl text-center lg:text-left">
+                        <ArticleTitle text="Lorem ipsum dolor sit amet, consectetuer." />
+                        <div class="mx-auto my-10 text-center lg:hidden">
+                            <a
+                                class="inline-block w-48 rounded-xl bg-white px-4 py-2 text-sm uppercase text-black hover:opacity-50 sm:text-base"
+                                href="/opowiesc"
+                            >
                                 Przeczytaj
                             </a>
                         </div>
                         <div class="hidden lg:block">
-                            <Story/>
+                            <Story />
                         </div>
                     </div>
                 </div>
@@ -32,17 +35,17 @@ import Animation from "@components/story/Animation.astro";
         <div class="order-1 lg:order-none lg:hidden">
             <Header showBackButton={false} />
         </div>
-        <div class="order-3 lg:order-2 flex flex-col lg:h-screen lg:overflow-y-auto scroll-smooth">
+        <div class="order-3 flex flex-col scroll-smooth lg:order-2 lg:h-screen lg:overflow-y-auto">
             <div class="hidden lg:block">
                 <Header showBackButton={false} />
             </div>
-            <div class="grid grid-cols sm:grid-cols-2 grow bg-black gap-px border-t border-black">
-                <ListProducts/>
-                <div class="grid items-center order-first sm:order-none bg-neutral-400 sm:bg-white">
-                    <Timer/>
+            <div class="grid-cols grid grow gap-px border-t border-black bg-black sm:grid-cols-2">
+                <ListProducts />
+                <div class="order-first grid items-center bg-neutral-400 sm:order-none sm:bg-white">
+                    <Timer />
                 </div>
             </div>
         </div>
     </div>
-    <CartDrawer/>
+    <CartDrawer />
 </Layout>

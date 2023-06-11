@@ -1,18 +1,18 @@
-import type {Handler, HandlerEvent, HandlerContext} from '@netlify/functions';
-import {getStripePaymentLinkUrl, CartItem} from "../../src/getStripePaymentLinkUrl";
+import type { Handler, HandlerEvent, HandlerContext } from '@netlify/functions';
+import { getStripePaymentLinkUrl, CartItem } from '../../src/getStripePaymentLinkUrl';
 
 declare var process: {
     env: {
-        URL: string,
-    }
-}
+        URL: string;
+    };
+};
 
 const handler: Handler = async (event: HandlerEvent, context: HandlerContext) => {
     const body = event.body;
     if (body === null) {
         return {
             statusCode: 400,
-            body: "No data received."
+            body: 'No data received.',
         };
     }
 
@@ -26,7 +26,7 @@ const handler: Handler = async (event: HandlerEvent, context: HandlerContext) =>
 
     return {
         statusCode: 200,
-        body: JSON.stringify({redirectUrl: paymentLinkUrl}),
+        body: JSON.stringify({ redirectUrl: paymentLinkUrl }),
     };
 };
 
@@ -41,7 +41,7 @@ function extractSiteUrlFromContext(context: HandlerContext) {
         return;
     }
 
-    const decodedData = JSON.parse(Buffer.from(data, 'base64').toString("utf-8"))
+    const decodedData = JSON.parse(Buffer.from(data, 'base64').toString('utf-8'));
     if (decodedData.site_url === undefined) {
         return;
     }
@@ -49,4 +49,4 @@ function extractSiteUrlFromContext(context: HandlerContext) {
     return decodedData.site_url;
 }
 
-export {handler};
+export { handler };

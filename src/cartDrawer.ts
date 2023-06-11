@@ -1,5 +1,5 @@
-import {Drawer} from "flowbite";
-import type {DrawerOptions, DrawerInterface} from "flowbite";
+import { Drawer } from 'flowbite';
+import type { DrawerOptions, DrawerInterface } from 'flowbite';
 
 // options with default values
 const options: DrawerOptions = {

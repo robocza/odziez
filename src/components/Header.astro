@@ -1,35 +1,36 @@
 ---
-import CartDrawerToggle from "@components/cart/CartDrawerToggle.astro";
-import PageTitleAnimated from "@components/PageTitleAnimated.astro";
-import Central from "@layouts/elements/arrangement/Central.astro";
-import HeaderBackButton from "@components/HeaderBackButton.astro";
-import HeaderTitle from "@components/HeaderTitle.astro";
-import HeaderSubTitle from "@components/HeaderSubTitle.astro";
+import CartDrawerToggle from '@components/cart/CartDrawerToggle.astro';
+import PageTitleAnimated from '@components/PageTitleAnimated.astro';
+import Central from '@layouts/elements/arrangement/Central.astro';
+import HeaderBackButton from '@components/HeaderBackButton.astro';
+import HeaderTitle from '@components/HeaderTitle.astro';
+import HeaderSubTitle from '@components/HeaderSubTitle.astro';
 
 interface Props {
     showBackButton?: boolean;
 }
 
-const {showBackButton=false} = Astro.props;
+const { showBackButton = false } = Astro.props;
 ---
-<div class="flex bg-black gap-px">
-    {showBackButton && <HeaderBackButton/>}
+
+<div class="flex gap-px bg-black">
+    {showBackButton && <HeaderBackButton />}
     <div class={`grow h-12 sm:h-14 lg:h-20 xl:h-24 bg-white ${!showBackButton && 'pl-12 sm:pl-14 lg:pl-20 xl:pl-24'}`}>
         <div class="hidden lg:block">
-            <PageTitleAnimated/>
+            <PageTitleAnimated />
         </div>
         <div class="block text-center lg:hidden">
-            <HeaderSubTitle/>
+            <HeaderSubTitle />
         </div>
     </div>
-    <div class="w-12 h-12 sm:h-14 sm:w-14 lg:h-20 lg:w-20 xl:h-24 xl:w-24 bg-white">
+    <div class="h-12 w-12 bg-white sm:h-14 sm:w-14 lg:h-20 lg:w-20 xl:h-24 xl:w-24">
         <Central>
             <div class="p-2">
-                <CartDrawerToggle/>
+                <CartDrawerToggle />
             </div>
         </Central>
     </div>
 </div>
-<div class="flex-1 text-center border-t border-black lg:hidden">
-    <HeaderTitle/>
+<div class="flex-1 border-t border-black text-center lg:hidden">
+    <HeaderTitle />
 </div>

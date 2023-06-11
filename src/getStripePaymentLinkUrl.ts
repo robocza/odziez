@@ -1,9 +1,9 @@
-import {getProductVariant} from "./productRepository";
-import {stripeApi} from "./stripeApi";
+import { getProductVariant } from './productRepository';
+import { stripeApi } from './stripeApi';
 
 export type CartItem = {
     id: string;
-    size: string,
+    size: string;
     quantity: number;
 };
 
@@ -17,7 +17,7 @@ export async function getStripePaymentLinkUrl(cartItems: CartItem[], successUrl:
             adjustable_quantity: {
                 enabled: true,
                 minimum: 1,
-                maximum: 100
+                maximum: 100,
             },
         };
     });
@@ -25,9 +25,9 @@ export async function getStripePaymentLinkUrl(cartItems: CartItem[], successUrl:
     const paymentLink = await stripeApi.paymentLinks.create({
         line_items: lineItems,
         shipping_address_collection: {
-            allowed_countries: ['PL']
+            allowed_countries: ['PL'],
         },
-        after_completion: {type: 'redirect', redirect: {url: successUrl}}
+        after_completion: { type: 'redirect', redirect: { url: successUrl } },
     });
 
     return paymentLink.url;

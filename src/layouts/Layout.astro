@@ -3,35 +3,35 @@ export interface Props {
     title: string;
 }
 
-const {title} = Astro.props;
+const { title } = Astro.props;
 ---
 
 <!DOCTYPE html>
 <html lang="pl" class="scroll-smooth">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<title>{title}</title>
-		<style is:global>
-			@font-face {
-				font-family: 'GT America';
-				src: url('/fonts/GT-America-Standard-Regular.woff2') format('woff2');
-				font-weight: normal;
-				font-style: normal;
-				font-display: swap;
-			}
-			@font-face {
-				font-family: 'FKRasterGroteskCompact';
-				src: url('/fonts/FKRasterGroteskCompact-Blended.woff2') format('woff2');
-				font-weight: normal;
-				font-style: normal;
-				font-display: swap;
-			}
-		</style>
-		<link rel="stylesheet" href="https://use.typekit.net/xwk1wkl.css"/>
-	</head>
-	<body class="min-w-[320px] w-full">
-		<slot/>
-	</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <title>{title}</title>
+        <style is:global>
+            @font-face {
+                font-family: 'GT America';
+                src: url('/fonts/GT-America-Standard-Regular.woff2') format('woff2');
+                font-weight: normal;
+                font-style: normal;
+                font-display: swap;
+            }
+            @font-face {
+                font-family: 'FKRasterGroteskCompact';
+                src: url('/fonts/FKRasterGroteskCompact-Blended.woff2') format('woff2');
+                font-weight: normal;
+                font-style: normal;
+                font-display: swap;
+            }
+        </style>
+        <link rel="stylesheet" href="https://use.typekit.net/xwk1wkl.css" />
+    </head>
+    <body class="w-full min-w-[320px]">
+        <slot />
+    </body>
 </html>
