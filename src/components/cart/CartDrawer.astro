@@ -1,22 +1,22 @@
 ---
-import Cart from "@components/cart/Cart.vue";
-import ProductSectionDivider from "@components/product/ProductSectionDivider.astro";
+import Cart from '@components/cart/Cart.vue';
+import ProductSectionDivider from '@components/product/ProductSectionDivider.astro';
 ---
 
-<div id="cart-drawer"
-     class="fixed top-0 right-0 z-40 h-screen overflow-y-auto transition-transform translate-x-full bg-white w-80"
-     tabindex="-1" aria-labelledby="cart-drawer-label">
-    <h5 id="cart-drawer-label" class="font-pixel text-5xl lowercase text-left px-4 mt-8 mb-4">
-        Koszyk
-    </h5>
-    <ProductSectionDivider/>
-    <button type="button" data-cart-drawer-hide aria-controls="cart-drawer"
-            class="hover:opacity-50 absolute top-2.5 right-2.5">
+<div
+    id="cart-drawer"
+    class="fixed right-0 top-0 z-40 h-screen w-80 translate-x-full overflow-y-auto bg-white transition-transform"
+    tabindex="-1"
+    aria-labelledby="cart-drawer-label"
+>
+    <h5 id="cart-drawer-label" class="mb-4 mt-8 px-4 text-left font-pixel text-5xl lowercase">Koszyk</h5>
+    <ProductSectionDivider />
+    <button type="button" data-cart-drawer-hide aria-controls="cart-drawer" class="absolute right-2.5 top-2.5 hover:opacity-50">
         <svg width="37" height="38" viewBox="0 0 37 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <line x1="0.353553" y1="0.646447" x2="36.3536" y2="36.6464" stroke="black"/>
-            <line x1="36.3536" y1="1.35355" x2="0.353553" y2="37.3536" stroke="black"/>
+            <line x1="0.353553" y1="0.646447" x2="36.3536" y2="36.6464" stroke="black"></line>
+            <line x1="36.3536" y1="1.35355" x2="0.353553" y2="37.3536" stroke="black"></line>
         </svg>
         <span class="sr-only">Zamknij koszyk</span>
     </button>
-    <Cart client:only="vue"/>
+    <Cart client:only="vue" />
 </div>

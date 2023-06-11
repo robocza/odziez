@@ -1,76 +1,78 @@
 ---
-import {getCollection} from 'astro:content';
-import ProductForm from "@components/product/ProductForm.astro";
-import ProductImageGallery from "@components/product/ProductImageGallery.astro";
-import BackButton from "@components/BackButton.astro";
-import ProductSectionDivider from "@components/product/ProductSectionDivider.astro";
-import ProductSizing from "@components/product/ProductSizing.astro";
-import ProductPrice from "@components/product/ProductPrice.astro";
-import ProductTitle from "@components/product/ProductTitle.astro";
-import Layout from "@layouts/Layout.astro";
-import Animation from "@components/story/Animation.astro";
-import ArticleTitle from "@components/ArticleTitle.astro";
-import Story from "@components/Story.astro";
-import Header from "@components/Header.astro";
-import CartDrawer from "@components/cart/CartDrawer.astro";
+import { getCollection } from 'astro:content';
+import ProductForm from '@components/product/ProductForm.astro';
+import ProductImageGallery from '@components/product/ProductImageGallery.astro';
+import BackButton from '@components/BackButton.astro';
+import ProductSectionDivider from '@components/product/ProductSectionDivider.astro';
+import ProductSizing from '@components/product/ProductSizing.astro';
+import ProductPrice from '@components/product/ProductPrice.astro';
+import ProductTitle from '@components/product/ProductTitle.astro';
+import Layout from '@layouts/Layout.astro';
+import Animation from '@components/story/Animation.astro';
+import ArticleTitle from '@components/ArticleTitle.astro';
+import Story from '@components/Story.astro';
+import Header from '@components/Header.astro';
+import CartDrawer from '@components/cart/CartDrawer.astro';
 
 // 1. Generate a new path for every collection entry
 export async function getStaticPaths() {
     const products = await getCollection('product');
-    return products.map(entry => ({
-        params: {slug: entry.slug}, props: {entry},
+    return products.map((entry) => ({
+        params: { slug: entry.slug },
+        props: { entry },
     }));
 }
 // 2. When it's time to render, you can get the entry directly from the prop
-const {entry} = Astro.props;
-const images = [entry.data.image, entry.data.image, entry.data.image, entry.data.image] // @todo fetch product images
-const {Content} = await entry.render();
+const { entry } = Astro.props;
+const images = [entry.data.image, entry.data.image, entry.data.image, entry.data.image]; // @todo fetch product images
+const { Content } = await entry.render();
 ---
+
 <Layout title={`Odzież Robocza - ${entry.data.name}`}>
     <div class="grid lg:grid-cols-2">
-        <div class="hidden lg:block order-2 lg:order-1 lg:h-screen lg:overflow-hidden bg-black text-white">
+        <div class="order-2 hidden bg-black text-white lg:order-1 lg:block lg:h-screen lg:overflow-hidden">
             <div class="lg:h-full lg:overflow-y-auto">
-                <Animation/>
+                <Animation />
                 <div class="px-10 pt-10">
                     <div class="mx-auto max-w-2xl">
-                        <ArticleTitle text="Lorem ipsum dolor sit amet, consectetuer."/>
+                        <ArticleTitle text="Lorem ipsum dolor sit amet, consectetuer." />
                         <div class="hidden lg:block">
-                            <Story/>
+                            <Story />
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="order-1 lg:hidden lg:order-none">
-            <Header showBackButton={true}/>
+        <div class="order-1 lg:order-none lg:hidden">
+            <Header showBackButton={true} />
         </div>
-        <div class="order-3 lg:order-2 flex flex-col lg:h-screen lg:overflow-y-auto scroll-smooth">
+        <div class="order-3 flex flex-col scroll-smooth lg:order-2 lg:h-screen lg:overflow-y-auto">
             <div class="hidden lg:block">
-                <Header/>
+                <Header />
             </div>
-            <div class="flex border-t border-black pt-2 px-4">
-                <div class="hidden lg:flex w-14 h-14 lg:h-16 lg:w-16 bg-white">
-                    <div class="grid content-center grow">
-                        <BackButton/>
+            <div class="flex border-t border-black px-4 pt-2">
+                <div class="hidden h-14 w-14 bg-white lg:flex lg:h-16 lg:w-16">
+                    <div class="grid grow content-center">
+                        <BackButton />
                     </div>
                 </div>
                 <div class="flex-1 bg-white text-center lg:text-right">
-                    <ProductTitle title={entry.data.name}/>
+                    <ProductTitle title={entry.data.name} />
                 </div>
             </div>
-            <ProductSectionDivider/>
-            <ProductImageGallery product={entry} images={images}/>
-            <ProductSectionDivider/>
-            <ProductPrice/>
-            <ProductSectionDivider/>
-            <ProductForm productId={entry.data.id}/>
-            <ProductSectionDivider/>
-            <div class="mx-auto max-w-xl w-full px-8">
-                <Content/>
+            <ProductSectionDivider />
+            <ProductImageGallery product={entry} images={images} />
+            <ProductSectionDivider />
+            <ProductPrice />
+            <ProductSectionDivider />
+            <ProductForm productId={entry.data.id} />
+            <ProductSectionDivider />
+            <div class="mx-auto w-full max-w-xl px-8">
+                <Content />
             </div>
-            <ProductSectionDivider/>
-            <ProductSizing/>
+            <ProductSectionDivider />
+            <ProductSizing />
         </div>
     </div>
-    <CartDrawer/>
+    <CartDrawer />
 </Layout>

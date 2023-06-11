@@ -3,16 +3,16 @@ import productsData from './data/products.json';
 interface ProductVariant {
     size: string;
     stripe: {
-        productId: string,
-        priceId: string
-    }
+        productId: string;
+        priceId: string;
+    };
 }
 
 interface Product {
     id: string;
     name: string;
-    image: string,
-    variants: ProductVariant[]
+    image: string;
+    variants: ProductVariant[];
 }
 
 export const products: Product[] = productsData as Product[];

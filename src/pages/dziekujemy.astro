@@ -1,24 +1,22 @@
 ---
 import Layout from '@layouts/Layout.astro';
-import Central from "@layouts/elements/arrangement/Central.astro";
+import Central from '@layouts/elements/arrangement/Central.astro';
 ---
 
 <Layout title="Odzież Robocza - drop N°.2">
     <main class="h-screen bg-black text-white">
-        <div class="max-w-screen-xl h-full mx-auto px-10 bg-right-top relative text-base">
-            <div class="absolute left-0 top-0 bottom-0 bg-[url('/assets/chain.png')] bg-repeat-y w-10 bg-right-top"/>
-            <div class="absolute right-0 top-0 bottom-0 bg-[url('/assets/chain.png')] bg-repeat-y w-10 bg-left-top"/>
+        <div class="relative mx-auto h-full max-w-screen-xl bg-right-top px-10 text-base">
+            <div class="absolute bottom-0 left-0 top-0 w-10 bg-[url('/assets/chain.png')] bg-right-top bg-repeat-y"></div>
+            <div class="absolute bottom-0 right-0 top-0 w-10 bg-[url('/assets/chain.png')] bg-left-top bg-repeat-y"></div>
             <Central>
-                <img class="inline-flex transition-transform hover:animate-ping" src="/assets/ball2.png"
-                     alt="Drop Siła Robocza Kula"/>
-                <div class="block font-pixel text-7xl uppercase my-4">Dziękujemy,</div>
-                <div class="block my-4">że toczysz z nami ten kamień.</div>
+                <img class="inline-flex transition-transform hover:animate-ping" src="/assets/ball2.png" alt="Drop Siła Robocza Kula" />
+                <div class="my-4 block font-pixel text-7xl uppercase">Dziękujemy,</div>
+                <div class="my-4 block">że toczysz z nami ten kamień.</div>
                 <div class="my-4">
-                    Przygotowujemy Twoje zamówienie najszybciej jak potrafimy.<br>
+                    Przygotowujemy Twoje zamówienie najszybciej jak potrafimy.<br />
                     O postępie będziemy pisać na Twój adres e-mail.
                 </div>
-                <a class="inline-block bg-white text-black py-2 px-4 rounded-xl uppercase hover:opacity-50 w-48"
-                   href="/opowiesc">
+                <a class="inline-block w-48 rounded-xl bg-white px-4 py-2 uppercase text-black hover:opacity-50" href="/opowiesc">
                     Przeczytaj artykuł <!-- @todo set article title -->
                 </a>
                 <div class="mt-8">
@@ -31,7 +29,7 @@ import Central from "@layouts/elements/arrangement/Central.astro";
 </Layout>
 
 <script>
-    import {emptyCart} from '../store/cart';
+    import { emptyCart } from '../store/cart';
 
     emptyCart();
 </script>
