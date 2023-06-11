@@ -15,12 +15,14 @@ const { showBackButton = false } = Astro.props;
 
 <div class="flex gap-px bg-black">
     {showBackButton && <HeaderBackButton />}
-    <div class={`grow h-12 sm:h-14 lg:h-20 xl:h-24 bg-white ${!showBackButton && 'pl-12 sm:pl-14 lg:pl-20 xl:pl-24'}`}>
+    <div class={`grow h-12 sm:h-14 lg:h-20 xl:h-24 bg-white ${showBackButton === false && 'pl-12 sm:pl-14 lg:pl-20 xl:pl-24'}`}>
         <div class="hidden lg:block">
             <PageTitleAnimated />
         </div>
-        <div class="block text-center lg:hidden">
-            <HeaderSubTitle />
+        <div class="block h-full lg:hidden">
+            <Central>
+                <HeaderSubTitle />
+            </Central>
         </div>
     </div>
     <div class="h-12 w-12 bg-white sm:h-14 sm:w-14 lg:h-20 lg:w-20 xl:h-24 xl:w-24">
