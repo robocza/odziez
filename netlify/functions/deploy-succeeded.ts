@@ -9,7 +9,7 @@ const handler: Handler = async (event: HandlerEvent, context: HandlerContext) =>
         };
     }
 
-    // @todo sync products from Stripe
+    // @todo sync products and shipping rates from Stripe
 
     return {
         statusCode: 200,

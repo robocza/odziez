@@ -1,17 +1,23 @@
 ---
 import type { CollectionEntry } from 'astro:content';
+import { getProduct, Product } from '../productRepository';
 
 interface Props {
-    product: CollectionEntry<'product'>;
+    productCollectionEntry: CollectionEntry<'product'>;
+    product: Product;
 }
 
-const { product } = Astro.props;
+const { productCollectionEntry } = Astro.props;
+
+const product = getProduct(productCollectionEntry.data.id);
 ---
 
 <div class="pb-2 text-center">
-    <a href={`/produkt/${product.slug}`}>
-        <img src={product.data.image} alt={product.data.name} class="mx-auto max-h-96 px-2 py-2 lg:max-h-48 lg:px-0" />
+    <a href={`/produkt/${productCollectionEntry.slug}`}>
+        <img src={product.images[0]} alt={product.name} class="mx-auto max-h-96 px-2 py-2 lg:max-h-48 lg:px-0" />
     </a>
-    <h2 class="my-2 text-lg uppercase">{product.data.name}</h2>
-    <a class="inline-block w-48 rounded-xl bg-black px-4 py-2 uppercase text-white hover:opacity-50" href={`/produkt/${product.slug}`}> Zobacz</a>
+    <h2 class="my-2 text-lg uppercase">{product.name}</h2>
+    <a class="inline-block w-48 rounded-xl bg-black px-4 py-2 uppercase text-white hover:opacity-50" href={`/produkt/${productCollectionEntry.slug}`}>
+        Zobacz</a
+    >
 </div>

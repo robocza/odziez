@@ -9,8 +9,7 @@
                      :alt=cartItemProduct.product.name>
                 <div class="flex flex-col justify-between p-3 leading-normal">
                     <h3 class="uppercase">{{ cartItemProduct.product.name }}</h3>
-                    <!-- @todo bind and format price -->
-                    <div class="block">129 zł</div>
+                    <div class="block">{{ cartItemProduct.formattedTotalPrice }}</div>
                     <div class="flex place-items-center relative">
                         <label class="pr-4 uppercase" for="product-quantity">Ilość:</label>
                         <div class="">

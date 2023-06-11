@@ -13,6 +13,7 @@ import ArticleTitle from '@components/ArticleTitle.astro';
 import Story from '@components/Story.astro';
 import Header from '@components/Header.astro';
 import CartDrawer from '@components/cart/CartDrawer.astro';
+import { getProduct } from '../../productRepository';
 
 // 1. Generate a new path for every collection entry
 export async function getStaticPaths() {
@@ -24,11 +25,12 @@ export async function getStaticPaths() {
 }
 // 2. When it's time to render, you can get the entry directly from the prop
 const { entry } = Astro.props;
-const images = [entry.data.image, entry.data.image, entry.data.image, entry.data.image]; // @todo fetch product images
+const images = entry.data.images;
 const { Content } = await entry.render();
+const product = getProduct(entry.data.id);
 ---
 
-<Layout title={`Odzież Robocza - ${entry.data.name}`}>
+<Layout title={`Odzież Robocza - ${product.name}`}>
     <div class="grid lg:grid-cols-2">
         <div class="order-2 hidden bg-black text-white lg:order-1 lg:block lg:h-screen lg:overflow-hidden">
             <div class="lg:h-full lg:overflow-y-auto">
@@ -57,15 +59,15 @@ const { Content } = await entry.render();
                     </div>
                 </div>
                 <div class="flex-1 bg-white text-center lg:text-right">
-                    <ProductTitle title={entry.data.name} />
+                    <ProductTitle title={product.name} />
                 </div>
             </div>
             <ProductSectionDivider />
-            <ProductImageGallery product={entry} images={images} />
+            <ProductImageGallery product={product} />
             <ProductSectionDivider />
-            <ProductPrice />
+            <ProductPrice price={product.price} />
             <ProductSectionDivider />
-            <ProductForm productId={entry.data.id} />
+            <ProductForm product={product} />
             <ProductSectionDivider />
             <div class="mx-auto w-full max-w-xl px-8">
                 <Content />
