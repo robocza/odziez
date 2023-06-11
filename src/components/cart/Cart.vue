@@ -5,8 +5,7 @@
                  :key="cartItemProduct.cartItem.id"
                  v-for="(cartItemProduct) in Object.values($cart)"
             >
-                <img class="object-cover w-full rounded-t-lg h-auto w-36" :src=cartItemProduct.product.image
-                     :alt=cartItemProduct.product.name>
+                <img class="object-cover w-full h-auto w-36" :src=cartItemProduct.product.image :alt=cartItemProduct.product.name>
                 <div class="flex flex-col justify-between p-3 leading-normal">
                     <h3 class="uppercase">{{ cartItemProduct.product.name }}</h3>
                     <div class="block">{{ cartItemProduct.formattedTotalPrice }}</div>

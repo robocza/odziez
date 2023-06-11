@@ -8,9 +8,7 @@ module.exports = {
     theme: {
         extend: {
             colors: {
-                neutral: {
-                    900: '#121212',
-                },
+                black: '#121212'
             },
             fontFamily: {
                 pixel: ['FKRasterGroteskCompact', ...defaultTheme.fontFamily.mono],
