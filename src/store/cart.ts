@@ -1,9 +1,9 @@
-import {persistentAtom} from '@nanostores/persistent';
+import { persistentAtom } from '@nanostores/persistent';
 
 type CartProduct = {
-    id: string,
+    id: string;
     size: string;
-}
+};
 
 export type CartItem = {
     id: string;
@@ -25,31 +25,27 @@ export function addProductToCart(product: CartProduct, quantity: number) {
         const updatedCartItem = {
             id: updatedCartItemId,
             product: product,
-            quantity: quantity + existingCartItemEntry.quantity
+            quantity: quantity + existingCartItemEntry.quantity,
         };
 
-        let newCart = cart.get().map(
-            item => {
-                if (item.id !== updatedCartItemId) {
-                    return item;
-                }
-
-                return updatedCartItem;
+        let newCart = cart.get().map((item) => {
+            if (item.id !== updatedCartItemId) {
+                return item;
             }
-        );
+
+            return updatedCartItem;
+        });
 
         cart.set(newCart);
     } else {
-        cart.set(
-            [
-                ...cart.get(),
-                {
-                    id: updatedCartItemId,
-                    product: product,
-                    quantity: quantity
-                }
-            ]
-        )
+        cart.set([
+            ...cart.get(),
+            {
+                id: updatedCartItemId,
+                product: product,
+                quantity: quantity,
+            },
+        ]);
     }
 }
 
@@ -61,33 +57,26 @@ export function updateCartItemQuantity(product: CartProduct, newQuantity: number
     const updatedCartItem = {
         id: updatedCartItemId,
         product: product,
-        quantity: newQuantity
+        quantity: newQuantity,
     };
 
     if (existingCartItemEntry) {
-        let newCart = cart.get().map(
-            item => {
-                if (item.id !== updatedCartItemId) {
-                    return item;
-                }
-
-                return updatedCartItem;
+        let newCart = cart.get().map((item) => {
+            if (item.id !== updatedCartItemId) {
+                return item;
             }
-        );
+
+            return updatedCartItem;
+        });
 
         cart.set(newCart);
     } else {
-        cart.set(
-            [
-                ...cart.get(),
-                updatedCartItem
-            ]
-        )
+        cart.set([...cart.get(), updatedCartItem]);
     }
 }
 
 export function removeCartItemById(id: string) {
-    const updatedCartItems = cart.get().filter(item => item.id !== id);
+    const updatedCartItems = cart.get().filter((item) => item.id !== id);
 
     cart.set(updatedCartItems);
 }
@@ -103,9 +92,9 @@ export function findCartItemForProduct(product: CartProduct): CartItem | undefin
 }
 
 export function findCartItem(cartItemId: string): CartItem | undefined {
-    return cart.get().find(item => cartItemId === item.id);
+    return cart.get().find((item) => cartItemId === item.id);
 }
 
-export function emptyCart():void {
+export function emptyCart(): void {
     cart.set([]);
 }

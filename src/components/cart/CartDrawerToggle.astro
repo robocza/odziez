@@ -1,27 +1,23 @@
-<button type="button"
-        class="hover:opacity-50"
-        data-drawer-target="cart-drawer"
-        data-cart-drawer-show data-drawer-placement="right"
->
-    <img class="mx-auto align-middle inline-block" src="/assets/cart.png" alt="Koszyk"/>
+<button type="button" class="hover:opacity-50" data-drawer-target="cart-drawer" data-cart-drawer-show data-drawer-placement="right">
+    <img class="mx-auto inline-block align-middle" src="/assets/cart.png" alt="Koszyk" />
     <span class="sr-only">Koszyk</span>
 </button>
 
 <script>
-    import {initCartDrawer} from '../../cartDrawer';
+    import { initCartDrawer } from '../../cartDrawer';
 
     const cartDrawerElement = document.getElementById('cart-drawer');
 
     const cartDrawer = initCartDrawer(cartDrawerElement);
 
-    const cartDrawerHideButtons = document.querySelectorAll("button[data-cart-drawer-hide]");
+    const cartDrawerHideButtons = document.querySelectorAll('button[data-cart-drawer-hide]');
     cartDrawerHideButtons.forEach((cartDrawerHideButton) => {
         cartDrawerHideButton.addEventListener('click', () => {
             cartDrawer.hide();
         });
     });
 
-    const cartDrawerShowButtons = document.querySelectorAll("button[data-cart-drawer-show]");
+    const cartDrawerShowButtons = document.querySelectorAll('button[data-cart-drawer-show]');
     cartDrawerShowButtons.forEach((button) => {
         button.addEventListener('click', () => {
             cartDrawer.show();
