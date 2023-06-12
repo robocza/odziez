@@ -1,5 +1,6 @@
-import productsData from './data/products.dist.json';
-
+import productsDataDev from './data/products.dev.json';
+import productsDataStaging from './data/products.staging.json';
+import productsDataProd from './data/products.prod.json';
 import type { Money } from './money';
 
 interface ProductVariant {
@@ -19,7 +20,20 @@ export interface Product {
     variants: ProductVariant[];
 }
 
-const products: Product[] = productsData as Product[];
+function getProductsData(): Product[] {
+    switch (import.meta.env.PUBLIC_APP_ENV) {
+        case 'prod':
+            return productsDataProd;
+        case 'staging':
+            return productsDataStaging;
+        case 'dev':
+            return productsDataDev;
+        default:
+            throw new Error(`Invalid PUBLIC_APP_ENV "${import.meta.env.PUBLIC_APP_ENV}"`);
+    }
+}
+
+const products: Product[] = getProductsData();
 
 export function getProduct(id: string): Product {
     const product = products.find((product) => product.id === id);
