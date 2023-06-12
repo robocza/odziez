@@ -14,7 +14,9 @@ const initialCountdownText = days + 'd:' + hours + 'h:' + minutes + 'm';
 
 <div class="mx-auto sm:max-w-xs sm:p-2">
     <div class="hidden text-5xl uppercase underline sm:block lg:text-3xl xl:text-5xl">Do zamknięcia preorderu zostało:</div>
-    <div class="font-pixel tracking-wide text-7xl uppercase leading-none sm:pt-4 sm:text-5xl lg:text-4xl xl:text-5xl" id="pre-order-timer">{initialCountdownText}</div>
+    <div class="font-pixel text-7xl uppercase leading-none tracking-wide sm:pt-4 sm:text-5xl lg:text-4xl xl:text-5xl" id="pre-order-timer">
+        {initialCountdownText}
+    </div>
 </div>
 
 <script>
