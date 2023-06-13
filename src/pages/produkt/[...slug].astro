@@ -8,7 +8,7 @@ import ProductSizing from '@components/product/ProductSizing.astro';
 import ProductPrice from '@components/product/ProductPrice.astro';
 import ProductTitle from '@components/product/ProductTitle.astro';
 import Layout from '@layouts/Layout.astro';
-import Animation from '@components/story/Animation.astro';
+import Stones from '@components/story/Stones.astro';
 import ArticleTitle from '@components/ArticleTitle.astro';
 import Story from '@components/Story.astro';
 import Header from '@components/Header.astro';
@@ -34,7 +34,7 @@ const product = getProduct(entry.data.id);
     <div class="grid lg:grid-cols-2">
         <div class="order-2 hidden bg-black text-white lg:order-1 lg:block lg:h-screen lg:overflow-hidden">
             <div class="lg:h-full lg:overflow-y-auto">
-                <Animation />
+                <Stones />
                 <div class="px-10 pt-10">
                     <div class="mx-auto max-w-2xl">
                         <ArticleTitle text="Lorem ipsum dolor sit amet, consectetuer." />
