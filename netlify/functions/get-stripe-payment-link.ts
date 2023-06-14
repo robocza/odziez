@@ -36,13 +36,13 @@ function extractSiteUrlFromContext(context: HandlerContext) {
         return;
     }
 
-    const data = clientContext.custom.netlify;
+    const data = clientContext?.custom?.netlify;
     if (data === undefined) {
         return;
     }
 
     const decodedData = JSON.parse(Buffer.from(data, 'base64').toString('utf-8'));
-    if (decodedData.site_url === undefined) {
+    if (decodedData?.site_url === undefined) {
         return;
     }
 

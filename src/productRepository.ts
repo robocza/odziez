@@ -1,6 +1,7 @@
 import productsDataDev from './data/products.dev.json';
 import productsDataStaging from './data/products.staging.json';
 import productsDataProd from './data/products.prod.json';
+import {currentEnvironment} from "./environment";
 import type { Money } from './money';
 
 interface ProductVariant {
@@ -21,7 +22,9 @@ export interface Product {
 }
 
 function getProductsData(): Product[] {
-    switch (import.meta.env.PUBLIC_APP_ENV) {
+    const env = currentEnvironment();
+
+    switch (currentEnvironment()) {
         case 'prod':
             return productsDataProd;
         case 'staging':
@@ -29,7 +32,7 @@ function getProductsData(): Product[] {
         case 'dev':
             return productsDataDev;
         default:
-            throw new Error(`Invalid PUBLIC_APP_ENV "${import.meta.env.PUBLIC_APP_ENV}"`);
+            throw new Error(`Invalid PUBLIC_APP_ENV "${env}"`);
     }
 }
 
