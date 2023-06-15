@@ -7,13 +7,6 @@
       "/assets/product/longsleeve.png",
       "/assets/product/longsleeve.png"
     ],
-    "sizes": [
-      "M",
-      "L",
-      "X",
-      "XL",
-      "XXL"
-    ],
     "price": {
       "amount": 12951,
       "currency": "PLN"
@@ -50,11 +43,6 @@
       "/assets/product/t-shirt.png",
       "/assets/product/t-shirt.png"
     ],
-    "sizes": [
-      "M",
-      "L",
-      "X"
-    ],
     "price": {
       "amount": 10900,
       "currency": "PLN"
@@ -90,13 +78,6 @@
       "/assets/product/bluza.png",
       "/assets/product/bluza.png",
       "/assets/product/bluza.png"
-    ],
-    "sizes": [
-      "M",
-      "L",
-      "X",
-      "XL",
-      "XXL"
     ],
     "price": {
       "amount": 11900,

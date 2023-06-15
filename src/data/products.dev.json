@@ -7,13 +7,6 @@
       "/assets/product/longsleeve.png",
       "/assets/product/longsleeve.png"
     ],
-    "sizes": [
-      "M",
-      "L",
-      "X",
-      "XL",
-      "XXL"
-    ],
     "price": {
       "amount": 111,
       "currency": "PLN"
@@ -23,14 +16,14 @@
         "size": "M",
         "stripe": {
           "productId": "prod_NewTevSizKig4F",
-          "priceId": "price_1MtcaTCvOTfFxYT2Bfum7NB7"
+          "priceId": "price_1NIzcfCvOTfFxYT2fxAkxcBw"
         }
       },
       {
         "size": "L",
         "stripe": {
           "productId": "prod_NewTevSizKig4F",
-          "priceId": "price_1MtcaTCvOTfFxYT2Bfum7NB7"
+          "priceId": "price_1NJ9MfCvOTfFxYT2JiEkwZcp"
         }
       },
       {
@@ -49,11 +42,6 @@
       "/assets/product/t-shirt.png",
       "/assets/product/t-shirt.png",
       "/assets/product/t-shirt.png"
-    ],
-    "sizes": [
-      "M",
-      "L",
-      "X"
     ],
     "price": {
       "amount": 10900,
@@ -91,13 +79,6 @@
       "/assets/product/bluza.png",
       "/assets/product/bluza.png"
     ],
-    "sizes": [
-      "M",
-      "L",
-      "X",
-      "XL",
-      "XXL"
-    ],
     "price": {
       "amount": 11900,
       "currency": "PLN"
@@ -107,7 +88,7 @@
         "size": "M",
         "stripe": {
           "productId": "prod_NZH7oiK8h48Ccg",
-          "priceId": "price_1Mo8Z4CvOTfFxYT2NnJp9W2Z"
+          "priceId": "price_1NJ9Z3CvOTfFxYT2jrYQz1P1"
         }
       },
       {

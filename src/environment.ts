@@ -1,6 +1,6 @@
-import process from "process";
+import process from 'process';
 
-type Environment = 'prod' | 'staging' | 'dev'
+type Environment = 'prod' | 'staging' | 'dev';
 
 export function currentEnvironment(): Environment {
     if (import.meta.env !== undefined) {

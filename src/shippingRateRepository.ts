@@ -1,7 +1,7 @@
 import shippingRatesDataProd from './data/shipping_rates.prod.json';
 import shippingRatesDataStaging from './data/shipping_rates.staging.json';
 import shippingRatesDataDev from './data/shipping_rates.dev.json';
-import {currentEnvironment} from "./environment";
+import { currentEnvironment } from './environment';
 
 interface ShippingRate {
     id: string;
