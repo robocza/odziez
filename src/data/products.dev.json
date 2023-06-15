@@ -3,9 +3,8 @@
     "id": "longsleeve",
     "name": "Longsleeve",
     "images": [
-      "/assets/product/longsleeve.png",
-      "/assets/product/longsleeve.png",
-      "/assets/product/longsleeve.png"
+      "/assets/product/t-shirt/t-shirt-back.jpg",
+      "/assets/product/t-shirt/t-shirt-front.jpg"
     ],
     "price": {
       "amount": 111,
@@ -39,9 +38,8 @@
     "id": "t-shirt",
     "name": "T-shirt",
     "images": [
-      "/assets/product/t-shirt.png",
-      "/assets/product/t-shirt.png",
-      "/assets/product/t-shirt.png"
+      "/assets/product/t-shirt/t-shirt-back.jpg",
+      "/assets/product/t-shirt/t-shirt-front.jpg"
     ],
     "price": {
       "amount": 10900,
@@ -75,9 +73,8 @@
     "id": "bluza",
     "name": "Bluza",
     "images": [
-      "/assets/product/bluza.png",
-      "/assets/product/bluza.png",
-      "/assets/product/bluza.png"
+      "/assets/product/t-shirt/t-shirt-back.jpg",
+      "/assets/product/t-shirt/t-shirt-front.jpg"
     ],
     "price": {
       "amount": 11900,

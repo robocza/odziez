@@ -15,7 +15,7 @@ const { showBackButton = false } = Astro.props;
 
 <div class="flex gap-px bg-black">
     {showBackButton && <HeaderBackButton />}
-    <div class={`grow h-12 sm:h-14 lg:h-20 xl:h-24 bg-white ${showBackButton === false && 'pl-12 sm:pl-14 lg:pl-20 xl:pl-24'}`}>
+    <div class={`grow h-12 sm:h-14 lg:h-20 xl:h-24 bg-white ${showBackButton === false && 'pl-12 sm:pl-14 lg:pl-0'}`}>
         <div class="hidden lg:block">
             <PageTitleAnimated />
         </div>
