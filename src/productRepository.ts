@@ -1,6 +1,7 @@
-import productsDataDev from './data/products.dev.json';
-import productsDataStaging from './data/products.staging.json';
-import productsDataProd from './data/products.prod.json';
+import productsData from './data/products.json';
+import productsStripeDataMappingDev from './data/products_stripe_mapping.dev.json';
+import productsStripeDataMappingStaging from './data/products_stripe_mapping.staging.json';
+import productsStripeDataMappingProd from './data/products_stripe_mapping.prod.json';
 import { currentEnvironment } from './environment';
 import type { Money } from './money';
 
@@ -21,29 +22,41 @@ export interface Product {
     variants: ProductVariant[];
 }
 
-function getProductsData() {
+type productsStripeDataMap = {
+    [id: string]: ProductVariant[];
+};
+
+function getProductsStripeMapping() {
     const env = currentEnvironment();
 
     switch (currentEnvironment()) {
         case 'prod':
-            return productsDataProd;
+            return productsStripeDataMappingProd;
         case 'staging':
-            return productsDataStaging;
+            return productsStripeDataMappingStaging;
         case 'dev':
-            return productsDataDev;
+            return productsStripeDataMappingDev;
         default:
             throw new Error(`Invalid PUBLIC_APP_ENV "${env}"`);
     }
 }
 
-const products: Product[] = getProductsData().map((productData) => ({
-    id: productData.id,
-    name: productData.name,
-    images: productData.images,
-    sizes: productData.variants.map((variant) => variant.size),
-    price: productData.price,
-    variants: productData.variants,
-}));
+const productsStripeMappingData: productsStripeDataMap = getProductsStripeMapping();
+
+const products: Product[] = productsData.map((productData) => {
+    const productId = productData.id;
+
+    const variants = productsStripeMappingData[productId] as ProductVariant[];
+
+    return {
+        id: productData.id,
+        name: productData.name,
+        images: productData.images,
+        sizes: variants.map((variant) => variant.size),
+        price: productData.price,
+        variants: variants,
+    };
+});
 
 export function getProduct(id: string): Product {
     const product = products.find((product) => product.id === id);

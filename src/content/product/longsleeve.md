@@ -2,8 +2,12 @@
 id: 'longsleeve'
 ---
 
-Opis produktu longsleeve.
+Nieco ekstrawagancki, ale przez to wielofunkcyjny Longsleeve Syzyf Roboczy nada się zarówno do codziennych przebieżek po korytarzach roby, jak i casualowych, wieczornych spotkań na mieście. Nie wychodzisz na miasto? O.K. Jest też idealny do spokojnego siedzenia w domu.
 
-Dodatkowa linia tekstu.
+Zarówno w pracy, jak na kanapie, warto pamiętać o tym, że wciąż mamy do przerwania liczne łańcuchy.
 
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+Wieloletnie syzyfowanie odbija się na naszych ciałach i głowach zmęczeniem i pragnieniem przejścia w stan działkowania. Gen Syfa-Syzyfa wszczepiają nam już w szkole. Ciągle krzyczą rób, rób, rób. Im bardziej robimy, tym więcej jest pracy. Na tym polega cały paradoks.
+
+Syzyf ma przypominać o tym, że to się nigdy nie skończy.
+
+Najwyższy czas trochę sobie odpuścić. Przestać słuchać boomerskiego sarkania na roszczeniowe zetki i zacząć odzyskiwać swój czas. (Btw. — czy to w ogóle jest Twój kamień?).

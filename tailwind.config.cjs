@@ -17,10 +17,18 @@ module.exports = {
             },
             screens: {
                 dawid: '1920px'
-            }
+            },
+            typography: {
+                DEFAULT: {
+                    css: {
+                        color: '#121212'
+                    },
+                },
+            },
         },
     },
     plugins: [
-        require('flowbite/plugin')
+        require('flowbite/plugin'),
+        require('@tailwindcss/typography'),
     ],
 };

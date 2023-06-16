@@ -1,0 +1,38 @@
+[
+  {
+    "id": "longsleeve",
+    "name": "Longsleeve Syzyf Roboczy",
+    "images": [
+      "/assets/product/t-shirt/t-shirt-back.jpg",
+      "/assets/product/t-shirt/t-shirt-front.jpg"
+    ],
+    "price": {
+      "amount": 111,
+      "currency": "PLN"
+    }
+  },
+  {
+    "id": "t-shirt",
+    "name": "T-shirt Kamień Roboczy",
+    "images": [
+      "/assets/product/t-shirt/t-shirt-back.jpg",
+      "/assets/product/t-shirt/t-shirt-front.jpg"
+    ],
+    "price": {
+      "amount": 10900,
+      "currency": "PLN"
+    }
+  },
+  {
+    "id": "bluza",
+    "name": "Bluza Siła Robocza",
+    "images": [
+      "/assets/product/t-shirt/t-shirt-back.jpg",
+      "/assets/product/t-shirt/t-shirt-front.jpg"
+    ],
+    "price": {
+      "amount": 11900,
+      "currency": "PLN"
+    }
+  }
+]
