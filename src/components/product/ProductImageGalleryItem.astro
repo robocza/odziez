@@ -1,5 +1,6 @@
 ---
 import { Product } from '../../productRepository';
+import CloseIcon from '@components/CloseIcon.astro';
 
 interface Props {
     product: Product;
@@ -11,10 +12,41 @@ const { product, position, image } = Astro.props;
 const positionElementId = 'item-' + position;
 ---
 
-<div data-product-image-gallery-item={positionElementId} class="hidden duration-700 ease-in-out">
+<a
+    href={image}
+    data-product-image-gallery-item-modal-opener
+    data-product-image-gallery-item={positionElementId}
+    class="hidden cursor-zoom-in duration-700 ease-in-out"
+    data-modal-target={`product-image-gallery-item-modal-"${positionElementId}"`}
+    data-modal-toggle={`product-image-gallery-item-modal-"${positionElementId}"`}
+>
     <img
         src={image}
         class="absolute left-1/2 top-1/2 block h-full -translate-x-1/2 -translate-y-1/2"
         alt={`Zdjęcie przedstawiające produkt "${product.name}"`}
     />
+</a>
+
+<div
+    id={`product-image-gallery-item-modal-"${positionElementId}"`}
+    tabindex="-1"
+    class="fixed bottom-0 left-0 right-0 top-0 z-50 hidden max-h-full w-full overflow-auto"
+>
+    <div class="relative max-h-full w-full max-w-2xl">
+        <button type="button" class="absolute right-2.5 top-2.5 hover:opacity-50" data-modal-hide={`product-image-gallery-item-modal-"${positionElementId}"`}>
+            <CloseIcon />
+            <span class="sr-only">Zamknij podgląd</span>
+        </button>
+        <a href={image}>
+            <img src={image} alt={`Zdjęcie przedstawiające produkt "${product.name}"`} />
+        </a>
+    </div>
 </div>
+
+<script>
+    document.querySelectorAll('a[data-product-image-gallery-item-modal-opener]').forEach((element) => {
+        element.addEventListener('click', (event) => {
+            event.preventDefault();
+        });
+    });
+</script>
