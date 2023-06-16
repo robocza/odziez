@@ -1,11 +1,11 @@
 <template>
     <template v-if="Object.values($cart).length">
         <form>
-            <div class="text-xl mb-2 pt-2 pb-4 border-black border-b flex items-center bg-white flex-row gap-2"
+            <div class="text-lg mb-2 pt-2 pb-4 px-4 border-black border-b flex items-center bg-white flex-row gap-1"
                  :key="cartItemProduct.cartItem.id"
                  v-for="(cartItemProduct) in Object.values($cart)"
             >
-                <img class="object-cover h-auto w-36" :src=cartItemProduct.product.image :alt=cartItemProduct.product.name>
+                <img class="object-cover h-auto w-32" :src=cartItemProduct.product.image :alt=cartItemProduct.product.name>
                 <div class="flex flex-col justify-between p-3 leading-normal">
                     <h3 class="uppercase">{{ cartItemProduct.product.name }}</h3>
                     <div class="block">{{ cartItemProduct.formattedTotalPrice }}</div>
