@@ -1,10 +1,17 @@
-<button type="button" class="hover:opacity-50" data-drawer-target="cart-drawer" data-cart-drawer-show data-drawer-placement="right">
+<button type="button" class="relative hover:opacity-50" data-drawer-target="cart-drawer" data-cart-drawer-show data-drawer-placement="right">
     <img class="mx-auto inline-block align-middle" src="/assets/cart.png" alt="Koszyk" />
     <span class="sr-only">Koszyk</span>
+    <div
+        data-cart-items-count-indicator
+        class="absolute -right-2 -top-2 inline-flex hidden h-6 w-6 items-center justify-center rounded-full border-2 border-white bg-black text-xs text-white"
+    >
+        0
+    </div>
 </button>
 
 <script>
     import { initCartDrawer } from '../../cartDrawer';
+    import { cartItemsCount } from '../../store/cartItemsCount';
 
     const cartDrawerElement = document.getElementById('cart-drawer');
 
@@ -21,6 +28,19 @@
     cartDrawerShowButtons.forEach((button) => {
         button.addEventListener('click', () => {
             cartDrawer.show();
+        });
+    });
+
+    const cartItemsCountIndicators = document.querySelectorAll('[data-cart-items-count-indicator]');
+    cartItemsCountIndicators.forEach((cartItemsCountIndicator) => {
+        cartItemsCount.subscribe((currentItemsCount) => {
+            cartItemsCountIndicator.textContent = `${currentItemsCount}`;
+
+            if (currentItemsCount === 0) {
+                cartItemsCountIndicator.classList.add('hidden');
+            } else {
+                cartItemsCountIndicator.classList.remove('hidden');
+            }
         });
     });
 </script>
