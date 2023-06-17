@@ -1,5 +1,7 @@
 ---
 import { getPreOrderEndDate } from '../preOrder';
+import CloseIcon from './CloseIcon.astro';
+import DropFaq from './DropFaq.astro';
 
 const preOrderEndDate = getPreOrderEndDate();
 
@@ -15,16 +17,42 @@ const initialCountdownText = days + 'd:' + hours + 'h:' + minutes + 'm';
 ---
 
 <div class="mx-auto sm:max-w-xs sm:p-2 dawid:max-w-xl">
-    <div class="hidden text-5xl uppercase underline sm:block lg:text-3xl xl:text-5xl dawid:text-7xl">Do zamknięcia preorderu zostało:</div>
+    <div class="hidden text-5xl uppercase underline sm:block sm:pb-4 lg:text-3xl xl:text-5xl dawid:text-7xl">Do zamknięcia preorderu zostało:</div>
     <div
-        class="font-pixel text-7xl uppercase leading-none tracking-wide sm:pt-4 sm:text-5xl lg:text-4xl xl:text-5xl 2xl:text-6xl dawid:text-7xl"
+        class="inline-block font-pixel text-5xl uppercase leading-none tracking-wide sm:text-4xl lg:text-3xl xl:text-3xl 2xl:text-4xl dawid:text-5xl"
         id="pre-order-timer"
     >
         {initialCountdownText}
     </div>
+    <button data-modal-target="drop-faq" data-modal-toggle="drop-faq" class="ml-1 inline-block h-8 w-8 hover:opacity-50" type="button">
+        <img src="/assets/info.png" class="" alt="FAQ" />
+    </button>
+</div>
+
+<div
+    id="drop-faq"
+    data-modal-backdrop="static"
+    tabindex="-1"
+    aria-hidden="true"
+    class="fixed left-0 right-0 top-0 z-50 hidden h-[calc(100%-1rem)] max-h-full w-full overflow-y-auto overflow-x-hidden p-4 md:inset-0"
+>
+    <div class="min-w-xs relative max-h-full w-full max-w-2xl overflow-y-auto">
+        <div class="relative bg-white p-6">
+            <button type="button" class="absolute right-2.5 top-2.5 hover:opacity-50" data-modal-hide="drop-faq">
+                <CloseIcon />
+                <span class="sr-only">Zamknij podgląd</span>
+            </button>
+            <DropFaq />
+            <div class="my-6 text-center">
+                <button class="inline-block rounded-xl bg-black px-8 py-2 text-white hover:opacity-50" data-modal-hide="drop-faq"> OK, chyba rozumiem</button>
+            </div>
+        </div>
+    </div>
 </div>
 
 <script>
+    import { getPreOrderEndDate } from '../preOrder';
+
     const countdownTargetDate = getPreOrderEndDate().getTime();
 
     const preOrderCountdownTimer = setInterval(function () {
