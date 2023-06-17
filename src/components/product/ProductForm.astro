@@ -42,7 +42,6 @@ const { product } = Astro.props;
             <label class="block text-lg uppercase" for="product-size">Rozmiar:</label>
             <a href="#tabela-rozmiarow" class="block text-sm underline hover:opacity-50">Tabela rozmiarów</a>
         </div>
-        <!-- @todo bind correct values -->
         <select id="product-size" name="size" class="inline-block w-[80px] rounded-lg border border-black bg-white p-2.5 text-lg text-black" required>
             {product.sizes.map((size) => <option value={size}>{size}</option>)}
         </select>

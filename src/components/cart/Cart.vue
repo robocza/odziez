@@ -16,8 +16,8 @@
                                 <button @click.stop.prevent="decrementQuantity"
                                         class="outline-none px-1">
                                     <svg class="pointer-events-none w-2" viewBox="0 0 39 72" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <line x1="1.29289" y1="36.2929" x2="36.2929" y2="1.29289" stroke="black" stroke-width="2"/>
-                                        <line x1="2.70711" y1="36.2929" x2="37.7071" y2="71.2929" stroke="black" stroke-width="2"/>
+                                        <line x1="1.29289" y1="36.2929" x2="36.2929" y2="1.29289" stroke="black" stroke-width="2" />
+                                        <line x1="2.70711" y1="36.2929" x2="37.7071" y2="71.2929" stroke="black" stroke-width="2" />
                                     </svg>
                                 </button>
                                 <input
@@ -50,13 +50,13 @@
                             @click.stop.prevent="removeCartItem">
                         <svg class="w-3 h-3 inline-block align-middle pointer-events-none" viewBox="0 0 37 38"
                              fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <line x1="0.353553" y1="0.646447" x2="36.3536" y2="36.6464" stroke="black"/>
-                            <line x1="36.3536" y1="1.35355" x2="0.353553" y2="37.3536" stroke="black"/>
+                            <line x1="0.353553" y1="0.646447" x2="36.3536" y2="36.6464" stroke="black" />
+                            <line x1="36.3536" y1="1.35355" x2="0.353553" y2="37.3536" stroke="black" />
                         </svg>
                         Usuń
                     </button>
-                    <input :value=cartItemProduct.cartItem.product.id type="hidden" name="id"/>
-                    <input :value=cartItemProduct.cartItem.product.size type="hidden" name="size"/>
+                    <input :value=cartItemProduct.cartItem.product.id type="hidden" name="id" />
+                    <input :value=cartItemProduct.cartItem.product.size type="hidden" name="size" />
                 </div>
             </div>
             <div class="text-center my-6">
@@ -153,9 +153,25 @@ async function goToCheckout(event) {
             },
             body: JSON.stringify(cartItems),
         }
-    ).then((response) => response.json());
+    ).then((response) => {
+        if (response.ok) {
+            return response;
+        }
 
-    window.location.href = data.redirectUrl;
+        throw new Error('Could not fetch payment link.');
+    }).then((response) => {
+        return response.json();
+    }).catch((error) => {
+        submittedButton.disabled = false;
+        submittedButton.classList.remove('cursor-not-allowed');
+        submittedButton.classList.remove('opacity-50');
+    });
+
+    if(data === undefined || data.redirectUrl === undefined){
+        alert('Wystąpił nieoczekiwany błąd przy próbie przejścia do kasy! Odśwież stronę i spróbuj ponownie, a jeśli to nie pomoże, napisz do nas na adres: odziez@robocza.org');
+    } else {
+        window.location.href = data.redirectUrl;
+    }
 }
 
 const $cart = useStore(cartProducts);
