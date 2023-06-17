@@ -1,0 +1,30 @@
+---
+import MailLink from '@components/MailLink.astro';
+import Link from '@components/Link.astro';
+---
+
+<footer class="bg-black py-4 text-white">
+    <div class="my-8 flex w-full flex-col sm:flex-row sm:justify-between">
+        <div>
+            <a href="https://grupa.robocza.org">
+                <img class="w-32" src="/assets/logo-grupa-robocza-white.svg" alt="Grupa Robocza" />
+            </a>
+            <p class="mt-4 text-base">
+                <MailLink email="grupa@robocza.org" className="underline hover:text-black hover:bg-white" />
+            </p>
+            <p class="mt-4 text-base">
+                ul. Wilhelma Feldmana 4/3<br />
+                31-130 Kraków
+            </p>
+        </div>
+        <div class="sm:place-self-end sm:text-right">
+            <p class="mt-2 text-base">
+                <Link url="https://pl.linkedin.com/company/grupa-robocza" text="LinkedIn" className="underline hover:text-black hover:bg-white" />
+            </p>
+            <p class="mt-2 text-base">
+                <Link url="https://www.instagram.com/grupa.robocza/" text="Instagram" className="underline hover:text-black hover:bg-white" />
+            </p>
+            <p class="mt-2 text-base">Worldwide 🌏 {new Date().getFullYear()}</p>
+        </div>
+    </div>
+</footer>

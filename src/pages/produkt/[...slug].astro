@@ -15,6 +15,7 @@ import Header from '@components/Header.astro';
 import CartDrawer from '@components/cart/CartDrawer.astro';
 import { getProduct } from '../../productRepository';
 import DropFaq from '@components/DropFaq.astro';
+import Footer from '@components/Footer.astro';
 
 // 1. Generate a new path for every collection entry
 export async function getStaticPaths() {
@@ -41,6 +42,8 @@ const product = getProduct(entry.data.id);
                         <ArticleTitle text="Lorem ipsum dolor sit amet, consectetuer." />
                         <div class="hidden lg:block">
                             <Story />
+                            <hr class="mt-16 h-px border-white bg-white" />
+                            <Footer />
                         </div>
                     </div>
                 </div>
@@ -78,6 +81,11 @@ const product = getProduct(entry.data.id);
             <ProductSectionDivider />
             <div class="mx-auto w-full max-w-xl px-8">
                 <DropFaq />
+            </div>
+        </div>
+        <div class="order-4 lg:hidden">
+            <div class="bg-black px-8 py-4">
+                <Footer />
             </div>
         </div>
     </div>
