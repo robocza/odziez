@@ -14,6 +14,7 @@ import Story from '@components/Story.astro';
 import Header from '@components/Header.astro';
 import CartDrawer from '@components/cart/CartDrawer.astro';
 import { getProduct } from '../../productRepository';
+import DropFaq from '@components/DropFaq.astro';
 
 // 1. Generate a new path for every collection entry
 export async function getStaticPaths() {
@@ -74,6 +75,10 @@ const product = getProduct(entry.data.id);
             </div>
             <ProductSectionDivider />
             <ProductSizing />
+            <ProductSectionDivider />
+            <div class="mx-auto w-full max-w-xl px-8">
+                <DropFaq />
+            </div>
         </div>
     </div>
     <CartDrawer />

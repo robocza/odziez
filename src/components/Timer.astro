@@ -1,5 +1,7 @@
 ---
-const preOrderEndDate = new Date('2023-07-03T20:00:00+02:00');
+import { getPreOrderEndDate } from '../preOrder';
+
+const preOrderEndDate = getPreOrderEndDate();
 
 const now = new Date().getTime();
 const countdownDate = preOrderEndDate.getTime();
@@ -23,7 +25,7 @@ const initialCountdownText = days + 'd:' + hours + 'h:' + minutes + 'm';
 </div>
 
 <script>
-    const countdownTargetDate = new Date('2023-07-03T20:00:00+02:00').getTime();
+    const countdownTargetDate = getPreOrderEndDate().getTime();
 
     const preOrderCountdownTimer = setInterval(function () {
         const preOrderTimerElement = document.getElementById('pre-order-timer');
