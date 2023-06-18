@@ -71,6 +71,9 @@
         <div class="mx-auto p-4">
             <div class="text-2xl">Twój koszyk jest pusty. Dorzuć trochę gruzu.</div>
         </div>
+        <div class="absolute bottom-0">
+            <img src="/assets/rubble.jpg" alt="Gruz"/>
+        </div>
     </template>
 </template>
 
@@ -161,7 +164,7 @@ async function goToCheckout(event) {
         throw new Error('Could not fetch payment link.');
     }).then((response) => {
         return response.json();
-    }).catch((error) => {
+    }).catch(() => {
         submittedButton.disabled = false;
         submittedButton.classList.remove('cursor-not-allowed');
         submittedButton.classList.remove('opacity-50');
