@@ -1,13 +1,14 @@
 ---
 import MailLink from '@components/MailLink.astro';
 import Link from '@components/Link.astro';
+import PoweredByGrupaRobocza from "@components/PoweredByGrupaRobocza.astro";
 ---
 
 <footer class="bg-black py-4 text-white">
     <div class="my-8 flex w-full flex-col sm:flex-row sm:justify-between">
         <div>
             <a href="https://grupa.robocza.org">
-                <img class="w-32" src="/assets/logo-grupa-robocza-white.svg" alt="Grupa Robocza" />
+                <PoweredByGrupaRobocza/>
             </a>
             <p class="mt-4 text-base">
                 <MailLink email="grupa@robocza.org" className="underline hover:text-black hover:bg-white" />
