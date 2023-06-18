@@ -1,0 +1,22 @@
+---
+import Layout from '@layouts/Layout.astro';
+import Footer from '@components/Footer.astro';
+import CartDrawer from '@components/cart/CartDrawer.astro';
+import Header from '@components/Header.astro';
+
+const { title } = Astro.props;
+---
+
+<Layout title={title}>
+    <div class="mx-auto md:min-w-fit">
+        <Header showBackButton={true} />
+        <div class="bg-black text-white">
+            <div class="mx-auto max-w-2xl">
+                <slot />
+                <hr class="mt-16 h-px border-white bg-white" />
+                <Footer />
+            </div>
+        </div>
+    </div>
+    <CartDrawer />
+</Layout>
