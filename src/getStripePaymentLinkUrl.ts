@@ -1,6 +1,6 @@
-import { getProductVariant } from './productRepository';
-import { allEnabled as allEnabledShippingRates } from './shippingRateRepository';
-import { stripeApi } from './stripeApi';
+import {getProductVariant} from './productRepository';
+import {allEnabled as allEnabledShippingRates} from './shippingRateRepository';
+import {stripeApi} from './stripeApi';
 
 export type CartItem = {
     id: string;
@@ -48,6 +48,14 @@ export async function getStripePaymentLinkUrl(cartItems: CartItem[], successUrl:
         automatic_tax: {
             enabled: false,
         },
+        custom_text: {
+            shipping_address: {
+                message: 'Preorder kończy się 17.07.2023 o 20:00 i od tej daty potrzebujemy 3-4 tygodnie na produkcję, pakowanie, umożliwienie odbioru osobistego i wysyłkę zamówień. O postępach prac będziemy informować Cię mailowo.'
+            }
+        },
+        invoice_creation: {
+            enabled: false
+        }
     });
 
     return paymentLink.url;
