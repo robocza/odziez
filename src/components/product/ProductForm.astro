@@ -11,7 +11,7 @@ const { product } = Astro.props;
 <div class="md:mx-auto md:flex md:place-items-center md:items-center md:space-x-6 lg:block lg:space-x-0 2xl:flex 2xl:space-x-6">
     <div class="mt-4 flex place-items-center md:mt-0 lg:mt-4 2xl:mt-0">
         <label class="w-1/2 pr-4 text-right text-lg uppercase md:w-auto lg:w-1/2 2xl:w-1/2" for="product-quantity">Ilość:</label>
-        <div class="flex flex-row rounded-lg border border-black bg-white p-1 text-center text-sm text-black">
+        <div class="flex flex-row rounded-sm border border-black bg-white p-1 text-center text-sm text-black">
             <button data-quantity-update-decrement class="px-1 outline-none">
                 <svg class="pointer-events-none w-2" viewBox="0 0 39 72" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <line x1="1.29289" y1="36.2929" x2="36.2929" y2="1.29289" stroke="black" stroke-width="2"></line>
@@ -42,13 +42,13 @@ const { product } = Astro.props;
             <label class="block text-lg uppercase" for="product-size">Rozmiar:</label>
             <a href="#tabela-rozmiarow" class="block text-sm underline hover:opacity-50">Tabela rozmiarów</a>
         </div>
-        <select id="product-size" name="size" class="inline-block w-[80px] rounded-lg border border-black bg-white p-2.5 text-lg text-black" required>
+        <select id="product-size" name="size" class="inline-block w-[80px] rounded-sm border border-black bg-white p-2.5 text-lg text-black" required>
             {product.sizes.map((size) => <option value={size}>{size}</option>)}
         </select>
     </div>
     <div class="mb-4 mt-8 px-4 md:mb-0 md:mt-0 md:flex md:place-items-center lg:mb-4 lg:mt-8 lg:block 2xl:mb-0 2xl:mt-0 2xl:flex">
         <button
-            class="mx-auto block rounded-2xl bg-black px-6 py-2 text-lg uppercase text-white hover:opacity-50 md:rounded-3xl lg:py-4"
+            class="mx-auto block rounded-sm bg-black px-6 py-2 text-lg uppercase text-white hover:opacity-50 lg:py-4"
             data-add-to-cart
             data-cart-drawer-show
             data-product-id={product.id}

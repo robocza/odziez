@@ -17,7 +17,7 @@ const product = getProduct(productCollectionEntry.data.id);
         <img src={product.images[0]} alt={product.name} class="mx-auto max-h-96 px-2 lg:max-h-48 lg:px-0 dawid:max-h-72" />
     </a>
     <h2 class="my-2 text-lg uppercase">{product.name}</h2>
-    <a class="inline-block w-48 rounded-xl bg-black px-4 py-2 uppercase text-white hover:opacity-50" href={`/produkt/${productCollectionEntry.slug}`}>
+    <a class="inline-block w-48 rounded-sm bg-black px-4 py-2 uppercase text-white hover:opacity-50" href={`/produkt/${productCollectionEntry.slug}`}>
         Zobacz</a
     >
 </div>

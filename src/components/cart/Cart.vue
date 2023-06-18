@@ -12,7 +12,7 @@
                     <div class="flex place-items-center relative">
                         <label class="pr-4 uppercase" for="product-quantity">Ilość:</label>
                         <div class="">
-                            <div class="flex flex-row bg-white border border-black text-black text-center text-sm rounded-lg">
+                            <div class="flex flex-row bg-white border border-black text-black text-center text-sm rounded-sm">
                                 <button @click.stop.prevent="decrementQuantity"
                                         class="outline-none px-1">
                                     <svg class="pointer-events-none w-2" viewBox="0 0 39 72" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -61,7 +61,7 @@
             </div>
             <div class="text-center my-6">
                 <button @click.stop.prevent="goToCheckout"
-                        class="inline-block bg-black text-white py-2 px-8 rounded-xl uppercase hover:opacity-50 w-48"
+                        class="inline-block bg-black text-white py-2 px-8 rounded-sm uppercase hover:opacity-50 w-48"
                         type="submit">Do kasy
                 </button>
             </div>
