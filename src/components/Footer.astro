@@ -1,14 +1,30 @@
 ---
 import MailLink from '@components/MailLink.astro';
 import Link from '@components/Link.astro';
-import PoweredByGrupaRobocza from "@components/PoweredByGrupaRobocza.astro";
+import PoweredByGrupaRobocza from '@components/PoweredByGrupaRobocza.astro';
 ---
 
 <footer class="bg-black py-4 text-white">
+    <div>
+        <form name="pre-order-syzyf" method="POST" data-netlify="true" action="/zapisano-do-newslettera">
+            <label class="block" for="mail"> Wpisz adres email, jeśli chcesz być na bieżąco.</label>
+            <input
+                id="mail"
+                class="inline-block w-48 max-w-full rounded-sm bg-white px-1 py-2 text-sm text-black"
+                name="mail"
+                type="email"
+                required
+                placeholder="info@robocza.org"
+            />
+            <button type="submit" class="inline-block w-36 rounded-sm rounded-sm bg-white px-2 py-2 text-sm uppercase text-black hover:opacity-50">
+                Zapisz się
+            </button>
+        </form>
+    </div>
     <div class="my-8 flex w-full flex-col sm:flex-row sm:justify-between">
         <div>
             <a href="https://grupa.robocza.org">
-                <PoweredByGrupaRobocza/>
+                <PoweredByGrupaRobocza />
             </a>
             <p class="mt-4 text-base">
                 <MailLink email="grupa@robocza.org" className="underline hover:text-black hover:bg-white" />

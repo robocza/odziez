@@ -1,0 +1,21 @@
+---
+import Layout from '@layouts/Layout.astro';
+import Central from '@layouts/elements/arrangement/Central.astro';
+---
+
+<Layout title="Odzież Robocza - drop N°.2">
+    <main class="h-screen bg-black text-white">
+        <div class="relative mx-auto h-full max-w-screen-xl bg-right-top px-10 text-base">
+            <div class="absolute bottom-0 left-0 top-0 hidden w-10 bg-[url('/assets/chain.png')] bg-[length:25px] bg-right-top bg-repeat-y lg:block"></div>
+            <div class="absolute bottom-0 right-0 top-0 hidden w-10 bg-[url('/assets/chain.png')] bg-[length:25px] bg-left-top bg-repeat-y lg:block"></div>
+            <Central>
+                <img class="inline-flex w-48" src="/assets/stone1.png" alt="Drop Siła Robocza Kamień" />
+                <div class="my-4">
+                    Dziękujemy!<br />
+                    Nie będziemy spamować.
+                </div>
+                <a class="inline-block w-72 rounded-sm bg-white px-4 py-2 uppercase text-black hover:opacity-50" href="/">Wróć na stronę główną</a>
+            </Central>
+        </div>
+    </main>
+</Layout>
