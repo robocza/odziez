@@ -3,8 +3,18 @@
     "id": "longsleeve",
     "name": "Longsleeve Syzyf Roboczy",
     "images": [
-      "/assets/product/t-shirt/t-shirt-back.jpg",
-      "/assets/product/t-shirt/t-shirt-front.jpg"
+      {
+        "url": "/assets/product/longsleeve/longsleeve-front.jpg",
+        "alt": "Longsleeve Syzyf Roboczy - przód"
+      },
+      {
+        "url": "/assets/product/longsleeve/longsleeve-fold.jpg",
+        "alt": "Longsleeve Syzyf Roboczy - złożony"
+      },
+      {
+        "url": "/assets/product/longsleeve/longsleeve-back.jpg",
+        "alt": "Longsleeve Syzyf Roboczy - tył"
+      }
     ],
     "price": {
       "amount": 111,
@@ -15,8 +25,14 @@
     "id": "t-shirt",
     "name": "T-shirt Kamień Roboczy",
     "images": [
-      "/assets/product/t-shirt/t-shirt-back.jpg",
-      "/assets/product/t-shirt/t-shirt-front.jpg"
+      {
+        "url": "/assets/product/t-shirt/t-shirt-back.jpg",
+        "alt": "T-shirt Kamień Roboczy - tył"
+      },
+      {
+        "url": "/assets/product/t-shirt/t-shirt-front.jpg",
+        "alt": "T-shirt Kamień Roboczy - przód"
+      }
     ],
     "price": {
       "amount": 10900,
@@ -27,8 +43,14 @@
     "id": "bluza",
     "name": "Bluza Siła Robocza",
     "images": [
-      "/assets/product/t-shirt/t-shirt-back.jpg",
-      "/assets/product/t-shirt/t-shirt-front.jpg"
+      {
+        "url": "/assets/product/bluza/bluza-front.jpg",
+        "alt": "Bluza Siła Robocza - przód"
+      },
+      {
+        "url": "/assets/product/bluza/bluza-close-up.jpg",
+        "alt": "Bluza Siła Robocza - zbliżenie"
+      }
     ],
     "price": {
       "amount": 11900,

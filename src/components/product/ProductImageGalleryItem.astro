@@ -4,7 +4,10 @@ import CloseIcon from '@components/CloseIcon.astro';
 
 interface Props {
     product: Product;
-    image: string;
+    image: {
+        url: string;
+        alt: string;
+    };
     position: number;
 }
 
@@ -13,18 +16,14 @@ const positionElementId = 'item-' + position;
 ---
 
 <a
-    href={image}
+    href={image.url}
     data-product-image-gallery-item-modal-opener
     data-product-image-gallery-item={positionElementId}
     class="hidden cursor-zoom-in duration-700 ease-in-out"
     data-modal-target={`product-image-gallery-item-modal-"${positionElementId}"`}
     data-modal-toggle={`product-image-gallery-item-modal-"${positionElementId}"`}
 >
-    <img
-        src={image}
-        class="absolute left-1/2 top-1/2 block h-full -translate-x-1/2 -translate-y-1/2"
-        alt={`Zdjęcie przedstawiające produkt "${product.name}"`}
-    />
+    <img src={image.url} alt={image.alt} class="absolute left-1/2 top-1/2 block h-full -translate-x-1/2 -translate-y-1/2" />
 </a>
 
 <div
@@ -37,8 +36,8 @@ const positionElementId = 'item-' + position;
             <CloseIcon />
             <span class="sr-only">Zamknij podgląd</span>
         </button>
-        <a href={image}>
-            <img src={image} alt={`Zdjęcie przedstawiające produkt "${product.name}"`} />
+        <a href={image.url}>
+            <img src={image.url} alt={image.alt} />
         </a>
     </div>
 </div>

@@ -16,7 +16,10 @@ interface ProductVariant {
 export interface Product {
     id: string;
     name: string;
-    images: string[];
+    images: {
+        url: string;
+        alt: string;
+    }[];
     sizes: string[];
     price: Money;
     variants: ProductVariant[];
