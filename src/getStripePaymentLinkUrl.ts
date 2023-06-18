@@ -8,7 +8,7 @@ export type CartItem = {
     quantity: number;
 };
 
-export async function getStripePaymentLinkUrl(cartItems: CartItem[], successUrl: string) {
+export async function getStripePaymentLinkUrl(cartItems: CartItem[], successUrl: string, cancelUrl: string) {
     const lineItems = cartItems.map((cartItem) => {
         const variant = getProductVariant(cartItem.id, cartItem.size);
 
@@ -29,13 +29,25 @@ export async function getStripePaymentLinkUrl(cartItems: CartItem[], successUrl:
         };
     });
 
-    const paymentLink = await stripeApi.paymentLinks.create({
+    const paymentLink = await stripeApi.checkout.sessions.create({
+        success_url: successUrl,
+        cancel_url: cancelUrl,
         line_items: lineItems,
         shipping_address_collection: {
             allowed_countries: ['PL'],
         },
         shipping_options: shippingOptions,
-        after_completion: { type: 'redirect', redirect: { url: successUrl } },
+        consent_collection: {
+            terms_of_service: "required"
+        },
+        allow_promotion_codes: true,
+        mode: "payment",
+        tax_id_collection: {
+            enabled: true,
+        },
+        automatic_tax: {
+            enabled: false,
+        },
     });
 
     return paymentLink.url;

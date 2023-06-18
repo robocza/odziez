@@ -22,7 +22,14 @@ const handler: Handler = async (event: HandlerEvent, context: HandlerContext) =>
 
     const successUrl = siteUrl + '/dziekujemy';
 
-    const paymentLinkUrl = await getStripePaymentLinkUrl(cartItems, successUrl);
+    const paymentLinkUrl = await getStripePaymentLinkUrl(cartItems, successUrl, siteUrl);
+
+    if (paymentLinkUrl === null) {
+        return {
+            statusCode: 400,
+            body: 'No payment link url received.',
+        };
+    }
 
     return {
         statusCode: 200,
