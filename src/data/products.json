@@ -58,12 +58,12 @@
     "name": "T-shirt Kamień Roboczy",
     "images": [
       {
-        "url": "/assets/product/t-shirt/t-shirt-back.jpg",
-        "alt": "T-shirt Kamień Roboczy - tył"
-      },
-      {
         "url": "/assets/product/t-shirt/t-shirt-front.jpg",
         "alt": "T-shirt Kamień Roboczy - przód"
+      },
+      {
+        "url": "/assets/product/t-shirt/t-shirt-back.jpg",
+        "alt": "T-shirt Kamień Roboczy - tył"
       }
     ],
     "price": {
