@@ -33,6 +33,7 @@ export async function getStripePaymentLinkUrl(cartItems: CartItem[], successUrl:
         success_url: successUrl,
         cancel_url: cancelUrl,
         line_items: lineItems,
+        billing_address_collection: 'required',
         shipping_address_collection: {
             allowed_countries: ['PL'],
         },

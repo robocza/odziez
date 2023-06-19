@@ -1,24 +1,38 @@
 {
   "longsleeve": [
     {
+      "size": "S",
+      "stripe": {
+        "productId": "prod_O6yVFyWCoBn7uG",
+        "priceId": "price_1NKkYUCvOTfFxYT2TJiE9uI0"
+      }
+    },
+    {
       "size": "M",
       "stripe": {
-        "productId": "prod_NewTevSizKig4F",
-        "priceId": "price_1NIzcfCvOTfFxYT2fxAkxcBw"
+        "productId": "prod_O6yVFyWCoBn7uG",
+        "priceId": "price_1NKkYUCvOTfFxYT2TJiE9uI0"
       }
     },
     {
       "size": "L",
       "stripe": {
-        "productId": "prod_NewTevSizKig4F",
-        "priceId": "price_1NJ9MfCvOTfFxYT2JiEkwZcp"
+        "productId": "prod_O6yVFyWCoBn7uG",
+        "priceId": "price_1NKkYUCvOTfFxYT2TJiE9uI0"
       }
     },
     {
       "size": "XL",
       "stripe": {
-        "productId": "prod_NewTevSizKig4F",
-        "priceId": "price_1MtcaTCvOTfFxYT2Bfum7NB7"
+        "productId": "prod_O6yVFyWCoBn7uG",
+        "priceId": "price_1NKkYUCvOTfFxYT2TJiE9uI0"
+      }
+    },
+    {
+      "size": "XL",
+      "stripe": {
+        "productId": "prod_O6yVFyWCoBn7uG",
+        "priceId": "price_1NKkYUCvOTfFxYT2TJiE9uI0"
       }
     }
   ],
