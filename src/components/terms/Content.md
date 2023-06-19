@@ -91,9 +91,9 @@ Ja/My(\*\) niniejszym informuję/informujemy(\*) o moim/naszym odstąpieniu od u
 
 \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
-– Data zawarcia umowy ****\_\_****<br>
-– Imię i nazwisko konsumenta(-ów) ****\_\_****<br>
-– Adres konsumenta(-ów) ****\_\_****<br>
-– Podpis konsumenta(-ów) (tylko jeżeli formularz jest przesyłany w wersji papierowej) ****\_\_****<br>
-– Data ****\_\_****<br>
+– Data zawarcia umowy \_\_\_\_\_\_<br>
+– Imię i nazwisko konsumenta(-ów) \_\_\_\_\_\_\_\_<br>
+– Adres konsumenta(-ów) \_\_\_\_\_\_\_\_<br>
+– Podpis konsumenta(-ów) (tylko jeżeli formularz jest przesyłany w wersji papierowej) \_\_\_\_\_\_\_\_<br>
+– Data \_\_\_\_\_\_\_\_<br>
 (\*) Niepotrzebne skreślić.
