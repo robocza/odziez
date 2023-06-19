@@ -1,8 +1,12 @@
 ---
 import Basic from '@layouts/Basic.astro';
+import Content from '@components/terms/Content.md';
 ---
 
 <Basic title="Regulamin - Odzież Robocza">
-    Tu będzie regulamin
-    <!-- @todo add text -->
+    <div
+        class="prose:h1:text-xl prose:h2:text-lg prose:a:hover:underline prose-invert block py-8 prose-headings:mb-4 prose-headings:mt-8 prose-headings:text-3xl prose-p:mb-4"
+    >
+        <Content />
+    </div>
 </Basic>
