@@ -2,7 +2,7 @@
 id: 'bluza'
 info:
     - 'Nadruk: sitodruk'
-    - 'Materiał: 90% bawełna, 10 % poliester'
+    - 'Materiał: 90% bawełna, 10% poliester'
     - 'Gramatura: 280g'
     - 'Uszyte w Polsce'
 ---

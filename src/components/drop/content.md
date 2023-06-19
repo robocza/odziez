@@ -12,4 +12,4 @@
 
 4. Jak działa odbiór osobisty w Krakowie?
 
-    Jeśli przy składaniu zamówienia wybierzesz opcję odbioru osobistego to po odbiór Szmat™ zaprosimy Cię do naszego biura w Krakowie na ul. Wilhelma Feldmana 4/3.
+    Jeśli przy składaniu zamówienia wybierzesz opcję odbioru osobistego to po odbiór Odzieży Roboczej™ zaprosimy Cię do naszego biura w Krakowie przy ul. Wilhelma Feldmana 4/3.
