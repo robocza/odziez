@@ -9,6 +9,14 @@ export type CartItem = {
 };
 
 export async function getStripePaymentLinkUrl(cartItems: CartItem[], successUrl: string, cancelUrl: string) {
+    const isCartValid = cartItems.every((cartItem) => {
+        return cartItem.quantity > 0 && cartItem.quantity <= 100;
+    });
+
+    if (!isCartValid) {
+        throw new Error('Cart is not valid.');
+    }
+
     const lineItems = cartItems.map((cartItem) => {
         const variant = getProductVariant(cartItem.id, cartItem.size);
 

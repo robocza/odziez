@@ -75,6 +75,10 @@ const { product } = Astro.props;
         const quantity = document.getElementById('product-quantity') as HTMLInputElement;
         const size = document.getElementById('product-size') as HTMLSelectElement;
 
+        if (quantity.value < 1 || quantity.value > 100) {
+            return;
+        }
+
         addProductToCart(
             {
                 id: event.target.dataset.productId,
