@@ -6,7 +6,10 @@ import Dinero, { Currency } from 'dinero.js';
 import { formatMoney } from '../money';
 
 type CartProduct = {
-    image: string;
+    image: {
+        url: string;
+        alt: string;
+    };
     name: string;
 };
 

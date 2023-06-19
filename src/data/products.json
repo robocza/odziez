@@ -19,7 +19,39 @@
     "price": {
       "amount": 111,
       "currency": "PLN"
-    }
+    },
+    "sizeChart": [
+      {
+        "size": "S",
+        "height": "50",
+        "width": "72",
+        "sleeve": "60"
+      },
+      {
+        "size": "M",
+        "height": "53",
+        "width": "73",
+        "sleeve": "61"
+      },
+      {
+        "size": "L",
+        "height": "55",
+        "width": "75",
+        "sleeve": "62"
+      },
+      {
+        "size": "XL",
+        "height": "58",
+        "width": "77",
+        "sleeve": "63"
+      },
+      {
+        "size": "XXL",
+        "height": "62",
+        "width": "78",
+        "sleeve": "64"
+      }
+    ]
   },
   {
     "id": "t-shirt",
@@ -37,7 +69,39 @@
     "price": {
       "amount": 10900,
       "currency": "PLN"
-    }
+    },
+    "sizeChart": [
+      {
+        "size": "S",
+        "height": "50",
+        "width": "72",
+        "sleeve": "22"
+      },
+      {
+        "size": "M",
+        "height": "53",
+        "width": "73",
+        "sleeve": "22,5"
+      },
+      {
+        "size": "L",
+        "height": "55",
+        "width": "75",
+        "sleeve": "23"
+      },
+      {
+        "size": "XL",
+        "height": "58",
+        "width": "77",
+        "sleeve": "23,5"
+      },
+      {
+        "size": "XXL",
+        "height": "62",
+        "width": "78",
+        "sleeve": "24"
+      }
+    ]
   },
   {
     "id": "bluza",
@@ -55,6 +119,38 @@
     "price": {
       "amount": 11900,
       "currency": "PLN"
-    }
+    },
+    "sizeChart": [
+      {
+        "size": "S",
+        "height": "53",
+        "width": "66",
+        "sleeve": "58"
+      },
+      {
+        "size": "M",
+        "height": "56",
+        "width": "68",
+        "sleeve": "60"
+      },
+      {
+        "size": "L",
+        "height": "59",
+        "width": "70",
+        "sleeve": "62"
+      },
+      {
+        "size": "XL",
+        "height": "62",
+        "width": "72",
+        "sleeve": "64"
+      },
+      {
+        "size": "XXL",
+        "height": "65",
+        "width": "74",
+        "sleeve": "66"
+      }
+    ]
   }
 ]

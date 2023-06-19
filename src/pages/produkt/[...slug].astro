@@ -77,7 +77,7 @@ const product = getProduct(entry.data.id);
                 <Content />
             </div>
             <ProductSectionDivider />
-            <ProductSizing />
+            <ProductSizing sizeChart={product.sizeChart} />
             <ProductSectionDivider />
             <div class="mx-auto w-full max-w-xl px-8">
                 <DropFaq />

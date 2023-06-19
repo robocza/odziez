@@ -13,6 +13,13 @@ interface ProductVariant {
     };
 }
 
+export type SizeChartItem = {
+    size: string;
+    height: string;
+    width: string;
+    sleeve: string;
+};
+
 export interface Product {
     id: string;
     name: string;
@@ -23,6 +30,7 @@ export interface Product {
     sizes: string[];
     price: Money;
     variants: ProductVariant[];
+    sizeChart: SizeChartItem[];
 }
 
 type productsStripeDataMap = {
@@ -58,6 +66,7 @@ const products: Product[] = productsData.map((productData) => {
         sizes: variants.map((variant) => variant.size),
         price: productData.price,
         variants: variants,
+        sizeChart: productData.sizeChart,
     };
 });
 
