@@ -13,7 +13,6 @@ module.exports = {
             fontFamily: {
                 pixel: ['FKRasterGroteskCompact', ...defaultTheme.fontFamily.mono],
                 sans: ['GT America', ...defaultTheme.fontFamily.sans],
-                serif: ['Jazzier', ...defaultTheme.fontFamily.serif]
             },
             screens: {
                 dawid: '1920px'
