@@ -1,5 +1,10 @@
 ---
 id: 'bluza'
+info:
+    - 'Nadruk: sitodruk'
+    - 'Materiał: 90% bawełna, 10 % poliester'
+    - 'Gramatura: 280g'
+    - 'Uszyte w Polsce'
 ---
 
 Pełna gracji Bluza Siła Robocza zapewni twojemu interfejsowi białkowemu komfort cieplny w momentach, gdy siądzie wiatrak na zakładzie albo po prostu nie będziecie w stanie dojść do porozumienia, jakie temperatury są zadowalające dla wszystkich osób w pomieszczeniu.

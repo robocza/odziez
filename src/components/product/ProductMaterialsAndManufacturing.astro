@@ -1,0 +1,14 @@
+---
+interface Props {
+    info: string[];
+}
+
+const { info } = Astro.props;
+---
+
+<div class="mx-auto w-full max-w-xl px-8">
+    <h5 class="mb-4 uppercase">Materiał i produkcja</h5>
+    <ul>
+        {info.map((item) => <li>{item}</li>)}
+    </ul>
+</div>

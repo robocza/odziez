@@ -1,5 +1,10 @@
 ---
 id: 'longsleeve'
+info:
+    - 'Nadruk: sitodruk'
+    - 'Materiał: 100% bawełna'
+    - 'Gramatura: 180g'
+    - 'Uszyte w Polsce'
 ---
 
 Nieco ekstrawagancki, ale i wielofunkcyjny Longsleeve Syzyf Roboczy nada się zarówno do codziennych przebieżek po korytarzach zakładu pracy, jak i casualowych, wieczornych spotkań na mieście. Nie wychodzisz na miasto? O.K. Jest też idealny do spokojnego siedzenia w domu.

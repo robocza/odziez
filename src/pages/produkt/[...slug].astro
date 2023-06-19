@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import ProductForm from '@components/product/ProductForm.astro';
 import ProductImageGallery from '@components/product/ProductImageGallery.astro';
+import ProductMaterialsAndManufacturing from '@components/product/ProductMaterialsAndManufacturing.astro';
 import BackButton from '@components/BackButton.astro';
 import ProductSectionDivider from '@components/product/ProductSectionDivider.astro';
 import ProductSizing from '@components/product/ProductSizing.astro';
@@ -76,6 +77,8 @@ const product = getProduct(entry.data.id);
             <div class="prose mx-auto w-full max-w-xl px-8 leading-normal">
                 <Content />
             </div>
+            <ProductSectionDivider />
+            <ProductMaterialsAndManufacturing info={entry.data.info} />
             <ProductSectionDivider />
             <ProductSizing sizeChart={product.sizeChart} />
             <ProductSectionDivider />

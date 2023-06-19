@@ -5,6 +5,7 @@ import { z, defineCollection } from 'astro:content';
 const productCollection = defineCollection({
     schema: z.object({
         id: z.string(),
+        info: z.string().array(),
     }),
 });
 // 3. Export a single `collections` object to register your collection(s)

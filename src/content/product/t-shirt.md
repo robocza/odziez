@@ -1,5 +1,10 @@
 ---
 id: 't-shirt'
+info:
+    - 'Nadruk: sitodruk'
+    - 'Materiał: 100% bawełna'
+    - 'Gramatura: 180g'
+    - 'Uszyte w Polsce'
 ---
 
 _Kiedy życie rzuca Ci kłody pod nogi, zacznij budować z nich schody. Kiedy życie rzuca Ci pod nogi kamienie, doceń ich upadku brzmienie._
