@@ -1,70 +1,112 @@
 {
   "longsleeve": [
     {
+      "size": "S",
+      "stripe": {
+        "productId": "prod_O6yxVeyu6r6HJk",
+        "priceId": "price_1NKkzLCvOTfFxYT2FaTmJ5VP"
+      }
+    },
+    {
       "size": "M",
       "stripe": {
-        "productId": "prod_NewTevSizKig4F",
-        "priceId": "price_1NIzcfCvOTfFxYT2fxAkxcBw"
+        "productId": "prod_O6z658chGDjWCv",
+        "priceId": "price_1NKl8UCvOTfFxYT28Fv5SYUP"
       }
     },
     {
       "size": "L",
       "stripe": {
-        "productId": "prod_NewTevSizKig4F",
-        "priceId": "price_1NJ9MfCvOTfFxYT2JiEkwZcp"
+        "productId": "prod_O6z7a4UnQxGarn",
+        "priceId": "price_1NKl97CvOTfFxYT2UoAQzMKW"
       }
     },
     {
       "size": "XL",
       "stripe": {
-        "productId": "prod_NewTevSizKig4F",
-        "priceId": "price_1MtcaTCvOTfFxYT2Bfum7NB7"
+        "productId": "prod_O6z7J2rF6m8jYM",
+        "priceId": "price_1NKl9WCvOTfFxYT2SO3NnA8A"
+      }
+    },
+    {
+      "size": "XXL",
+      "stripe": {
+        "productId": "prod_O6z8BYh1d7pDhc",
+        "priceId": "price_1NKl9oCvOTfFxYT26Cnn0l2b"
       }
     }
   ],
   "t-shirt": [
     {
+      "size": "S",
+      "stripe": {
+        "productId": "prod_O6zF5Ss50uvCwa",
+        "priceId": "price_1NKlGyCvOTfFxYT2QABaU5oS"
+      }
+    },
+    {
       "size": "M",
       "stripe": {
-        "productId": "prod_NZHadwxkNuYbg4",
-        "priceId": "price_1Mo90wCvOTfFxYT2dob2b3RI"
+        "productId": "prod_O6zGQAqIzjPCbv",
+        "priceId": "price_1NKlHxCvOTfFxYT2Fk0GxIC8"
       }
     },
     {
       "size": "L",
       "stripe": {
-        "productId": "prod_NZHadwxkNuYbg4",
-        "priceId": "price_1Mo90wCvOTfFxYT2dob2b3RI"
+        "productId": "prod_O6zGY5UO3vqKNX",
+        "priceId": "price_1NKlIFCvOTfFxYT2NJTeTu1H"
       }
     },
     {
       "size": "XL",
       "stripe": {
-        "productId": "prod_NZHadwxkNuYbg4",
-        "priceId": "price_1Mo90wCvOTfFxYT2dob2b3RI"
+        "productId": "prod_O6zH3E0Jw9CXYD",
+        "priceId": "price_1NKlISCvOTfFxYT2BOPz0Lvr"
+      }
+    },
+    {
+      "size": "XXL",
+      "stripe": {
+        "productId": "prod_O6zHA0s2grBIey",
+        "priceId": "price_1NKlIgCvOTfFxYT28ODmPe0M"
       }
     }
   ],
   "bluza": [
     {
+      "size": "S",
+      "stripe": {
+        "productId": "prod_O6zOTeYXw11ZyE",
+        "priceId": "price_1NKlPkCvOTfFxYT287Pl4ge4"
+      }
+    },
+    {
       "size": "M",
       "stripe": {
-        "productId": "prod_NZH7oiK8h48Ccg",
-        "priceId": "price_1NJ9Z3CvOTfFxYT2jrYQz1P1"
+        "productId": "prod_O6zOyTdsU5X8aQ",
+        "priceId": "price_1NKlQ6CvOTfFxYT2PaNxvEP6"
       }
     },
     {
       "size": "L",
       "stripe": {
-        "productId": "prod_NZH7oiK8h48Ccg",
-        "priceId": "price_1Mo8Z4CvOTfFxYT2NnJp9W2Z"
+        "productId": "prod_O6zPros6yvcK8h",
+        "priceId": "price_1NKlQGCvOTfFxYT2IktbcbfH"
       }
     },
     {
       "size": "XL",
       "stripe": {
-        "productId": "prod_NZH7oiK8h48Ccg",
-        "priceId": "price_1Mo8Z4CvOTfFxYT2NnJp9W2Z"
+        "productId": "prod_O6zPNpOd8eAZpl",
+        "priceId": "price_1NKlQSCvOTfFxYT2ETDyWvxz"
+      }
+    },
+    {
+      "size": "XXL",
+      "stripe": {
+        "productId": "prod_O6zP31m3VVjhRB",
+        "priceId": "price_1NKlQdCvOTfFxYT2eDBsWMpT"
       }
     }
   ]
