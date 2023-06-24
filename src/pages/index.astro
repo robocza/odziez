@@ -8,6 +8,7 @@ import ArticleTitle from '@components/ArticleTitle.astro';
 import Header from '@components/Header.astro';
 import Stones from '@components/story/Stones.astro';
 import Footer from '@components/Footer.astro';
+import LinkButtonReverse from '@components/LinkButtonReverse.astro';
 ---
 
 <Layout title="Odzież Robocza">
@@ -19,12 +20,7 @@ import Footer from '@components/Footer.astro';
                     <div class="mx-auto max-w-2xl text-center lg:text-left">
                         <ArticleTitle />
                         <div class="mx-auto my-10 text-center lg:hidden">
-                            <a
-                                class="inline-block w-48 rounded-sm bg-white px-4 py-2 text-sm uppercase text-black hover:opacity-50 sm:text-base"
-                                href="/opowiesc"
-                            >
-                                Przeczytaj tekst
-                            </a>
+                            <LinkButtonReverse url="/opowiesc" text="Przeczytaj tekst" />
                         </div>
                         <div class="hidden lg:block">
                             <Story />
@@ -42,7 +38,7 @@ import Footer from '@components/Footer.astro';
             <div class="hidden lg:block">
                 <Header showBackButton={false} />
             </div>
-            <div class="grid-cols grid grow gap-px border-t border-black bg-black sm:grid-cols-2">
+            <div id="odziez" class="grid-cols grid grow gap-px border-t border-black bg-black sm:grid-cols-2">
                 <ListProducts />
                 <div class="order-first grid items-center bg-neutral-400 sm:order-none sm:bg-white">
                     <Timer />
