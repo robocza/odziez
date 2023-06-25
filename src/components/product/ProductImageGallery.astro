@@ -9,7 +9,7 @@ interface Props {
 const { product } = Astro.props;
 ---
 
-<div class="relative w-full">
+<div id="product-image-gallery-lightbox" class="relative w-full">
     <!-- Carousel wrapper -->
     <div class="relative mb-10 h-56 overflow-hidden sm:h-64 xl:h-80 2xl:h-96">
         {product.images.map((image, key) => <ProductImageGalleryItem product={product} image={image} position={key} />)}
@@ -86,4 +86,14 @@ const { product } = Astro.props;
     $nextButton.addEventListener('click', () => {
         carousel.next();
     });
+
+    import PhotoSwipeLightbox from 'photoswipe/lightbox';
+    import 'photoswipe/style.css';
+
+    const lightbox = new PhotoSwipeLightbox({
+        gallery: '#product-image-gallery-lightbox',
+        children: 'a[data-product-image-gallery-item]',
+        pswpModule: () => import('photoswipe'),
+    });
+    lightbox.init();
 </script>
