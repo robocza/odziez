@@ -26,6 +26,7 @@ export interface Product {
     images: {
         url: string;
         alt: string;
+        bigUrl: string;
     }[];
     sizes: string[];
     price: Money;

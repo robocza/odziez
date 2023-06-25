@@ -6,6 +6,7 @@ interface Props {
     product: Product;
     image: {
         url: string;
+        bigUrl: string;
         alt: string;
     };
     position: number;
@@ -16,36 +17,11 @@ const positionElementId = 'item-' + position;
 ---
 
 <a
-    href={image.url}
-    data-product-image-gallery-item-modal-opener
+    data-pswp-width="2400"
+    data-pswp-height="2400"
+    href={image.bigUrl}
     data-product-image-gallery-item={positionElementId}
-    class="hidden cursor-zoom-in duration-700 ease-in-out"
-    data-modal-target={`product-image-gallery-item-modal-"${positionElementId}"`}
-    data-modal-toggle={`product-image-gallery-item-modal-"${positionElementId}"`}
+    class="hidden duration-700 ease-in-out"
 >
     <img src={image.url} alt={image.alt} class="absolute left-1/2 top-1/2 block h-full -translate-x-1/2 -translate-y-1/2" />
 </a>
-
-<div
-    id={`product-image-gallery-item-modal-"${positionElementId}"`}
-    tabindex="-1"
-    class="fixed bottom-0 left-0 right-0 top-0 z-50 hidden max-h-full w-full overflow-auto"
->
-    <div class="relative max-h-full w-full max-w-2xl">
-        <button type="button" class="absolute right-2.5 top-2.5 hover:opacity-50" data-modal-hide={`product-image-gallery-item-modal-"${positionElementId}"`}>
-            <CloseIcon />
-            <span class="sr-only">Zamknij podgląd</span>
-        </button>
-        <a href={image.url}>
-            <img src={image.url} alt={image.alt} />
-        </a>
-    </div>
-</div>
-
-<script>
-    document.querySelectorAll('a[data-product-image-gallery-item-modal-opener]').forEach((element) => {
-        element.addEventListener('click', (event) => {
-            event.preventDefault();
-        });
-    });
-</script>

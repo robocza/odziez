@@ -5,14 +5,17 @@
     "images": [
       {
         "url": "/assets/product/longsleeve/longsleeve-front.jpg",
+        "bigUrl": "/assets/product/longsleeve/longsleeve-front-big.jpg",
         "alt": "Longsleeve Syzyf Roboczy - przód"
       },
       {
         "url": "/assets/product/longsleeve/longsleeve-fold.jpg",
+        "bigUrl": "/assets/product/longsleeve/longsleeve-fold-big.jpg",
         "alt": "Longsleeve Syzyf Roboczy - złożony"
       },
       {
         "url": "/assets/product/longsleeve/longsleeve-back.jpg",
+        "bigUrl": "/assets/product/longsleeve/longsleeve-back-big.jpg",
         "alt": "Longsleeve Syzyf Roboczy - tył"
       }
     ],
@@ -59,10 +62,12 @@
     "images": [
       {
         "url": "/assets/product/t-shirt/t-shirt-front.jpg",
+        "bigUrl": "/assets/product/t-shirt/t-shirt-front-big.jpg",
         "alt": "T-shirt Kamień Roboczy - przód"
       },
       {
         "url": "/assets/product/t-shirt/t-shirt-back.jpg",
+        "bigUrl": "/assets/product/t-shirt/t-shirt-back-big.jpg",
         "alt": "T-shirt Kamień Roboczy - tył"
       }
     ],
@@ -109,10 +114,12 @@
     "images": [
       {
         "url": "/assets/product/bluza/bluza-front.jpg",
+        "bigUrl": "/assets/product/bluza/bluza-front-big.jpg",
         "alt": "Bluza Siła Robocza - przód"
       },
       {
         "url": "/assets/product/bluza/bluza-close-up.jpg",
+        "bigUrl": "/assets/product/bluza/bluza-close-up-big.jpg",
         "alt": "Bluza Siła Robocza - zbliżenie"
       }
     ],
