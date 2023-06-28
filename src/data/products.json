@@ -121,6 +121,11 @@
         "url": "/assets/product/bluza/bluza-close-up.jpg",
         "bigUrl": "/assets/product/bluza/bluza-close-up-big.jpg",
         "alt": "Bluza Siła Robocza - zbliżenie"
+      },
+      {
+        "url": "/assets/product/bluza/bluza-back.jpg",
+        "bigUrl": "/assets/product/bluza/bluza-back-big.jpg",
+        "alt": "Bluza Siła Robocza - tył"
       }
     ],
     "price": {
