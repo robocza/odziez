@@ -1,9 +1,4 @@
-## ZESPÓŁ
-
-Odzież Robocza to projekt od nas dla Was i od nas dla nas. Nie byłoby tego wszystkiego, gdyby nie zaangażowanie SIŁ kilku osób.
-<br>
-<br>
-**Na pokładzie dropu przebywają:**
+## Kto przygotował DROP Nº2?
 
 -   **Maja Starakiewicz** [dyrekcja artystyczna / ilustracje / projektowanie] [🔗WWW](https://maja.starakiewicz.pl/)
 -   **Dawid Prząda** [dyrekcja artystyczna / projektowanie / logistyka] [🔗WWW](https://widok.studio/)
