@@ -1,34 +1,17 @@
-Praca jest procesem między człowiekiem a naturą, w którym człowiek, poprzez swoje działania, pośredniczy, reguluje i kontroluje przepływ energii między sobą a otaczającym go światem. Praca definiuje to, co ludzkie. Jest – i może już zawsze pozostanie fundamentem kultury – zarówno tej osobistej, jak i na poziomie społeczeństw.
+## Czym jest Odzież Robocza?
 
-Ludzkość wyłania się z przyrody i staje twarzą w twarz z jej potężnymi siłami. Ta relacja ożywia wewnętrzną potencję ciał: ramiona, nogi, głowę i dłonie, które pomagają nam przystosować materiały natury do swoich własnych potrzeb.
+Odzież Robocza to ubrania dla osób pracujących w domu i poza nim. Sprawdzą się niezależnie od tego, czy na co dzień dźwigasz ciężary, pielisz grządki – czy stukasz w klawiaturę. Są produkowane w Polsce, w niewielkiej ilości przez [Grupę Roboczą](https://grupa.robocza.org/). W ramach pierwszej edycji Odzieży powstały dresy dla [Minimum Viable Utopia](https://mvu.pl/).
 
-Poznać ramion siłę!
-<br>
-Dać upust energii, wkroczyć w materię świata, poczuć jej ciężar – to znaczy prawdziwie pracować. W tej dynamicznej interakcji ludzka istota oddziałuje na świat zewnętrzny i zmienia go, jednocześnie zmieniając siebie.
+## Dlaczego tematem przewodnim dropu Nº2 jest Praca?
 
-Obecny system pracy zdominowany przez logikę kapitalizmu wyzwala tę potencję w zupełnie innym kierunku. Daliśmy się uwikłać w działania mające na celu utrzymanie i zakonserwowanie bieżącego stanu rzeczy – pracujemy głównie po to, żeby utrzymać swoją zdolność do pracy, a nie po to, żeby realizować siebie w działaniu.
+Przygotowane przez Dawida i Maję nadruki oraz towarzyszące im krótkie teksty dotyczą pracy i post-pracy. Współczesny Syzyf jest uwięziony w niekończącym się cyklu wykonywania zadań, które często nie mają większego sensu. Takie są wymagania rynku – zachowanie ciągłości pracy i produkcji jest podstawowym warunkiem przetrwania.
 
-## KONIEC ŚWIATA
+Syzyf realizuje swoje marzenia po godzinach, poświęcając im czas odpoczynku. W rezultacie pracuje bez przerwy. Ma nadzieję, że kiedyś uda mu się przekuć pasje w codzienną pracę i odzyskać czas wolny. Jednak toczony przez niego kamień innych zadań jest tak wielki i ciężki, że zmiana może nigdy nie nadejść.
 
-_Łatwiej jest wyobrazić sobie koniec świata niż koniec kapitalizmu. / Frederic Jameson_
+Dlatego marzy o nadejściu ery post-pracy, w której będzie mógł się poświęcić temu, co daje mu satysfakcję i jest dla niego naprawdę istotne.
 
-Termin „post-praca” odnosi się do koncepcji społecznej przemiany, w której tradycyjne modele pracy i zatrudnienia zostają zastąpione lub ewoluują w wyniku postępu technologicznego, automatyzacji i zmian w strukturze gospodarki. Obejmuje on wizję społeczeństwa, w którym tradycyjne formy pełnoetatowej pracy stają się mniej dominujące lub związane z codziennym życiem.
+Kawałek tego Syzyfa jest w nas wszystkich – zmęczonej SILE ROBOCZEJ tego świata, która jak nikt inny zasługuje na docenienie i odpoczynek.
 
-Post-praca jest często kojarzona z ideą rozwoju technologii, takich jak sztuczna inteligencja, robotyka i automatyzacja, które mogą zastępować niektóre czynności wykonywane dotychczas przez ludzi. Może prowadzić do transformacji rynku, zmian w strukturze zatrudnienia i ewolucji sposobu, w jaki społeczeństwo organizuje swoją aktywność zawodową.
+## Po co to robimy?
 
-W gruncie rzeczy chodzi jednak o to, żeby przestać myśleć o pracy i móc się skupić na samym działaniu. Zyskać pełną wolność napierania na materię rzeczywistości, doświadczać jej w każdym wymiarze i przekształcać w dowolny sposób. Post-praca to oswojony trud, działanie pozbawione końca, pełna afirmacja potencjalności.
-
-## SYZYF i POST-SYZYF
-
-Określenie „syzyfowa praca” oznacza ciężką, prawie niemożliwą do wykonania, bezcelową pracę. Nie mającą końca, z góry skazaną na niepowodzenie.
-Syzyf został skazany przez bogów na wtaczanie wielkiego głazu na szczyt góry, jedynie po to, by ten spadał z powrotem, wymuszając na nim niekończący się wysiłek.
-
-Od kiedy to komputery zaczęły wspierać nas w myśleniu, coraz częściej zdarza nam się postrzegać świat tak, jak one. Głosząc pochwałę automatyzacji, zaczynamy traktować swoje ciała jak interfejsy białkowe. Wydaje nam się, że można je swobodnie optymalizować i przerabiać, dostosowywać do rosnących wymagań rynku. Robimy wszystkie te rzeczy myśląc, że przyszłość jest bardzo daleko, kiedy w rzeczywistości stoimy w niej po kolana.
-
-Coraz bardziej wyrafinowane interfejsy, w zamian za kolejne porcje danych i surowców, powoli odsłaniają kolejne tajemnice życia. Wyświetlają na ścianach naszej jaskini kształt tego, co nadchodzi. Kapitał nie ma serca i nie wzrusza go jęk psujących się maszyn. Jeśli tylko okaże się, że pod ręką jest coś, co skutecznie je zastąpi. Okazuje się, że technologia może nas nie uratować przed syzyfową pracą i tylko dołożyć nam głazów.
-
-## SIŁA ROBOCZA
-
-Bez pracy, nie byłoby odpoczynku. Praca jest procesem, a procesy należy realizować, żeby je zrozumieć. Dlatego weź kamień i pchaj, ale nie pchaj bez sensu. Zastanów się, czy wszystkie kamienie zasługują na toczenie.
-
-My chcieliśmy zrobić ciuchy. Nikt nas do tego nie zmusił. O to w tym chodzi.
+Przede wszystkim dlatego, że lubimy razem robić rzeczy. Poza tym, jako Grupa Robocza co roku organizujemy projektowe [Wyprawy Robocze](https://mvu.pl/wyprawa/), bierzemy udział w wielu wydarzeniach dotyczących nowych technologii i organizujemy  własne (np. [Eden: Learning Garden](https://eden.mvu.pl/learninggarden/)). Kupując koszulkę, bluzę czy longsleeve, dajesz nam znak, że to co robimy jest fajne i że spodobał ci się nasz projekt. Przy okazji pomagasz nam działać dalej.
