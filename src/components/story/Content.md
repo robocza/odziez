@@ -14,4 +14,4 @@ Kawałek tego Syzyfa jest w nas wszystkich – zmęczonej SILE ROBOCZEJ tego św
 
 ## Po co to robimy?
 
-Przede wszystkim dlatego, że lubimy razem robić rzeczy. Poza tym, jako Grupa Robocza co roku organizujemy projektowe [Wyprawy Robocze](https://mvu.pl/wyprawa/), bierzemy udział w wielu wydarzeniach dotyczących nowych technologii i organizujemy  własne (np. [Eden: Learning Garden](https://eden.mvu.pl/learninggarden/)). Kupując koszulkę, bluzę czy longsleeve, dajesz nam znak, że to co robimy jest fajne i że spodobał ci się nasz projekt. Przy okazji pomagasz nam działać dalej.
+Przede wszystkim dlatego, że lubimy razem robić rzeczy. Poza tym, jako Grupa Robocza co roku organizujemy projektowe [Wyprawy Robocze](https://mvu.pl/wyprawa/), bierzemy udział w wielu wydarzeniach dotyczących nowych technologii i organizujemy własne (np. [Eden: Learning Garden](https://eden.mvu.pl/learninggarden/)). Kupując koszulkę, bluzę czy longsleeve, dajesz nam znak, że to co robimy jest fajne i że spodobał ci się nasz projekt. Przy okazji pomagasz nam działać dalej.
