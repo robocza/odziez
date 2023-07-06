@@ -1,6 +1,13 @@
 {
   "longsleeve": [
     {
+      "size": "XS",
+      "stripe": {
+        "productId": "prod_ODMjfbvkJwkkD0",
+        "priceId": "price_1NQvzmCvOTfFxYT2nGxjm0ST"
+      }
+    },
+    {
       "size": "S",
       "stripe": {
         "productId": "prod_O6yxVeyu6r6HJk",
@@ -38,6 +45,13 @@
   ],
   "t-shirt": [
     {
+      "size": "XS",
+      "stripe": {
+        "productId": "prod_ODMfmf5UvoejDK",
+        "priceId": "price_1NQvwPCvOTfFxYT2h465y7GM"
+      }
+    },
+    {
       "size": "S",
       "stripe": {
         "productId": "prod_O6zF5Ss50uvCwa",
@@ -74,6 +88,13 @@
     }
   ],
   "bluza": [
+    {
+      "size": "XS",
+      "stripe": {
+        "productId": "prod_ODMdDYfZ8b00Kz",
+        "priceId": "price_1NQvu7CvOTfFxYT2BylrN1mZ"
+      }
+    },
     {
       "size": "S",
       "stripe": {
