@@ -1,6 +1,5 @@
 ---
 import { Product } from '../../productRepository';
-import CloseIcon from '@components/CloseIcon.astro';
 
 interface Props {
     product: Product;
@@ -8,6 +7,8 @@ interface Props {
         url: string;
         bigUrl: string;
         alt: string;
+        width: number;
+        height: number;
     };
     position: number;
 }
@@ -17,8 +18,8 @@ const positionElementId = 'item-' + position;
 ---
 
 <a
-    data-pswp-width="2400"
-    data-pswp-height="2400"
+    data-pswp-width={image.width}
+    data-pswp-height={image.height}
     href={image.bigUrl}
     data-product-image-gallery-item={positionElementId}
     class="hidden duration-700 ease-in-out"

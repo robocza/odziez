@@ -27,6 +27,8 @@ export interface Product {
         url: string;
         alt: string;
         bigUrl: string;
+        width: number;
+        height: number;
     }[];
     sizes: string[];
     price: Money;

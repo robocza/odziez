@@ -6,17 +6,65 @@
       {
         "url": "/assets/product/longsleeve/longsleeve-front.jpg",
         "bigUrl": "/assets/product/longsleeve/longsleeve-front-big.jpg",
-        "alt": "Longsleeve Syzyf Roboczy - przód"
+        "alt": "Longsleeve Syzyf Roboczy - przód",
+        "width": 2400,
+        "height": 2400
       },
       {
         "url": "/assets/product/longsleeve/longsleeve-fold.jpg",
         "bigUrl": "/assets/product/longsleeve/longsleeve-fold-big.jpg",
-        "alt": "Longsleeve Syzyf Roboczy - złożony"
+        "alt": "Longsleeve Syzyf Roboczy - złożony",
+        "width": 2400,
+        "height": 2400
       },
       {
         "url": "/assets/product/longsleeve/longsleeve-back.jpg",
         "bigUrl": "/assets/product/longsleeve/longsleeve-back-big.jpg",
-        "alt": "Longsleeve Syzyf Roboczy - tył"
+        "alt": "Longsleeve Syzyf Roboczy - tył",
+        "width": 2400,
+        "height": 2400
+      },
+      {
+        "url": "/assets/product/longsleeve/session-8.jpeg",
+        "bigUrl": "/assets/product/longsleeve/session-8.jpeg",
+        "alt": "Longsleeve Syzyf Roboczy - przód",
+        "width": 853,
+        "height": 1280
+      },
+      {
+        "url": "/assets/product/longsleeve/session-12.jpeg",
+        "bigUrl": "/assets/product/longsleeve/session-12.jpeg",
+        "alt": "Longsleeve Syzyf Roboczy - detal",
+        "width": 853,
+        "height": 1280
+      },
+      {
+        "url": "/assets/product/longsleeve/session-17.jpeg",
+        "bigUrl": "/assets/product/longsleeve/session-17.jpeg",
+        "alt": "Longsleeve Syzyf Roboczy - detal",
+        "width": 853,
+        "height": 1280
+      },
+      {
+        "url": "/assets/product/longsleeve/session-24.jpeg",
+        "bigUrl": "/assets/product/longsleeve/session-24.jpeg",
+        "alt": "Longsleeve Syzyf Roboczy - detal",
+        "width": 853,
+        "height": 1280
+      },
+      {
+        "url": "/assets/product/session/session-7.jpeg",
+        "bigUrl": "/assets/product/session/session-7.jpeg",
+        "alt": "Longsleeve Syzyf Roboczy - detal",
+        "width": 853,
+        "height": 1280
+      },
+      {
+        "url": "/assets/product/session/session-28.jpeg",
+        "bigUrl": "/assets/product/session/session-28.jpeg",
+        "alt": "Longsleeve Syzyf Roboczy - detal",
+        "width": 853,
+        "height": 1280
       }
     ],
     "price": {
@@ -69,12 +117,44 @@
       {
         "url": "/assets/product/t-shirt/t-shirt-front.jpg",
         "bigUrl": "/assets/product/t-shirt/t-shirt-front-big.jpg",
-        "alt": "T-shirt Kamień Roboczy - przód"
+        "alt": "T-shirt Kamień Roboczy - przód",
+        "width": 2400,
+        "height": 2400
       },
       {
         "url": "/assets/product/t-shirt/t-shirt-back.jpg",
         "bigUrl": "/assets/product/t-shirt/t-shirt-back-big.jpg",
-        "alt": "T-shirt Kamień Roboczy - tył"
+        "alt": "T-shirt Kamień Roboczy - tył",
+        "width": 2400,
+        "height": 2400
+      },
+      {
+        "url": "/assets/product/t-shirt/session-9.jpeg",
+        "bigUrl": "/assets/product/t-shirt/session-9.jpeg",
+        "alt": "T-shirt Kamień Roboczy - tył",
+        "width": 853,
+        "height": 1280
+      },
+      {
+        "url": "/assets/product/t-shirt/session-10.jpeg",
+        "bigUrl": "/assets/product/t-shirt/session-10.jpeg",
+        "alt": "T-shirt Kamień Roboczy - tył",
+        "width": 853,
+        "height": 1280
+      },
+      {
+        "url": "/assets/product/session/session-7.jpeg",
+        "bigUrl": "/assets/product/session/session-7.jpeg",
+        "alt": "T-shirt Kamień Roboczy - detal",
+        "width": 853,
+        "height": 1280
+      },
+      {
+        "url": "/assets/product/session/session-28.jpeg",
+        "bigUrl": "/assets/product/session/session-28.jpeg",
+        "alt": "T-shirt Kamień Roboczy - detal",
+        "width": 853,
+        "height": 1280
       }
     ],
     "price": {
@@ -127,17 +207,23 @@
       {
         "url": "/assets/product/bluza/bluza-front.jpg",
         "bigUrl": "/assets/product/bluza/bluza-front-big.jpg",
-        "alt": "Bluza Siła Robocza - przód"
+        "alt": "Bluza Siła Robocza - przód",
+        "width": 2400,
+        "height": 2400
       },
       {
         "url": "/assets/product/bluza/bluza-close-up.jpg",
         "bigUrl": "/assets/product/bluza/bluza-close-up-big.jpg",
-        "alt": "Bluza Siła Robocza - zbliżenie"
+        "alt": "Bluza Siła Robocza - zbliżenie",
+        "width": 2400,
+        "height": 2400
       },
       {
         "url": "/assets/product/bluza/bluza-back.jpg",
         "bigUrl": "/assets/product/bluza/bluza-back-big.jpg",
-        "alt": "Bluza Siła Robocza - tył"
+        "alt": "Bluza Siła Robocza - tył",
+        "width": 2400,
+        "height": 2400
       }
     ],
     "price": {
