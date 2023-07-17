@@ -1,29 +1,10 @@
 ---
-import { getPreOrderEndDate } from '../preOrder';
 import CloseIcon from './CloseIcon.astro';
 import DropFaq from './DropFaq.astro';
-
-const preOrderEndDate = getPreOrderEndDate();
-
-const now = new Date().getTime();
-const countdownDate = preOrderEndDate.getTime();
-const distance = countdownDate - now;
-
-const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-
-const initialCountdownText = days + 'd:' + hours + 'h:' + minutes + 'm';
 ---
 
 <div class="mx-auto sm:max-w-xs sm:p-2 dawid:max-w-xl">
-    <div class="hidden text-5xl uppercase underline sm:block sm:pb-4 lg:text-3xl xl:text-5xl dawid:text-7xl">Do zamknięcia preorderu zostało:</div>
-    <div
-        class="inline-block font-pixel text-5xl uppercase leading-none tracking-wide sm:text-4xl lg:text-3xl xl:text-3xl 2xl:text-4xl dawid:text-5xl"
-        id="pre-order-timer"
-    >
-        {initialCountdownText}
-    </div>
+    <div class="hidden text-4xl uppercase underline sm:block sm:pb-4 lg:text-2xl xl:text-4xl dawid:text-6xl">Drop zakończony</div>
     <button data-modal-target="drop-faq" data-modal-toggle="drop-faq" class="ml-1 inline-block h-8 w-8 hover:opacity-50" type="button">
         <img src="/assets/info.png" class="" alt="FAQ" />
     </button>
@@ -49,32 +30,3 @@ const initialCountdownText = days + 'd:' + hours + 'h:' + minutes + 'm';
         </div>
     </div>
 </div>
-
-<script>
-    import { getPreOrderEndDate } from '../preOrder';
-
-    const countdownTargetDate = getPreOrderEndDate().getTime();
-
-    const preOrderCountdownTimer = setInterval(function () {
-        const preOrderTimerElement = document.getElementById('pre-order-timer');
-
-        const now = new Date().getTime();
-        const distance = countdownTargetDate - now;
-        if (distance < 0) {
-            preOrderTimerElement.innerHTML = 'Preorder zakończony';
-            clearInterval(preOrderCountdownTimer);
-
-            return;
-        }
-
-        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-
-        const timerText = days + 'd:' + hours + 'h:' + minutes + 'm';
-
-        if (preOrderTimerElement.innerHTML !== timerText) {
-            preOrderTimerElement.innerHTML = timerText;
-        }
-    }, 1000);
-</script>
