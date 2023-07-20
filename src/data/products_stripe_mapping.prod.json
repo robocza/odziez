@@ -87,48 +87,5 @@
       }
     }
   ],
-  "bluza": [
-    {
-      "size": "XS",
-      "stripe": {
-        "productId": "prod_ODMdDYfZ8b00Kz",
-        "priceId": "price_1NQvu7CvOTfFxYT2BylrN1mZ"
-      }
-    },
-    {
-      "size": "S",
-      "stripe": {
-        "productId": "prod_O6zOTeYXw11ZyE",
-        "priceId": "price_1NKlPkCvOTfFxYT287Pl4ge4"
-      }
-    },
-    {
-      "size": "M",
-      "stripe": {
-        "productId": "prod_O6zOyTdsU5X8aQ",
-        "priceId": "price_1NKlQ6CvOTfFxYT2PaNxvEP6"
-      }
-    },
-    {
-      "size": "L",
-      "stripe": {
-        "productId": "prod_O6zPros6yvcK8h",
-        "priceId": "price_1NKlQGCvOTfFxYT2IktbcbfH"
-      }
-    },
-    {
-      "size": "XL",
-      "stripe": {
-        "productId": "prod_O6zPNpOd8eAZpl",
-        "priceId": "price_1NKlQSCvOTfFxYT2ETDyWvxz"
-      }
-    },
-    {
-      "size": "XXL",
-      "stripe": {
-        "productId": "prod_O6zP31m3VVjhRB",
-        "priceId": "price_1NKlQdCvOTfFxYT2eDBsWMpT"
-      }
-    }
-  ]
+  "bluza": []
 }

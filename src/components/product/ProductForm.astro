@@ -1,12 +1,15 @@
 ---
 import { Product } from '../../productRepository';
 import CloseIcon from '../CloseIcon.astro';
+import ProductFormFields from './ProductFormFields.astro';
 
 interface Props {
     product: Product;
 }
 
 const { product } = Astro.props;
+
+const productAvailable = product.variants.length > 0;
 ---
 
 <div
@@ -28,58 +31,7 @@ const { product } = Astro.props;
             <div class="space-y-6 p-6">
                 <div class="min-w-xs relative max-h-full w-full max-w-2xl overflow-y-auto">
                     <div class="md:mx-auto md:flex md:place-items-center md:items-center md:space-x-6 lg:block lg:space-x-0 2xl:flex 2xl:space-x-6">
-                        <div class="mt-4 flex place-items-center md:mt-0 lg:mt-4 2xl:mt-0">
-                            <label class="w-1/2 pr-4 text-right text-lg uppercase md:w-auto lg:w-1/2 2xl:w-1/2" for="product-quantity">Ilość:</label>
-                            <div class="flex flex-row rounded-sm border border-black bg-white p-1 text-center text-sm text-black">
-                                <button data-quantity-update-decrement class="px-1 outline-none">
-                                    <svg class="pointer-events-none w-2" viewBox="0 0 39 72" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <line x1="1.29289" y1="36.2929" x2="36.2929" y2="1.29289" stroke="black" stroke-width="2"></line>
-                                        <line x1="2.70711" y1="36.2929" x2="37.7071" y2="71.2929" stroke="black" stroke-width="2"></line>
-                                    </svg>
-                                </button>
-                                <input
-                                    id="product-quantity"
-                                    value="1"
-                                    type="number"
-                                    class="m-0 w-[40px] appearance-none border-none bg-transparent px-0 py-2 text-center outline-none"
-                                    required
-                                    name="quantity"
-                                    min="1"
-                                    max="10"
-                                    pattern="[0-9]*"
-                                />
-                                <button data-quantity-update-increment class="px-1 outline-none">
-                                    <svg class="pointer-events-none w-2" viewBox="0 0 39 72" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <line x1="37.7071" y1="35.7071" x2="2.7071" y2="70.7071" stroke="black" stroke-width="2"></line>
-                                        <line x1="36.2929" y1="35.7071" x2="1.2929" y2="0.707104" stroke="black" stroke-width="2"></line>
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="my-4 flex place-items-center">
-                            <div class="inline-block w-1/2 pr-4 text-right md:w-auto lg:w-1/2 2xl:w-auto">
-                                <label class="block text-lg uppercase" for="product-size">Rozmiar:</label>
-                                <a href="#tabela-rozmiarow" class="block text-sm underline hover:opacity-50">Tabela rozmiarów</a>
-                            </div>
-                            <select
-                                id="product-size"
-                                name="size"
-                                class="inline-block w-[80px] rounded-sm border border-black bg-white p-2.5 text-lg text-black"
-                                required
-                            >
-                                {product.sizes.map((size) => <option value={size}>{size}</option>)}
-                            </select>
-                        </div>
-                        <div class="mb-4 mt-8 px-4 md:mb-0 md:mt-0 md:flex md:place-items-center lg:mb-4 lg:mt-8 lg:block 2xl:mb-0 2xl:mt-0 2xl:flex">
-                            <button
-                                class="mx-auto block rounded-sm bg-black px-6 py-2 text-lg uppercase text-white hover:opacity-50 lg:py-4"
-                                data-add-to-cart
-                                data-cart-drawer-show
-                                data-product-id={product.id}
-                            >
-                                Dodaj do koszyka
-                            </button>
-                        </div>
+                        {productAvailable ? <ProductFormFields product={product} /> : 'Produkt nie jest dostępny.'}
                     </div>
                 </div>
             </div>
@@ -92,75 +44,3 @@ const { product } = Astro.props;
         <button data-modal-target="drop-secret-cart" data-modal-toggle="drop-secret-cart" class="cursor-default" type="button"> Drop zakończony.</button>
     </div>
 </div>
-
-<script>
-    import { addProductToCart } from '@store/cart';
-
-    const addToCartButtons = document.querySelectorAll('button[data-add-to-cart]');
-
-    addToCartButtons.forEach((button) => {
-        button.addEventListener('click', (event) => {
-            addToCart(event);
-        });
-    });
-
-    function addToCart(event) {
-        event.preventDefault();
-
-        const quantity = document.getElementById('product-quantity') as HTMLInputElement;
-        const size = document.getElementById('product-size') as HTMLSelectElement;
-
-        if (quantity.value < 1 || quantity.value > 100) {
-            return;
-        }
-
-        addProductToCart(
-            {
-                id: event.target.dataset.productId,
-                size: size.value,
-            },
-            Number(quantity.value),
-        );
-    }
-
-    document.querySelectorAll('[data-quantity-update-decrement]').forEach((button) => {
-        button.addEventListener('click', (event) => {
-            decrementQuantity(event);
-        });
-    });
-
-    document.querySelectorAll('[data-quantity-update-increment]').forEach((button) => {
-        button.addEventListener('click', (event) => {
-            incrementQuantity(event);
-        });
-    });
-
-    function decrementQuantity(event) {
-        const quantityInput = event.target.parentNode.parentElement.querySelector('input[name="quantity"]');
-
-        let value = Number(quantityInput.value);
-        value--;
-        quantityInput.value = value;
-        updateInputQuantity(quantityInput);
-    }
-
-    function incrementQuantity(event) {
-        const quantityInput = event.target.parentNode.parentElement.querySelector('input[name="quantity"]');
-        let value = Number(quantityInput.value);
-        value++;
-        quantityInput.value = value;
-        updateInputQuantity(quantityInput);
-    }
-
-    function updateInputQuantity(target) {
-        let value = Number(target.value).valueOf();
-        if (value <= 0) {
-            value = 1;
-            target.value = value;
-        }
-        if (value > 10) {
-            value = 10;
-            target.value = value;
-        }
-    }
-</script>
