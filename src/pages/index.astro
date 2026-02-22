@@ -1,55 +1,55 @@
 ---
-import ListProducts from '@components/ListProducts.astro';
-import Timer from '@components/Timer.astro';
+import Central from '@layouts/elements/arrangement/Central.astro';
 import Layout from '@layouts/Layout.astro';
-import CartDrawer from '@components/cart/CartDrawer.astro';
-import Story from '@components/Story.astro';
-import ArticleTitle from '@components/ArticleTitle.astro';
-import Header from '@components/Header.astro';
-import Stones from '@components/story/Stones.astro';
-import Footer from '@components/Footer.astro';
-import LinkButtonReverse from '@components/LinkButtonReverse.astro';
 ---
 
-<Layout title="Odzież Robocza">
-    <div class="grid lg:grid-cols-2">
-        <div class="order-2 bg-black text-white lg:order-1 lg:h-screen lg:overflow-hidden">
-            <div class="lg:h-full lg:overflow-y-auto">
-                <Stones />
-                <div class="px-10 pt-10">
-                    <div class="mx-auto max-w-2xl text-center lg:text-left">
-                        <ArticleTitle />
-                        <div class="mx-auto my-10 text-center lg:hidden">
-                            <LinkButtonReverse url="/opowiesc" text="Przeczytaj tekst" />
-                        </div>
-                        <div class="hidden lg:block">
-                            <Story />
-                            <hr class="mt-16 h-px border-white bg-white" />
-                            <Footer />
+<Layout title="Odzież Robocza - drop N°.3">
+    <main class="h-screen bg-[url(/assets/hardcode-garden-bg.jpeg)] bg-no-repeat bg-center bg-cover text-white font-sans">
+        <div class="relative mx-auto h-full max-w-screen-xl">
+            <Central>
+                <div class="flex flex-col gap-8">
+                    <div class="px-8 lg:px-0">
+                        <h1 class="uppercase font-decorative text-lg sm:text-xl lg:text-3xl border-[3px] border-phosphorescent rounded-full py-3 px-5 w-full max-w-xl m-auto flex justify-between font-normal gap-2">
+                            <span class="text-left">Odzież Robocza</span>
+                            <span class="text-right">drop#3</span>
+                        </h1>
+                    </div>
+                    <div>
+                        <img
+                            class="max-w-4xl w-full max-h-screen px-5"
+                            src="/assets/hardcode-garden-logo.svg"
+                            alt="Odzież Robocza - Hardcode Garden - drop N°.3"
+                        />
+                        <div class="font-decorative text-center text-lg lg:text-3xl font-normal ml-20 lg:ml-40 lowercase">
+                            Coming soon.<br>
+                            Zapisz się do newslettera
                         </div>
                     </div>
+                    <div class="px-8 lg:px-0">
+                        <form name="pre-order-hardcode-garden" method="POST" data-netlify="true" action="/zapisano-do-newslettera" class="flex flex-col md:flex-row md:justify-center gap-6">
+                            <div>
+                                <label class="md:inline-block">
+                                    <input
+                                        id="mail"
+                                        class="w-full md:w-[360px] rounded-full bg-white border-[3px] border-white py-2 px-6 text-black leading-none  text-sm h-12 text-center lg:text-left"
+                                        name="mail"
+                                        type="email"
+                                        required
+                                        aria-label="Wpisz adres email, jeśli chcesz dostać info"
+                                        placeholder="Wpisz adres email, jeśli chcesz dostać info…"
+                                    />
+                                </label>
+                                <div class="text-center md:text-right lg:pr-6">
+                                    <a class="hover:underline text-xs" href="/polityka-prywatnosci">Polityka prywatności</a>
+                                </div>
+                            </div>
+                            <button type="submit" class="py-2 px-12 transition-colors uppercase leading-none h-12 text-2xl border-[3px] border-phosphorescent rounded-full font-normal hover:bg-phosphorescent">
+                                Zapisz się
+                            </button>
+                        </form>
+                    </div>
                 </div>
-            </div>
+            </Central>
         </div>
-        <div class="z-20 order-1 lg:order-none lg:hidden">
-            <Header showBackButton={false} />
-        </div>
-        <div class="order-3 flex flex-col scroll-smooth lg:order-2 lg:h-screen lg:overflow-y-auto">
-            <div class="hidden lg:block">
-                <Header showBackButton={false} />
-            </div>
-            <div id="odziez" class="grid-cols grid grow gap-px border-t border-black bg-black sm:grid-cols-2">
-                <ListProducts />
-                <div class="order-first grid items-center bg-neutral-400 sm:order-none sm:bg-white">
-                    <Timer />
-                </div>
-            </div>
-        </div>
-        <div class="order-4 lg:hidden">
-            <div class="bg-black px-8 py-4">
-                <Footer />
-            </div>
-        </div>
-    </div>
-    <CartDrawer />
+    </main>
 </Layout>

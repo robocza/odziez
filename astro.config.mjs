@@ -8,19 +8,17 @@ export default defineConfig({
     // output: 'server',
     // adapter: netlify(),
     server: {
+        allowedHosts: true,
         host: true,
-        port: 3000
+        port: 3000,
     },
-    site: "https://odziez.robocza.org",
-    integrations: [
-        tailwind(),
-        vue(),
-    ],
+    site: 'https://odziez.robocza.org',
+    integrations: [tailwind(), vue()],
     vite: {
         server: {
             watch: {
-                ignored: ['**/.idea/workspace.xml']
-            }
-        }
-    }
+                ignored: ['**/.idea/workspace.xml'],
+            },
+        },
+    },
 });

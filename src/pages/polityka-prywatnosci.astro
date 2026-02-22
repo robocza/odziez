@@ -1,12 +1,28 @@
 ---
-import Basic from '@layouts/Basic.astro';
+import Central from '@layouts/elements/arrangement/Central.astro';
+import Layout from '@layouts/Layout.astro';
 import Content from '@components/privacy/Content.md';
 ---
 
-<Basic title="Polityka prywatności - Odzież Robocza">
-    <div
-        class="prose:h1:text-xl prose:h2:text-lg prose:a:hover:underline prose-invert block py-8 prose-headings:mb-4 prose-headings:mt-8 prose-headings:text-3xl prose-p:mb-4 prose-ul:mb-4 prose-ul:list-inside prose-li:list-[lower-alpha]"
-    >
-        <Content />
-    </div>
-</Basic>
+<Layout title="Polityka prywatności - Odzież Robocza">
+    <main class="bg-[url(/assets/hardcode-garden-bg.jpeg)] min-h-screen bg-fixed bg-no-repeat bg-center bg-cover text-white font-sans">
+
+        <div class="relative mx-auto max-w-screen-xl">
+            <Central>
+                <div class="p-10">
+                    <h1 class="uppercase font-decorative text-lg sm:text-xl lg:text-3xl border-[3px] border-phosphorescent rounded-full py-3 px-5 w-full max-w-xl m-auto flex justify-between font-normal gap-2">
+                        <span class="text-left">Odzież Robocza</span>
+                        <span class="text-right">drop#3</span>
+                    </h1>
+                    <div class="text-left">
+                        <div
+                            class="prose:h1:text-xl prose:h2:text-lg prose:a:hover:underline prose-invert block py-8 prose-headings:mb-4 prose-headings:mt-8 prose-headings:text-3xl prose-p:mb-4 prose-ul:mb-4 prose-li:mb-4 prose-li:list-inside prose-li:list-decimal"
+                        >
+                            <Content />
+                        </div>
+                    </div>
+                </div>
+            </Central>
+        </div>
+    </main>
+</Layout>
