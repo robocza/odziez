@@ -4,7 +4,7 @@
 
 1. Organizatorem przedsprzedaży i właścicielem sklepu internetowego Odzież Robocza (dalej: “Sklep”) dostępnego pod adresem www.odziez.robocza.org jest Fundacja Grupa Robocza z siedzibą w Krakowie, ul. Dąbrowskiego 5/24L, 30-532 Kraków, wpisana do rejestru stowarzyszeń, innych organizacji społ. i zawodowych, fundacji, ZOZ prowadzonego przez Sąd Rejonowy dla Krakowa-Śródmieścia w Krakowie, Wydział XI, pod numerem KRS 0000512875, NIP: 5832915416 (dalej: “Grupa Robocza”).
 2. Regulamin określa zasady przedsprzedaży produktów na zamówienie, w tym tryb zawierania umów sprzedaży na odległość dotyczących tych produktów za pośrednictwem Sklepu.
-3. Z Grupą Roboczą można skontaktować się listownie na adres Fundacja Grupa Robocza, ul. Wilhelma Feldmana 3/4, 31-130 Kraków lub drogą elektroniczną na adres e-mail odziez@robocza.org.
+3. Z Grupą Roboczą można skontaktować się listownie na adres Fundacja Grupa Robocza, ul. Mikołaja Kopernika 19A, 31-501 Kraków lub drogą elektroniczną na adres e-mail odziez@robocza.org.
 
 ## § 2 Zasady przedsprzedaży
 
@@ -15,7 +15,7 @@
 5. Kliknięcie przycisku “Zapłać” i opłacenie zamówienia jest równoznaczne z potwierdzeniem zamówienia i zawarciem umowy sprzedaży z Grupą Roboczą.
 6. Okres przedsprzedaży trwa od 19.06.2023 r., g. 22:00 do 17.07.2023 r., g. 20:00.
 7. Realizacja zamówień na Produkty, w tym ich produkcja, pakowanie oraz wysyłka rozpocznie się po zakończeniu okresu przedsprzedaży i potrwa najpóźniej do 25.08.2023 r g. 20:00..
-8. Kupujący może skorzystać z następujących metod dostawy zamówionego produktu: (a) Kurier InPost (b) odbiór osobisty w Krakowie, przy ulicy Wilhelma Feldmana 3/4 po uprzednim ustaleniu terminu i godziny odbioru z Grupą Roboczą.
+8. Kupujący może skorzystać z następujących metod dostawy zamówionego produktu: (a) Kurier InPost (b) odbiór osobisty w Krakowie, przy ulicy Mikołaja Kopernika 19A po uprzednim ustaleniu terminu i godziny odbioru z Grupą Roboczą.
 9. Kupujący może skorzystać z następujących metod płatności: (a) płatności elektroniczne (b) płatność kartą płatniczą. Obsługa płatności online odbywa się za pośrednictwem platformy Stripe.com, której właścicielem jest Stripe, Inc z siedzibą w San Francisco, CA 94103, przy 510 Townsend Street (USA).
 10. Na końcową kwotę do zapłaty przez Kupującego składa się cena za Produkt wskazana w Sklepie na stronie Produktu oraz koszt dostawy, o którym Kupujący jest informowany w trakcie składania zamówienia.
 11. Ceny podane w Sklepie są podane w polskich złotych i są cenami brutto (uwzględniają podatek VAT).
@@ -81,9 +81,9 @@
 _(formularz ten należy wypełnić i odesłać tylko w przypadku chęci odstąpienia od umowy)_
 Fundacja Grupa Robocza
 <br>
-ul.Wilhelma Feldmana 3/4
+ul. Mikołaja Kopernika 19A
 <br>
-31-130 Kraków
+31-501 Kraków
 <br>
 <br>
 

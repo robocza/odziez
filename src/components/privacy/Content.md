@@ -2,7 +2,7 @@
 
 ## Administrator danych
 
-Administratorem Twoich danych osobowych jest Fundacja Grupa Robocza z siedzibą w Krakowie, ul. Dąbrowskiego 5/24L, 30-532 Kraków. Z administratorem można skontaktować się listownie na adres Fundacja Grupa Robocza, ul. Wilhelma Feldmana 3/4, 31-130 Kraków lub drogą elektroniczną na adres e-mail odziez@robocza.org.
+Administratorem Twoich danych osobowych jest Fundacja Grupa Robocza z siedzibą w Krakowie, ul. Dąbrowskiego 5/24L, 30-532 Kraków. Z administratorem można skontaktować się listownie na adres Fundacja Grupa Robocza, ul. Mikołaja Kopernika 19A, 31-501 Kraków lub drogą elektroniczną na adres e-mail odziez@robocza.org.
 
 ## Cele i okresy przetwarzania danych
 
@@ -26,4 +26,4 @@ Transfer danych do USA odbywa się w oparciu o odpowiednie mechanizmy legalizuj�
 
 W związku z przetwarzaniem Twoich danych przysługują Ci następujące prawa: prawo do żądania dostępu do danych osobowych, ich sprostowania, usunięcia lub ograniczenia przetwarzania oraz prawo wniesienia skargi do organu nadzorczego. W Polsce organem nadzorczym jest Prezes Urzędu Ochrony Danych Osobowych. Ponadto, przysługuje Ci prawo wniesienia sprzeciwu, z przyczyn związanych z Twoją szczególną sytuacją, wobec przetwarzania danych osobowych, jeśli są one przetwarzane w oparciu o prawnie uzasadniony interes administratora lub strony trzeciej (art. 6 ust. 1 lit.f RODO).
 
-Wnioski dotyczące realizacji praw możesz przesyłać listownie na adres Fundacja Grupa Robocza, ul. Wilhelma Feldmana 3/4, 31-130 Kraków lub drogą elektroniczną na adres e-mail odziez@robocza.org.
+Wnioski dotyczące realizacji praw możesz przesyłać listownie na adres Fundacja Grupa Robocza, ul. Mikołaja Kopernika 19A, 31-501 Kraków lub drogą elektroniczną na adres e-mail odziez@robocza.org.
