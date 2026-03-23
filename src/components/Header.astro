@@ -1,10 +1,8 @@
 ---
 import CartDrawerToggle from '@components/cart/CartDrawerToggle.astro';
-import PageTitleAnimated from '@components/PageTitleAnimated.astro';
 import Central from '@layouts/elements/arrangement/Central.astro';
 import HeaderBackButton from '@components/HeaderBackButton.astro';
 import HeaderTitle from '@components/HeaderTitle.astro';
-import HeaderSubTitle from '@components/HeaderSubTitle.astro';
 
 interface Props {
     showBackButton?: boolean;
@@ -13,15 +11,12 @@ interface Props {
 const { showBackButton = false } = Astro.props;
 ---
 
-<div class="flex gap-px bg-black">
+<div class="flex gap-px bg-green">
     {showBackButton && <HeaderBackButton />}
     <div class={`grow h-12 sm:h-14 lg:h-20 xl:h-24 bg-white ${showBackButton === false && 'pl-12 sm:pl-14 lg:pl-0'}`}>
-        <div class="hidden lg:block">
-            <PageTitleAnimated />
-        </div>
-        <div class="block h-full lg:hidden">
+        <div class="block h-full">
             <Central>
-                <HeaderSubTitle />
+                <HeaderTitle />
             </Central>
         </div>
     </div>
@@ -33,6 +28,6 @@ const { showBackButton = false } = Astro.props;
         </Central>
     </div>
 </div>
-<div class="flex-1 border-t border-black text-center lg:hidden">
+<div class="flex-1 border-t border-green text-center lg:hidden">
     <HeaderTitle />
 </div>
