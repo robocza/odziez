@@ -1,7 +1,7 @@
 <template>
     <template v-if="Object.values($cart).length">
         <form>
-            <div class="text-lg mb-2 pt-2 pb-4 px-4 border-black border-b flex items-center bg-white flex-row gap-1"
+            <div class="text-lg mb-2 pt-2 pb-4 px-4 border-green border-b flex items-center bg-white flex-row gap-1"
                  :key="cartItemProduct.cartItem.id"
                  v-for="(cartItemProduct) in Object.values($cart)"
             >
@@ -12,7 +12,7 @@
                     <div class="flex place-items-center relative">
                         <label class="pr-4 uppercase" for="product-quantity">Ilość:</label>
                         <div class="">
-                            <div class="flex flex-row bg-white border border-black text-black text-center text-sm rounded-sm">
+                            <div class="flex flex-row bg-white border border-green text-black text-center text-sm rounded-sm">
                                 <button @click.stop.prevent="decrementQuantity"
                                         class="outline-none px-1">
                                     <svg class="pointer-events-none w-2" viewBox="0 0 39 72" fill="none" xmlns="http://www.w3.org/2000/svg">

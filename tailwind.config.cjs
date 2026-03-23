@@ -6,10 +6,12 @@ module.exports = {
         extend: {
             colors: {
                 black: '#121212',
-                phosphorescent: '#00FF83',
+                phosphorescent: '#5DF19F',
+                green: '#01CE53',
             },
             fontFamily: {
                 decorative: ['BDOGrotesk', ...defaultTheme.fontFamily.sans],
+                title: ['Pickle', ...defaultTheme.fontFamily.sans],
                 sans: ['GT America', ...defaultTheme.fontFamily.sans],
             },
             screens: {
