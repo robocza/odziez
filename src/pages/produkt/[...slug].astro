@@ -51,7 +51,7 @@ const product = getProduct(entry.data.id);
         <div class="z-20 order-1 lg:order-none lg:hidden">
             <Header showBackButton={true} />
         </div>
-        <div class="order-3 flex flex-col scroll-smooth lg:order-2 lg:h-screen lg:overflow-y-auto">
+        <div class="order-3 flex flex-col scroll-smooth lg:order-2 lg:h-screen lg:overflow-y-auto text-green">
             <div class="hidden lg:block">
                 <Header />
             </div>
@@ -72,7 +72,7 @@ const product = getProduct(entry.data.id);
             <ProductSectionDivider />
             <ProductForm product={product} />
             <ProductSectionDivider />
-            <div class="prose mx-auto w-full max-w-xl px-8 leading-normal">
+            <div class="prose mx-auto w-full max-w-xl px-8 leading-normal text-green">
                 <Content />
             </div>
             <ProductSectionDivider />
@@ -85,7 +85,7 @@ const product = getProduct(entry.data.id);
             </div>
         </div>
         <div class="order-4 lg:hidden">
-            <div class="bg-black px-8 py-4">
+            <div class="bg-green px-8 py-4">
                 <Footer />
             </div>
         </div>

@@ -1,7 +1,7 @@
 <template>
     <template v-if="Object.values($cart).length">
         <form>
-            <div class="text-lg mb-2 pt-2 pb-4 px-4 border-green border-b flex items-center bg-white flex-row gap-1"
+            <div class="text-lg mb-2 pt-2 pb-4 px-4 border-green text-green border-b flex items-center bg-white flex-row gap-1"
                  :key="cartItemProduct.cartItem.id"
                  v-for="(cartItemProduct) in Object.values($cart)"
             >
@@ -12,7 +12,7 @@
                     <div class="flex place-items-center relative">
                         <label class="pr-4 uppercase" for="product-quantity">Ilość:</label>
                         <div class="">
-                            <div class="flex flex-row bg-white border border-green text-black text-center text-sm rounded-sm">
+                            <div class="flex flex-row bg-white border border-green text-green text-center text-sm rounded-sm">
                                 <button @click.stop.prevent="decrementQuantity"
                                         class="outline-none px-1">
                                     <svg class="pointer-events-none w-2" viewBox="0 0 39 72" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -48,7 +48,7 @@
                     <button class="mt-2 text-left text-neutral-500 text-xs uppercase hover:opacity-50 align-middle"
                             :data-cart-item-id=cartItemProduct.cartItem.id
                             @click.stop.prevent="removeCartItem">
-                        <svg class="w-3 h-3 inline-block align-middle pointer-events-none" viewBox="0 0 37 38"
+                        <svg class="w-2 h-2 inline-block align-middle pointer-events-none" viewBox="0 0 37 38"
                              fill="none" xmlns="http://www.w3.org/2000/svg">
                             <line x1="0.353553" y1="0.646447" x2="36.3536" y2="36.6464" stroke="black" />
                             <line x1="36.3536" y1="1.35355" x2="0.353553" y2="37.3536" stroke="black" />
@@ -61,7 +61,7 @@
             </div>
             <div class="text-center my-6">
                 <button @click.stop.prevent="goToCheckout"
-                        class="inline-block bg-black text-white py-2 px-8 rounded-sm uppercase hover:opacity-50 w-48"
+                        class="inline-block bg-green text-white py-2 px-8 rounded-full uppercase hover:opacity-50 w-48"
                         type="submit">Do kasy
                 </button>
             </div>
