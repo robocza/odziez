@@ -16,7 +16,7 @@ const { product } = Astro.props;
     </div>
     <!-- Slider indicators -->
     <div class="absolute bottom-2 left-1/2 z-30 flex -translate-x-1/2 items-center space-x-3">
-        {product.images.map(() => <button data-product-image-gallery-item-indicator type="button" class="rounded-full bg-black" />)}
+        {product.images.map(() => <button data-product-image-gallery-item-indicator type="button" class="rounded-full bg-green" />)}
     </div>
     <!-- Slider controls -->
     <button
@@ -24,9 +24,9 @@ const { product } = Astro.props;
         type="button"
         class="group absolute left-0 top-0 z-30 flex h-full cursor-pointer items-center justify-center px-4 hover:opacity-50 focus:outline-none"
     >
-        <svg class="w-5" viewBox="0 0 39 72" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <line x1="1.29289" y1="36.2929" x2="36.2929" y2="1.29289" stroke="black" stroke-width="2"></line>
-            <line x1="2.70711" y1="36.2929" x2="37.7071" y2="71.2929" stroke="black" stroke-width="2"></line>
+        <svg class="w-5 stroke-green" viewBox="0 0 39 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="1.29289" y1="36.2929" x2="36.2929" y2="1.29289" stroke-width="2"></line>
+            <line x1="2.70711" y1="36.2929" x2="37.7071" y2="71.2929" stroke-width="2"></line>
         </svg>
         <span class="hidden">Poprzednie</span>
     </button>
@@ -35,9 +35,9 @@ const { product } = Astro.props;
         type="button"
         class="group absolute right-0 top-0 z-30 flex h-full cursor-pointer items-center justify-center px-4 hover:opacity-50 focus:outline-none"
     >
-        <svg class="w-5" viewBox="0 0 39 72" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <line x1="37.7071" y1="35.7071" x2="2.7071" y2="70.7071" stroke="black" stroke-width="2"></line>
-            <line x1="36.2929" y1="35.7071" x2="1.2929" y2="0.707104" stroke="black" stroke-width="2"></line>
+        <svg class="w-5 stroke-green" viewBox="0 0 39 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="37.7071" y1="35.7071" x2="2.7071" y2="70.7071" stroke-width="2"></line>
+            <line x1="36.2929" y1="35.7071" x2="1.2929" y2="0.707104" stroke-width="2"></line>
         </svg>
         <span class="hidden">Następne</span>
     </button>

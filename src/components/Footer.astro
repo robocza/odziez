@@ -4,19 +4,19 @@ import Link from '@components/Link.astro';
 import PoweredByGrupaRobocza from '@components/PoweredByGrupaRobocza.astro';
 ---
 
-<footer class="bg-black py-4 text-white">
+<footer class="bg-green sm:bg-transparent py-4 text-white">
     <div>
         <form name="pre-order-syzyf" method="POST" data-netlify="true" action="/zapisano-do-newslettera">
             <label class="block" for="mail"> Wpisz adres email, jeśli chcesz być na bieżąco.</label>
             <input
                 id="mail"
-                class="inline-block w-48 max-w-full rounded-sm bg-white px-1 py-2 text-sm text-black"
+                class="inline-block w-48 max-w-full rounded-sm bg-white px-1 py-2 text-sm text-green"
                 name="mail"
                 type="email"
                 required
                 placeholder="info@robocza.org"
             />
-            <button type="submit" class="inline-block w-36 rounded-sm rounded-sm bg-white px-2 py-2 text-sm uppercase text-black hover:opacity-50">
+            <button type="submit" class="inline-block w-36 rounded-sm rounded-sm bg-white px-2 py-2 text-sm uppercase text-green hover:opacity-50">
                 Zapisz się
             </button>
         </form>
@@ -27,23 +27,23 @@ import PoweredByGrupaRobocza from '@components/PoweredByGrupaRobocza.astro';
                 <PoweredByGrupaRobocza />
             </a>
             <p class="mt-4 text-base">
-                <MailLink email="grupa@robocza.org" className="underline hover:text-black hover:bg-white" />
+                <MailLink email="grupa@robocza.org" className="underline hover:text-green hover:bg-white" />
             </p>
             <p class="mt-4 text-base">
                 ul. Mikołaja Kopernika 19A<br />
                 31-501 Kraków
             </p>
             <div class="mt-4 text-base">
-                <Link url="/regulamin" text="Regulamin" className="underline hover:text-black hover:bg-white mr-4" />
-                <Link url="/polityka-prywatnosci" text="Polityka prywatności" className="underline hover:text-black hover:bg-white" />
+                <Link url="/regulamin" text="Regulamin" className="underline hover:text-green hover:bg-white mr-4" />
+                <Link url="/polityka-prywatnosci" text="Polityka prywatności" className="underline hover:text-green hover:bg-white" />
             </div>
         </div>
         <div class="sm:place-self-end sm:text-right">
             <p class="mt-2 text-base">
-                <Link url="https://pl.linkedin.com/company/grupa-robocza" text="LinkedIn" className="underline hover:text-black hover:bg-white" />
+                <Link url="https://pl.linkedin.com/company/grupa-robocza" text="LinkedIn" className="underline hover:text-green hover:bg-white" />
             </p>
             <p class="mt-2 text-base">
-                <Link url="https://www.instagram.com/grupa.robocza/" text="Instagram" className="underline hover:text-black hover:bg-white" />
+                <Link url="https://www.instagram.com/grupa.robocza/" text="Instagram" className="underline hover:text-green hover:bg-white" />
             </p>
             <p class="mt-2 text-base">Worldwide 🌏 {new Date().getFullYear()}</p>
         </div>

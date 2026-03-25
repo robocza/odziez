@@ -1,17 +1,28 @@
 <button type="button" class="relative hover:opacity-50" data-drawer-target="cart-drawer" data-cart-drawer-show data-drawer-placement="right">
-    <img class="mx-auto inline-block align-middle" src="/assets/cart.png" alt="Koszyk" />
+    <img data-cart-icon class="mx-auto inline-block align-middle" src="/assets/cart-empty.svg" alt="Koszyk" />
     <span class="sr-only">Koszyk</span>
-    <div
+    <span
         data-cart-items-count-indicator
         class="absolute -right-2 -top-2 inline-flex hidden h-6 w-6 items-center justify-center rounded-full border-2 border-white bg-green text-xs text-white"
     >
         0
-    </div>
+    </span>
 </button>
 
 <script>
     import { initCartDrawer } from '../../cartDrawer';
     import { cartItemsCount } from '../../store/cartItemsCount';
+
+    const cartIcons = document.querySelectorAll('img[data-cart-icon]');
+    cartIcons.forEach((cartIcon) => {
+        cartItemsCount.subscribe((currentItemsCount) => {
+            if (currentItemsCount === 0) {
+                cartIcon.src = '/assets/cart-empty.svg';
+            } else {
+                cartIcon.src = '/assets/cart-full.svg';
+            }
+        });
+    });
 
     const cartDrawerElement = document.getElementById('cart-drawer');
 
