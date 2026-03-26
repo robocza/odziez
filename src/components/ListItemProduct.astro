@@ -12,7 +12,7 @@ const { productCollectionEntry } = Astro.props;
 const product = getProduct(productCollectionEntry.data.id);
 ---
 
-<div class="pb-2 text-center">
+<div class="py-8 sm:py-2 text-center">
     <a href={`/produkt/${productCollectionEntry.slug}`}>
         <img src={product.images[0].url} alt={product.images[0].alt} class="mx-auto max-h-96 px-2 lg:max-h-48 lg:px-0 dawid:max-h-72" />
     </a>

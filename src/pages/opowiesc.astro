@@ -10,12 +10,14 @@ import Footer from '@components/Footer.astro';
 <Layout title="Odzież Robocza - drop N°.2">
     <div class="mx-auto md:min-w-fit">
         <Header showBackButton={true} />
-        <div class="bg-green text-white">
-            <div class="px-10 pt-10">
+        <div class="bg-[url(/assets/hardcore-garden-bg.jpg)] bg-no-repeat bg-center bg-cover text-white">
+            <div class="sm:px-10 pt-10">
                 <div class="mx-auto max-w-2xl">
-                    <HardcoreGarden />
-                    <Story />
-                    <hr class="mt-16 h-px border-white bg-white" />
+                    <div class="px-10 sm:px-0 pb-10 sm:pb-0">
+                        <HardcoreGarden />
+                        <Story />
+                        <hr class="hidden sm:block mt-16 sm:h-px sm:border-white sm:bg-white" />
+                    </div>
                     <Footer />
                 </div>
             </div>
