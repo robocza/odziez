@@ -1,272 +1,286 @@
 [
-  {
-    "id": "longsleeve",
-    "name": "Longsleeve Syzyf Roboczy",
-    "images": [
-      {
-        "url": "/assets/product/longsleeve/longsleeve-front.jpg",
-        "bigUrl": "/assets/product/longsleeve/longsleeve-front-big.jpg",
-        "alt": "Longsleeve Syzyf Roboczy - przód",
-        "width": 2400,
-        "height": 2400
-      },
-      {
-        "url": "/assets/product/longsleeve/longsleeve-fold.jpg",
-        "bigUrl": "/assets/product/longsleeve/longsleeve-fold-big.jpg",
-        "alt": "Longsleeve Syzyf Roboczy - złożony",
-        "width": 2400,
-        "height": 2400
-      },
-      {
-        "url": "/assets/product/longsleeve/longsleeve-back.jpg",
-        "bigUrl": "/assets/product/longsleeve/longsleeve-back-big.jpg",
-        "alt": "Longsleeve Syzyf Roboczy - tył",
-        "width": 2400,
-        "height": 2400
-      },
-      {
-        "url": "/assets/product/longsleeve/session-8.jpeg",
-        "bigUrl": "/assets/product/longsleeve/session-8.jpeg",
-        "alt": "Longsleeve Syzyf Roboczy - przód",
-        "width": 853,
-        "height": 1280
-      },
-      {
-        "url": "/assets/product/longsleeve/session-12.jpeg",
-        "bigUrl": "/assets/product/longsleeve/session-12.jpeg",
-        "alt": "Longsleeve Syzyf Roboczy - detal",
-        "width": 853,
-        "height": 1280
-      },
-      {
-        "url": "/assets/product/longsleeve/session-17.jpeg",
-        "bigUrl": "/assets/product/longsleeve/session-17.jpeg",
-        "alt": "Longsleeve Syzyf Roboczy - detal",
-        "width": 853,
-        "height": 1280
-      },
-      {
-        "url": "/assets/product/longsleeve/session-24.jpeg",
-        "bigUrl": "/assets/product/longsleeve/session-24.jpeg",
-        "alt": "Longsleeve Syzyf Roboczy - detal",
-        "width": 853,
-        "height": 1280
-      },
-      {
-        "url": "/assets/product/session/session-7.jpeg",
-        "bigUrl": "/assets/product/session/session-7.jpeg",
-        "alt": "Longsleeve Syzyf Roboczy - detal",
-        "width": 853,
-        "height": 1280
-      },
-      {
-        "url": "/assets/product/session/session-28.jpeg",
-        "bigUrl": "/assets/product/session/session-28.jpeg",
-        "alt": "Longsleeve Syzyf Roboczy - detal",
-        "width": 853,
-        "height": 1280
-      }
-    ],
-    "price": {
-      "amount": 13000,
-      "currency": "PLN"
+    {
+        "id": "longsleeve",
+        "name": "Longsleeve Syzyf Roboczy",
+        "images": [
+            {
+                "url": "/assets/product/longsleeve/longsleeve-front.jpg",
+                "bigUrl": "/assets/product/longsleeve/longsleeve-front-big.jpg",
+                "alt": "Longsleeve Syzyf Roboczy - przód",
+                "width": 2400,
+                "height": 2400
+            },
+            {
+                "url": "/assets/product/longsleeve/longsleeve-fold.jpg",
+                "bigUrl": "/assets/product/longsleeve/longsleeve-fold-big.jpg",
+                "alt": "Longsleeve Syzyf Roboczy - złożony",
+                "width": 2400,
+                "height": 2400
+            },
+            {
+                "url": "/assets/product/longsleeve/longsleeve-back.jpg",
+                "bigUrl": "/assets/product/longsleeve/longsleeve-back-big.jpg",
+                "alt": "Longsleeve Syzyf Roboczy - tył",
+                "width": 2400,
+                "height": 2400
+            },
+            {
+                "url": "/assets/product/longsleeve/session-8.jpeg",
+                "bigUrl": "/assets/product/longsleeve/session-8.jpeg",
+                "alt": "Longsleeve Syzyf Roboczy - przód",
+                "width": 853,
+                "height": 1280
+            },
+            {
+                "url": "/assets/product/longsleeve/session-12.jpeg",
+                "bigUrl": "/assets/product/longsleeve/session-12.jpeg",
+                "alt": "Longsleeve Syzyf Roboczy - detal",
+                "width": 853,
+                "height": 1280
+            },
+            {
+                "url": "/assets/product/longsleeve/session-17.jpeg",
+                "bigUrl": "/assets/product/longsleeve/session-17.jpeg",
+                "alt": "Longsleeve Syzyf Roboczy - detal",
+                "width": 853,
+                "height": 1280
+            },
+            {
+                "url": "/assets/product/longsleeve/session-24.jpeg",
+                "bigUrl": "/assets/product/longsleeve/session-24.jpeg",
+                "alt": "Longsleeve Syzyf Roboczy - detal",
+                "width": 853,
+                "height": 1280
+            },
+            {
+                "url": "/assets/product/session/session-7.jpeg",
+                "bigUrl": "/assets/product/session/session-7.jpeg",
+                "alt": "Longsleeve Syzyf Roboczy - detal",
+                "width": 853,
+                "height": 1280
+            },
+            {
+                "url": "/assets/product/session/session-28.jpeg",
+                "bigUrl": "/assets/product/session/session-28.jpeg",
+                "alt": "Longsleeve Syzyf Roboczy - detal",
+                "width": 853,
+                "height": 1280
+            }
+        ],
+        "price": {
+            "amount": 13000,
+            "currency": "PLN"
+        },
+        "sizeChart": [
+            {
+                "size": "XS",
+                "height": "48",
+                "width": "70",
+                "sleeve": "59"
+            },
+            {
+                "size": "S",
+                "height": "50",
+                "width": "72",
+                "sleeve": "60"
+            },
+            {
+                "size": "M",
+                "height": "53",
+                "width": "73",
+                "sleeve": "61"
+            },
+            {
+                "size": "L",
+                "height": "55",
+                "width": "75",
+                "sleeve": "62"
+            },
+            {
+                "size": "XL",
+                "height": "58",
+                "width": "77",
+                "sleeve": "63"
+            },
+            {
+                "size": "XXL",
+                "height": "62",
+                "width": "78",
+                "sleeve": "64"
+            }
+        ]
     },
-    "sizeChart": [
-      {
-        "size": "XS",
-        "height": "48",
-        "width": "70",
-        "sleeve": "59"
-      },
-      {
-        "size": "S",
-        "height": "50",
-        "width": "72",
-        "sleeve": "60"
-      },
-      {
-        "size": "M",
-        "height": "53",
-        "width": "73",
-        "sleeve": "61"
-      },
-      {
-        "size": "L",
-        "height": "55",
-        "width": "75",
-        "sleeve": "62"
-      },
-      {
-        "size": "XL",
-        "height": "58",
-        "width": "77",
-        "sleeve": "63"
-      },
-      {
-        "size": "XXL",
-        "height": "62",
-        "width": "78",
-        "sleeve": "64"
-      }
-    ]
-  },
-  {
-    "id": "t-shirt",
-    "name": "T-shirt Kamień Roboczy",
-    "images": [
-      {
-        "url": "/assets/product/t-shirt/t-shirt-front.jpg",
-        "bigUrl": "/assets/product/t-shirt/t-shirt-front-big.jpg",
-        "alt": "T-shirt Kamień Roboczy - przód",
-        "width": 2400,
-        "height": 2400
-      },
-      {
-        "url": "/assets/product/t-shirt/t-shirt-back.jpg",
-        "bigUrl": "/assets/product/t-shirt/t-shirt-back-big.jpg",
-        "alt": "T-shirt Kamień Roboczy - tył",
-        "width": 2400,
-        "height": 2400
-      },
-      {
-        "url": "/assets/product/t-shirt/session-9.jpeg",
-        "bigUrl": "/assets/product/t-shirt/session-9.jpeg",
-        "alt": "T-shirt Kamień Roboczy - tył",
-        "width": 853,
-        "height": 1280
-      },
-      {
-        "url": "/assets/product/t-shirt/session-10.jpeg",
-        "bigUrl": "/assets/product/t-shirt/session-10.jpeg",
-        "alt": "T-shirt Kamień Roboczy - tył",
-        "width": 853,
-        "height": 1280
-      },
-      {
-        "url": "/assets/product/session/session-7.jpeg",
-        "bigUrl": "/assets/product/session/session-7.jpeg",
-        "alt": "T-shirt Kamień Roboczy - detal",
-        "width": 853,
-        "height": 1280
-      },
-      {
-        "url": "/assets/product/session/session-28.jpeg",
-        "bigUrl": "/assets/product/session/session-28.jpeg",
-        "alt": "T-shirt Kamień Roboczy - detal",
-        "width": 853,
-        "height": 1280
-      }
-    ],
-    "price": {
-      "amount": 9000,
-      "currency": "PLN"
+    {
+        "id": "t-shirt",
+        "name": "Czapka",
+        "images": [
+            {
+                "url": "/assets/product/longsleeve/cap.png",
+                "bigUrl": "/assets/product/longsleeve/cap.png",
+                "alt": "Longsleeve Syzyf Roboczy - przód",
+                "width": 1200,
+                "height": 1039
+            },
+            {
+                "url": "/assets/product/t-shirt/t-shirt-front.jpg",
+                "bigUrl": "/assets/product/t-shirt/t-shirt-front-big.jpg",
+                "alt": "T-shirt Kamień Roboczy - przód",
+                "width": 2400,
+                "height": 2400
+            },
+            {
+                "url": "/assets/product/t-shirt/t-shirt-back.jpg",
+                "bigUrl": "/assets/product/t-shirt/t-shirt-back-big.jpg",
+                "alt": "T-shirt Kamień Roboczy - tył",
+                "width": 2400,
+                "height": 2400
+            },
+            {
+                "url": "/assets/product/t-shirt/session-9.jpeg",
+                "bigUrl": "/assets/product/t-shirt/session-9.jpeg",
+                "alt": "T-shirt Kamień Roboczy - tył",
+                "width": 853,
+                "height": 1280
+            },
+            {
+                "url": "/assets/product/t-shirt/session-10.jpeg",
+                "bigUrl": "/assets/product/t-shirt/session-10.jpeg",
+                "alt": "T-shirt Kamień Roboczy - tył",
+                "width": 853,
+                "height": 1280
+            },
+            {
+                "url": "/assets/product/session/session-7.jpeg",
+                "bigUrl": "/assets/product/session/session-7.jpeg",
+                "alt": "T-shirt Kamień Roboczy - detal",
+                "width": 853,
+                "height": 1280
+            },
+            {
+                "url": "/assets/product/session/session-28.jpeg",
+                "bigUrl": "/assets/product/session/session-28.jpeg",
+                "alt": "T-shirt Kamień Roboczy - detal",
+                "width": 853,
+                "height": 1280
+            }
+        ],
+        "price": {
+            "amount": 9000,
+            "currency": "PLN"
+        },
+        "sizeChart": [
+            {
+                "size": "XS",
+                "height": "48",
+                "width": "70",
+                "sleeve": "21,5"
+            },
+            {
+                "size": "S",
+                "height": "50",
+                "width": "72",
+                "sleeve": "22"
+            },
+            {
+                "size": "M",
+                "height": "53",
+                "width": "73",
+                "sleeve": "22,5"
+            },
+            {
+                "size": "L",
+                "height": "55",
+                "width": "75",
+                "sleeve": "23"
+            },
+            {
+                "size": "XL",
+                "height": "58",
+                "width": "77",
+                "sleeve": "23,5"
+            },
+            {
+                "size": "XXL",
+                "height": "62",
+                "width": "78",
+                "sleeve": "24"
+            }
+        ]
     },
-    "sizeChart": [
-      {
-        "size": "XS",
-        "height": "48",
-        "width": "70",
-        "sleeve": "21,5"
-      },
-      {
-        "size": "S",
-        "height": "50",
-        "width": "72",
-        "sleeve": "22"
-      },
-      {
-        "size": "M",
-        "height": "53",
-        "width": "73",
-        "sleeve": "22,5"
-      },
-      {
-        "size": "L",
-        "height": "55",
-        "width": "75",
-        "sleeve": "23"
-      },
-      {
-        "size": "XL",
-        "height": "58",
-        "width": "77",
-        "sleeve": "23,5"
-      },
-      {
-        "size": "XXL",
-        "height": "62",
-        "width": "78",
-        "sleeve": "24"
-      }
-    ]
-  },
-  {
-    "id": "bluza",
-    "name": "Bluza Siła Robocza",
-    "images": [
-      {
-        "url": "/assets/product/bluza/bluza-front.jpg",
-        "bigUrl": "/assets/product/bluza/bluza-front-big.jpg",
-        "alt": "Bluza Siła Robocza - przód",
-        "width": 2400,
-        "height": 2400
-      },
-      {
-        "url": "/assets/product/bluza/bluza-close-up.jpg",
-        "bigUrl": "/assets/product/bluza/bluza-close-up-big.jpg",
-        "alt": "Bluza Siła Robocza - zbliżenie",
-        "width": 2400,
-        "height": 2400
-      },
-      {
-        "url": "/assets/product/bluza/bluza-back.jpg",
-        "bigUrl": "/assets/product/bluza/bluza-back-big.jpg",
-        "alt": "Bluza Siła Robocza - tył",
-        "width": 2400,
-        "height": 2400
-      }
-    ],
-    "price": {
-      "amount": 22000,
-      "currency": "PLN"
-    },
-    "sizeChart": [
-      {
-        "size": "XS",
-        "height": "50",
-        "width": "64",
-        "sleeve": "56"
-      },
-      {
-        "size": "S",
-        "height": "53",
-        "width": "66",
-        "sleeve": "58"
-      },
-      {
-        "size": "M",
-        "height": "56",
-        "width": "68",
-        "sleeve": "60"
-      },
-      {
-        "size": "L",
-        "height": "59",
-        "width": "70",
-        "sleeve": "62"
-      },
-      {
-        "size": "XL",
-        "height": "62",
-        "width": "72",
-        "sleeve": "64"
-      },
-      {
-        "size": "XXL",
-        "height": "65",
-        "width": "74",
-        "sleeve": "66"
-      }
-    ]
-  }
+    {
+        "id": "bluza",
+        "name": "T-Shirt 280g",
+        "images": [
+            {
+                "url": "/assets/product/t-shirt/t-shirt-front.png",
+                "bigUrl": "/assets/product/t-shirt/t-shirt-front.png",
+                "alt": "Bluza Siła Robocza - przód",
+                "width": 1200,
+                "height": 1140
+            },
+            {
+                "url": "/assets/product/bluza/bluza-front.jpg",
+                "bigUrl": "/assets/product/bluza/bluza-front-big.jpg",
+                "alt": "Bluza Siła Robocza - przód",
+                "width": 2400,
+                "height": 2400
+            },
+            {
+                "url": "/assets/product/bluza/bluza-close-up.jpg",
+                "bigUrl": "/assets/product/bluza/bluza-close-up-big.jpg",
+                "alt": "Bluza Siła Robocza - zbliżenie",
+                "width": 2400,
+                "height": 2400
+            },
+            {
+                "url": "/assets/product/bluza/bluza-back.jpg",
+                "bigUrl": "/assets/product/bluza/bluza-back-big.jpg",
+                "alt": "Bluza Siła Robocza - tył",
+                "width": 2400,
+                "height": 2400
+            }
+        ],
+        "price": {
+            "amount": 22000,
+            "currency": "PLN"
+        },
+        "sizeChart": [
+            {
+                "size": "XS",
+                "height": "50",
+                "width": "64",
+                "sleeve": "56"
+            },
+            {
+                "size": "S",
+                "height": "53",
+                "width": "66",
+                "sleeve": "58"
+            },
+            {
+                "size": "M",
+                "height": "56",
+                "width": "68",
+                "sleeve": "60"
+            },
+            {
+                "size": "L",
+                "height": "59",
+                "width": "70",
+                "sleeve": "62"
+            },
+            {
+                "size": "XL",
+                "height": "62",
+                "width": "72",
+                "sleeve": "64"
+            },
+            {
+                "size": "XXL",
+                "height": "65",
+                "width": "74",
+                "sleeve": "66"
+            }
+        ]
+    }
 ]
