@@ -6,10 +6,8 @@ const { title } = Astro.props;
 ---
 
 <Layout title={title}>
-    <main class="h-screen bg-black text-white">
+    <main class="h-screen bg-green text-white">
         <div class="relative mx-auto h-full max-w-screen-xl bg-right-top px-10 text-base">
-            <div class="absolute bottom-0 left-0 top-0 hidden w-10 bg-[url('/assets/chain.png')] bg-[length:25px] bg-right-top bg-repeat-y lg:block"></div>
-            <div class="absolute bottom-0 right-0 top-0 hidden w-10 bg-[url('/assets/chain.png')] bg-[length:25px] bg-left-top bg-repeat-y lg:block"></div>
             <Central>
                 <slot />
             </Central>

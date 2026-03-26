@@ -9,8 +9,7 @@ import ProductSizing from '@components/product/ProductSizing.astro';
 import ProductPrice from '@components/product/ProductPrice.astro';
 import ProductTitle from '@components/product/ProductTitle.astro';
 import Layout from '@layouts/Layout.astro';
-import Stones from '@components/story/Stones.astro';
-import ArticleTitle from '@components/ArticleTitle.astro';
+import HardcoreGarden from '@components/HardcoreGarden.astro';
 import Story from '@components/Story.astro';
 import Header from '@components/Header.astro';
 import CartDrawer from '@components/cart/CartDrawer.astro';
@@ -35,12 +34,11 @@ const product = getProduct(entry.data.id);
 
 <Layout title={`Odzież Robocza - ${product.name}`}>
     <div class="grid lg:grid-cols-2">
-        <div class="order-2 hidden bg-black text-white lg:order-1 lg:block lg:h-screen lg:overflow-hidden">
+        <div class="order-2 hidden bg-[url(/assets/hardcore-garden-bg.jpg)] text-white lg:order-1 lg:block lg:h-screen lg:overflow-hidden">
             <div class="lg:h-full lg:overflow-y-auto">
-                <Stones />
-                <div class="px-10 pt-10">
-                    <div class="mx-auto max-w-2xl">
-                        <ArticleTitle />
+                <div class="sm:px-10 sm:pt-10">
+                    <div class="mx-auto max-w-2xl px-10 sm:px-0">
+                        <HardcoreGarden />
                         <div class="hidden lg:block">
                             <Story />
                             <hr class="mt-16 h-px border-white bg-white" />
@@ -53,11 +51,11 @@ const product = getProduct(entry.data.id);
         <div class="z-20 order-1 lg:order-none lg:hidden">
             <Header showBackButton={true} />
         </div>
-        <div class="order-3 flex flex-col scroll-smooth lg:order-2 lg:h-screen lg:overflow-y-auto">
+        <div class="order-3 flex flex-col scroll-smooth lg:order-2 lg:h-screen lg:overflow-y-auto text-green">
             <div class="hidden lg:block">
                 <Header />
             </div>
-            <div class="flex border-t border-black px-4 pt-2">
+            <div class="flex border-t border-green px-4 pt-2">
                 <div class="hidden h-14 w-14 bg-white lg:flex lg:h-16 lg:w-16">
                     <div class="grid grow content-center">
                         <BackButton />
@@ -74,7 +72,7 @@ const product = getProduct(entry.data.id);
             <ProductSectionDivider />
             <ProductForm product={product} />
             <ProductSectionDivider />
-            <div class="prose mx-auto w-full max-w-xl px-8 leading-normal">
+            <div class="prose mx-auto w-full max-w-xl px-8 leading-normal text-green">
                 <Content />
             </div>
             <ProductSectionDivider />
@@ -87,7 +85,7 @@ const product = getProduct(entry.data.id);
             </div>
         </div>
         <div class="order-4 lg:hidden">
-            <div class="bg-black px-8 py-4">
+            <div class="bg-green px-8 py-4">
                 <Footer />
             </div>
         </div>
