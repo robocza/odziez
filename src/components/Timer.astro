@@ -41,23 +41,25 @@ const initialCountdownText = days + 'd:' + hours + 'h:' + minutes + 'm';
     const preOrderCountdownTimer = setInterval(function () {
         const preOrderTimerElement = document.getElementById('pre-order-timer');
 
-        const now = new Date().getTime();
-        const distance = countdownTargetDate - now;
-        if (distance < 0) {
-            preOrderTimerElement.innerHTML = 'Preorder zakończony';
-            clearInterval(preOrderCountdownTimer);
+        if (preOrderTimerElement !== null) {
+            const now = new Date().getTime();
+            const distance = countdownTargetDate - now;
+            if (distance < 0) {
+                preOrderTimerElement.innerHTML = 'Preorder zakończony';
+                clearInterval(preOrderCountdownTimer);
 
-            return;
-        }
+                return;
+            }
 
-        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
 
-        const timerText = days + 'd:' + hours + 'h:' + minutes + 'm';
+            const timerText = days + 'd:' + hours + 'h:' + minutes + 'm';
 
-        if (preOrderTimerElement.innerHTML !== timerText) {
-            preOrderTimerElement.innerHTML = timerText;
+            if (preOrderTimerElement.innerHTML !== timerText) {
+                preOrderTimerElement.innerHTML = timerText;
+            }
         }
     }, 1000);
 </script>
