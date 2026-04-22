@@ -1,0 +1,32 @@
+---
+import SimpleCenteredWithBackground from '@layouts/SimpleCenteredWithBackground.astro';
+import Central from '@layouts/elements/arrangement/Central.astro';
+---
+
+<SimpleCenteredWithBackground title="Odzież Robocza - drop N°.3">
+    <Central>
+        <div class="max-w-[320px]">
+            <img class="max-w-4xl w-full" src="/assets/hardcore-garden-logo.svg" alt="Odzież Robocza - Hardcode Garden - drop N°.3" />
+            <div class="my-2 sm:my-4 uppercase text-center text-phosphorescent text-base sm:text-2xl">
+                Odzież Robocza drop#3
+            </div>
+        </div>
+    </Central>
+
+    <div class="my-4 sm:my-16 block font-title text-4xl lowercase sm:text-9xl text-phosphorescent text-stroke-title">Dziękujemy</div>
+    <div class="mt-2 sm:mt-8 text-green">
+        Przygotowujemy Twoje zamówienie i wyślemy je najszybciej jak potrafimy.<br />
+         O postępie będziemy pisać na Twój adres e-mail.
+    </div>
+    <a class="my-2 sm:mt-8 inline-block rounded-md bg-green px-4 py-2 md:px-8 md:py-4 uppercase text-white text-sm sm:text-base hover:opacity-50" href="/opowiesc"> Przeczytaj artykuł</a>
+    <div class="mt-4 sm:mt-16 text-green">
+        Problem z zamówieniem?
+        <a class="block underline hover:opacity-50" href="mailto:grupa@robocza.org">grupa@robocza.org</a>
+    </div>
+</SimpleCenteredWithBackground>
+
+<script>
+    import { emptyCart } from '../store/cart';
+
+    emptyCart();
+</script>

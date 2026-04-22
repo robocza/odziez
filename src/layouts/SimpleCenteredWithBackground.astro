@@ -1,0 +1,15 @@
+---
+import Layout from '@layouts/Layout.astro';
+import Central from '@layouts/elements/arrangement/Central.astro';
+
+const { title } = Astro.props;
+---
+<Layout title={title}>
+    <main class="h-screen bg-[url(/assets/hardcore-garden-bg.jpg)] bg-no-repeat bg-top bg-cover text-white">
+        <div class="relative mx-auto h-full max-w-screen-xl bg-right-top px-10 text-base">
+            <Central>
+                <slot />
+            </Central>
+        </div>
+    </main>
+</Layout>
