@@ -13,8 +13,8 @@
 3. Przedsprzedażą objęte są bluzy, koszulki z krótkim rękawem oraz koszulki z długim rękawem zaprojektowane i wyprodukowane na zlecenie Grupy Roboczej (dalej: “Produkt”, “Produkty”).
 4. Zamówienia na Produkty można składać za pośrednictwem Sklepu. W celu złożenia zamówienia należy: (a) wybrać Produkt będący przedmiotem zamówienia w wybranym rozmiarze i ilości, a następnie kliknąć przycisk „Dodaj do koszyka”; (b) kliknąć przycisk „Do kasy”; (c) po przekierowaniu na stronę operatora płatności wypełnić formularz zamówienia poprzez wpisanie danych Kupującego oraz adresu, na który ma nastąpić dostawa zamówienia oraz wybrać rodzaj przesyłki; (d) wybrać metodę płatności oraz kliknąć “Zapłać’ i opłacić zamówienie.
 5. Kliknięcie przycisku “Zapłać” i opłacenie zamówienia jest równoznaczne z potwierdzeniem zamówienia i zawarciem umowy sprzedaży z Grupą Roboczą.
-6. Okres przedsprzedaży trwa od 19.06.2023 r., g. 22:00 do 17.07.2023 r., g. 20:00.
-7. Realizacja zamówień na Produkty, w tym ich produkcja, pakowanie oraz wysyłka rozpocznie się po zakończeniu okresu przedsprzedaży i potrwa najpóźniej do 25.08.2023 r g. 20:00..
+6. Okres przedsprzedaży trwa od 29.04.2026 r., g. 18:00 do 13.05.2026 r., g. 20:00.
+7. Realizacja zamówień na Produkty, w tym ich produkcja, pakowanie oraz wysyłka rozpocznie się po zakończeniu okresu przedsprzedaży i potrwa najpóźniej do 25.06.2026 r g. 20:00.
 8. Kupujący może skorzystać z następujących metod dostawy zamówionego produktu: (a) Kurier InPost (b) odbiór osobisty w Krakowie, przy ulicy Mikołaja Kopernika 19A po uprzednim ustaleniu terminu i godziny odbioru z Grupą Roboczą.
 9. Kupujący może skorzystać z następujących metod płatności: (a) płatności elektroniczne (b) płatność kartą płatniczą. Obsługa płatności online odbywa się za pośrednictwem platformy Stripe.com, której właścicielem jest Stripe, Inc z siedzibą w San Francisco, CA 94103, przy 510 Townsend Street (USA).
 10. Na końcową kwotę do zapłaty przez Kupującego składa się cena za Produkt wskazana w Sklepie na stronie Produktu oraz koszt dostawy, o którym Kupujący jest informowany w trakcie składania zamówienia.
