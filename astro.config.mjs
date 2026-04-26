@@ -1,7 +1,8 @@
-import { defineConfig } from "astro/config";
+import { defineConfig } from 'astro/config';
 // import netlify from '@astrojs/netlify/functions';
-import tailwind from "@astrojs/tailwind";
-import vue from "@astrojs/vue";
+import { searchForWorkspaceRoot } from 'vite';
+import tailwindcss from '@tailwindcss/vite';
+import vue from '@astrojs/vue';
 
 // https://astro.build/config
 export default defineConfig({
@@ -9,13 +10,16 @@ export default defineConfig({
     // adapter: netlify(),
     server: {
         allowedHosts: true,
-        host: true,
         port: 3000,
     },
     site: 'https://odziez.robocza.org',
-    integrations: [tailwind(), vue()],
+    integrations: [vue()],
     vite: {
+        plugins: [tailwindcss()],
         server: {
+            fs: {
+                allow: [searchForWorkspaceRoot(process.cwd())],
+            },
             watch: {
                 ignored: ['**/.idea/workspace.xml'],
             },
