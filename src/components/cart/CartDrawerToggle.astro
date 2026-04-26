@@ -1,4 +1,4 @@
-<button type="button" class="relative hover:opacity-50" data-drawer-target="cart-drawer" data-cart-drawer-show data-drawer-placement="right">
+<button type="button" class="relative hover:opacity-50 cursor-pointer" data-drawer-target="cart-drawer" data-cart-drawer-show data-drawer-placement="right">
     <img data-cart-icon class="mx-auto inline-block align-middle" src="/assets/cart-empty.svg" alt="Koszyk" />
     <span class="sr-only">Koszyk</span>
     <span
@@ -11,20 +11,22 @@
 
 <script>
     import { initCartDrawer } from '../../cartDrawer';
-    import { cartItemsCount } from '../../store/cartItemsCount';
+    import { cartItemsCount } from '@store/cartItemsCount.ts';
 
     const cartIcons = document.querySelectorAll('img[data-cart-icon]');
     cartIcons.forEach((cartIcon) => {
+        const cartIconElement = cartIcon as HTMLImageElement;
+
         cartItemsCount.subscribe((currentItemsCount) => {
             if (currentItemsCount === 0) {
-                cartIcon.src = '/assets/cart-empty.svg';
+                cartIconElement.src = '/assets/cart-empty.svg';
             } else {
-                cartIcon.src = '/assets/cart-full.svg';
+                cartIconElement.src = '/assets/cart-full.svg';
             }
         });
     });
 
-    const cartDrawerElement = document.getElementById('cart-drawer');
+    const cartDrawerElement = document.getElementById('cart-drawer') as HTMLElement;
 
     const cartDrawer = initCartDrawer(cartDrawerElement);
 

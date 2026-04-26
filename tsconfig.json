@@ -1,19 +1,27 @@
 {
-  "extends": "astro/tsconfigs/strict",
-  "compilerOptions": {
-    "strictNullChecks": true,
-    "baseUrl": "src",
-    "paths": {
-      "@components/*": ["components/*"],
-      "@layouts/*": ["layouts/*"],
-      "@assets/*": ["assets/*"],
-      "@pages/*": ["pages/*"],
-      "@store/*": ["store/*"]
-    },
-    "plugins": [
-      {
-        "name": "@astrojs/ts-plugin"
-      }
-    ]
-  }
+    "extends": "astro/tsconfigs/strict",
+    "compilerOptions": {
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+        "strictNullChecks": true,
+        "baseUrl": "src",
+        "paths": {
+            "@components/*": [
+                "components/*"
+            ],
+            "@layouts/*": [
+                "layouts/*"
+            ],
+            "@assets/*": [
+                "assets/*"
+            ],
+            "@pages/*": [
+                "pages/*"
+            ],
+            "@store/*": [
+                "store/*"
+            ]
+        },
+        "jsx": "preserve"
+    }
 }

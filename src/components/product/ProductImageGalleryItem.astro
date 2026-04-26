@@ -1,5 +1,5 @@
 ---
-import { Product } from '../../productRepository';
+import { type Product } from '../../productRepository';
 
 interface Props {
     product: Product;
@@ -13,7 +13,7 @@ interface Props {
     position: number;
 }
 
-const { product, position, image } = Astro.props;
+const { position, image } = Astro.props;
 const positionElementId = 'item-' + position;
 ---
 

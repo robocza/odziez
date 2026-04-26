@@ -14,9 +14,6 @@ module.exports = {
                 title: ['Pickle', ...defaultTheme.fontFamily.sans],
                 sans: ['GT America', ...defaultTheme.fontFamily.sans],
             },
-            screens: {
-                dawid: '1920px',
-            },
             typography: {
                 DEFAULT: {
                     css: {

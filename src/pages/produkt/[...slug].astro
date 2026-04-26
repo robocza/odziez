@@ -20,7 +20,7 @@ import Footer from '@components/Footer.astro';
 export async function getStaticPaths() {
     const products = await getCollection('product');
     return products.map((entry) => ({
-        params: { slug: entry.slug },
+        params: { slug: entry.id },
         props: { entry },
     }));
 }
@@ -46,7 +46,7 @@ const product = getProduct(entry.data.id);
                 </div>
             </div>
         </div>
-        <div class="z-20 order-1 lg:order-none lg:hidden">
+        <div class="z-20 order-1 lg:order-0 lg:hidden">
             <Header showBackButton={true} />
         </div>
         <div class="order-3 flex flex-col scroll-smooth lg:order-2 lg:h-screen lg:overflow-y-auto text-green">

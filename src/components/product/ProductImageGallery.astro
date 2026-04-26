@@ -1,6 +1,6 @@
 ---
 import ProductImageGalleryItem from './ProductImageGalleryItem.astro';
-import { Product } from '../../productRepository';
+import { type Product } from '../../productRepository';
 
 interface Props {
     product: Product;
@@ -16,7 +16,7 @@ const { product } = Astro.props;
     </div>
     <!-- Slider indicators -->
     <div class="absolute bottom-2 left-1/2 z-30 flex -translate-x-1/2 items-center space-x-3">
-        {product.images.map(() => <button data-product-image-gallery-item-indicator type="button" class="rounded-full bg-green" />)}
+        {product.images.map(() => <button data-product-image-gallery-item-indicator type="button" class="rounded-full bg-green cursor-pointer" />)}
     </div>
     <!-- Slider controls -->
     <button
@@ -44,24 +44,26 @@ const { product } = Astro.props;
 </div>
 
 <script>
-    import { Carousel, IndicatorItem } from 'flowbite';
-    import type { CarouselItem, CarouselOptions, CarouselInterface } from 'flowbite';
+    import { Carousel } from 'flowbite';
+    import type { CarouselItem, CarouselOptions, CarouselInterface, IndicatorItem } from 'flowbite';
+
+    const carouselElement = document.getElementById('product-image-gallery-lightbox');
 
     let carouselItems: CarouselItem[] = [];
 
-    document.querySelectorAll('[data-product-image-gallery-item]').forEach((element: HTMLElement, key) => {
+    document.querySelectorAll('[data-product-image-gallery-item]').forEach((element, key) => {
         carouselItems.push({
             position: key,
-            el: element,
+            el: element as HTMLElement,
         });
     });
 
     let carouselIndicators: IndicatorItem[] = [];
 
-    document.querySelectorAll('[data-product-image-gallery-item-indicator]').forEach((element: HTMLElement, key) => {
+    document.querySelectorAll('[data-product-image-gallery-item-indicator]').forEach((element, key) => {
         carouselIndicators.push({
             position: key,
-            el: element,
+            el: element as HTMLElement,
         });
     });
 
@@ -73,11 +75,11 @@ const { product } = Astro.props;
         },
     };
 
-    const carousel: CarouselInterface = new Carousel(carouselItems, options);
+    const carousel: CarouselInterface = new Carousel(carouselElement, carouselItems, options);
 
     // set event listeners for prev and next buttons
-    const $prevButton = document.getElementById('data-carousel-prev');
-    const $nextButton = document.getElementById('data-carousel-next');
+    const $prevButton = document.getElementById('data-carousel-prev') as HTMLElement;
+    const $nextButton = document.getElementById('data-carousel-next') as HTMLElement;
 
     $prevButton.addEventListener('click', () => {
         carousel.prev();
