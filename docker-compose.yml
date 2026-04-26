@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   node:
     container_name: odziez-robocza-node
@@ -12,14 +10,10 @@ services:
       - ./:/app
     networks:
       odziez-robocza-network:
-        ipv4_address: 10.10.67.2
-    stdin_open: true 
+    stdin_open: true
     tty: true
     command: tail -f /dev/null
 
 networks:
   odziez-robocza-network:
     driver: bridge
-    ipam:
-      config:
-        - subnet: 10.10.67.0/24

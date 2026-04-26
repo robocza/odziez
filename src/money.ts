@@ -1,4 +1,4 @@
-import Dinero, { Currency } from 'dinero.js';
+import Dinero, { type Currency } from 'dinero.js';
 
 export type Money = {
     amount: number;

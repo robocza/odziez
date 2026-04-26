@@ -1,5 +1,5 @@
 ---
-import { getCollection } from 'astro:content';
+import { getCollection, render } from 'astro:content';
 import ProductForm from '@components/product/ProductForm.astro';
 import ProductImageGallery from '@components/product/ProductImageGallery.astro';
 import ProductMaterialsAndManufacturing from '@components/product/ProductMaterialsAndManufacturing.astro';
@@ -28,8 +28,7 @@ export async function getStaticPaths() {
 }
 // 2. When it's time to render, you can get the entry directly from the prop
 const { entry } = Astro.props;
-const images = entry.data.images;
-const { Content } = await entry.render();
+const { Content } = await render(entry);
 const product = getProduct(entry.data.id);
 ---
 

@@ -1,25 +1,17 @@
-FROM node:18.16
+FROM node:24.15
 
 RUN apt-get update
 
+ARG FISH_VERSION="4.1.1-1~focal_amd64"
+
 # fish
-RUN FISH_VERSION="3.6.1" \
-    && apt-get install -y cmake libncurses5-dev libpcre2-dev \
-    && curl -OSLs "https://github.com/fish-shell/fish-shell/releases/download/$FISH_VERSION/fish-$FISH_VERSION.tar.xz" \
-    && tar -xJf "fish-$FISH_VERSION.tar.xz" \
-    && cd "fish-$FISH_VERSION" \
-    && mkdir build \
-    && cd build \
-    && cmake .. \
-    && make \
-    && make install \
-    && cd / \
-    && rm -rf "fish-$FISH_VERSION" "fish-$FISH_VERSION.tar.xz" \
-    && fish -c true
+RUN curl -OSLs "https://launchpad.net/~fish-shell/+archive/ubuntu/release-4/+files/fish_${FISH_VERSION}.deb" \
+    && apt-get install -y -f "./fish_${FISH_VERSION}.deb" \
+    && rm "fish_${FISH_VERSION}.deb";
+RUN mkdir -p /var/www/.local/share/fish
+RUN mkdir -p /var/www/.config/fish
 
 # cleanup
 RUN apt-get clean autoclean && apt-get autoremove -y
-
-RUN mkdir -p /var/www/.local/share/fish
 
 WORKDIR /app
