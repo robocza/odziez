@@ -69,10 +69,7 @@
     </template>
     <template v-else>
         <div class="mx-auto p-4">
-            <div class="text-2xl">Twój koszyk jest pusty. Dorzuć trochę gruzu.</div>
-        </div>
-        <div class="absolute bottom-0">
-            <img src="/assets/rubble.jpg" alt="Gruz"/>
+            <div class="text-2xl">Twój koszyk jest pusty.</div>
         </div>
     </template>
 </template>
