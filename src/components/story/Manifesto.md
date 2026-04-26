@@ -1,3 +1,5 @@
+## Hardcore Garden Manifesto
+
 ### 1. GARDENS ARE THE BEST
 
 Nie ma nic lepszego od ogrodów. Jeżeli nie masz pomysłu, co ze sobą zrobić – załóż ogród, zobacz ogród, odwiedź ogród, posprzątaj w ogrodzie. Opowiedz o ogrodzie w pracy. Zaproś do ogrodu  znajomych.

@@ -1,6 +1,13 @@
 {
     "hc-garden-t-shirt-sand": [
         {
+            "size": "XXS",
+            "stripe": {
+                "productId": "prod_O6zN39rFtRgFxK",
+                "priceId": "price_1NKlOvCvOTfFxYT2obLfBwhZ"
+            }
+        },
+        {
             "size": "XS",
             "stripe": {
                 "productId": "prod_O6zN39rFtRgFxK",
@@ -30,13 +37,6 @@
         },
         {
             "size": "XL",
-            "stripe": {
-                "productId": "prod_O6zN39rFtRgFxK",
-                "priceId": "price_1NKlOvCvOTfFxYT2obLfBwhZ"
-            }
-        },
-        {
-            "size": "XXL",
             "stripe": {
                 "productId": "prod_O6zN39rFtRgFxK",
                 "priceId": "price_1NKlOvCvOTfFxYT2obLfBwhZ"
@@ -45,6 +45,13 @@
     ],
     "hc-garden-t-shirt-white": [
         {
+            "size": "XXS",
+            "stripe": {
+                "productId": "prod_O6zN39rFtRgFxK",
+                "priceId": "price_1NKlOvCvOTfFxYT2obLfBwhZ"
+            }
+        },
+        {
             "size": "XS",
             "stripe": {
                 "productId": "prod_O6zN39rFtRgFxK",
@@ -74,13 +81,6 @@
         },
         {
             "size": "XL",
-            "stripe": {
-                "productId": "prod_O6zN39rFtRgFxK",
-                "priceId": "price_1NKlOvCvOTfFxYT2obLfBwhZ"
-            }
-        },
-        {
-            "size": "XXL",
             "stripe": {
                 "productId": "prod_O6zN39rFtRgFxK",
                 "priceId": "price_1NKlOvCvOTfFxYT2obLfBwhZ"
