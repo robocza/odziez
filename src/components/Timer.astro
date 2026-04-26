@@ -1,5 +1,6 @@
 ---
 import { getPreOrderEndDate } from '../preOrder';
+import Central from '@layouts/elements/arrangement/Central.astro';
 
 const preOrderEndDate = getPreOrderEndDate();
 
@@ -14,20 +15,13 @@ const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
 const initialCountdownText = days + 'd:' + hours + 'h:' + minutes + 'm';
 ---
 
-<div class="order-first sm:grid sm:grid-cols-2 bg-green sm:order-none sm:bg-white text-phosphorescent sm:text-green sm:col-span-2">
-    <div class="hidden sm:flex sm:items-end">
-        <div class="mx-auto sm:max-w-xs dawid:max-w-xl">
-            <div class="text-5xl uppercase sm:block sm:pb-4 lg:text-3xl xl:text-5xl dawid:text-7xl">Do zamknięcia preorderu zostało:</div>
-        </div>
-    </div>
-
-    <div class="sm:flex sm:items-end">
-        <div
-            class="text-center mx-auto font-title text-5xl pt-3 pb-2 uppercase leading-none tracking-wide sm:text-left sm:block sm:pt-1 sm:pb-4 sm:text-4xl lg:text-3xl xl:text-4xl 2xl:text-5xl dawid:text-6xl"
-            id="pre-order-timer"
-        >
-            {initialCountdownText}
-        </div>
+<div class="order-first flex bg-green sm:order-none text-white sm:col-span-2 sm:py-2 sm:px-8 items-center text-5xl sm:text-5xl md:text-4xl lg:text-3xl xl:text-3xl dawid:text-4xl">
+    <div class=" uppercase hidden sm:block">Do zamknięcia preorderu zostało:</div>
+    <div
+        class="pt-4 pb-2 text-center mx-auto font-title uppercase leading-none tracking-wide sm:text-left sm:block sm:ml-4 sm:pt-2 sm:pb-0"
+        id="pre-order-timer"
+    >
+        {initialCountdownText}
     </div>
 </div>
 
