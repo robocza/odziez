@@ -12,6 +12,7 @@ const product = defineCollection({
     loader: glob({ base: './src/content/product', pattern: '**/*.{md,mdx}' }),
     schema: z.object({
         id: z.string(),
+        order: z.number(),
         info: z.string().array(),
     }),
 });
