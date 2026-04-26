@@ -1,5 +1,6 @@
 ---
-import Content from '@components/story/Content.md';
+import Intro from '@components/story/Intro.md';
+import Manifesto from '@components/story/Manifesto.md';
 import Team from '@components/story/Team.md';
 import LinkButtonReverse from '@components/LinkButtonReverse.astro';
 ---
@@ -8,7 +9,15 @@ import LinkButtonReverse from '@components/LinkButtonReverse.astro';
     <div
         class="prose-invert prose-headings:mb-4 prose-headings:mt-8 prose-headings:font-pixel prose-headings:text-3xl prose-headings:uppercase prose-headings:tracking-wide prose-p:mb-4 prose-a:underline hover:prose-a:bg-white hover:prose-a:text-green prose-headings:sm:text-3xl prose-headings:md:text-4xl text-phosphorescent"
     >
-        <Content />
+        <Intro />
+    </div>
+    <div>
+        <h2 class="mt-8 mb-4 sm:mt-16 sm:mb-8 text-5xl text-phosphorescent lowercase font-title">Hardcore Garden Manifesto</h2>
+    </div>
+    <div
+        class="prose-invert prose-headings:mb-4 prose-headings:mt-8 prose-headings:font-pixel prose-headings:text-3xl prose-headings:uppercase prose-headings:tracking-wide prose-p:mb-4 prose-a:underline hover:prose-a:bg-white hover:prose-a:text-green prose-headings:sm:text-3xl prose-headings:md:text-4xl text-phosphorescent"
+    >
+        <Manifesto />
     </div>
     <div class="mx-auto my-10 text-center lg:hidden">
         <LinkButtonReverse url="/#odziez" text="Zobacz odzież" />
