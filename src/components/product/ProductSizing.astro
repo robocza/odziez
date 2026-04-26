@@ -7,7 +7,6 @@ interface Props {
 
 const { sizeChart } = Astro.props;
 ---
-
 <div class="mx-auto w-full max-w-xl px-8">
     <h5 id="tabela-rozmiarow" class="mb-4 uppercase">Rozmiarówka (cm)</h5>
 
@@ -17,7 +16,6 @@ const { sizeChart } = Astro.props;
                 <th class="border-r p-2 font-normal"></th>
                 <th class="p-2 font-normal">Szerokość</th>
                 <th class="p-2 font-normal">Długość</th>
-                <th class="p-2 font-normal">Rękaw</th>
             </tr>
         </thead>
         <tbody>
@@ -27,7 +25,6 @@ const { sizeChart } = Astro.props;
                         <td class="border-r p-2 text-right">{sizeChartItem.size}</td>
                         <td class="p-2 text-center">{sizeChartItem.height}</td>
                         <td class="p-2 text-center">{sizeChartItem.width}</td>
-                        <td class="p-2 text-center">{sizeChartItem.sleeve}</td>
                     </tr>
                 ))
             }

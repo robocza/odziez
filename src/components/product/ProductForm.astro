@@ -1,5 +1,6 @@
 ---
 import { Product } from '../../productRepository';
+import ProductSizing from '@components/product/ProductSizing.astro';
 
 interface Props {
     product: Product;
@@ -40,7 +41,7 @@ const { product } = Astro.props;
     <div class="my-4 flex place-items-center">
         <div class="inline-block w-1/2 pr-4 text-right md:w-auto lg:w-1/2 2xl:w-auto">
             <label class="block text-lg uppercase" for="product-size">Rozmiar:</label>
-            <a href="#tabela-rozmiarow" class="block text-sm underline hover:opacity-50">Tabela rozmiarów</a>
+            {product.sizeChart && <a href="#tabela-rozmiarow" class="block text-sm underline hover:opacity-50">Tabela rozmiarów</a>}
         </div>
         <select id="product-size" name="size" class="inline-block w-[80px] rounded border border-green bg-white p-2.5 text-lg text-green" required>
             {product.sizes.map((size) => <option value={size}>{size}</option>)}

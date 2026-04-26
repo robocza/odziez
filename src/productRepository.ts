@@ -17,7 +17,6 @@ export type SizeChartItem = {
     size: string;
     height: string;
     width: string;
-    sleeve: string;
 };
 
 export interface Product {
@@ -33,7 +32,7 @@ export interface Product {
     sizes: string[];
     price: Money;
     variants: ProductVariant[];
-    sizeChart: SizeChartItem[];
+    sizeChart?: SizeChartItem[];
 }
 
 type productsStripeDataMap = {
