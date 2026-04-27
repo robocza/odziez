@@ -59,8 +59,10 @@ const product = getProduct(entry.data.id);
                         <BackButton />
                     </div>
                 </div>
-                <div class="flex-1 bg-white text-center lg:text-right">
-                    <ProductTitle title={product.name} />
+                <div class="flex-1 bg-white text-center">
+                    <div class="lg:mr-14">
+                        <ProductTitle title={product.name} />
+                    </div>
                 </div>
             </div>
             <ProductSectionDivider />

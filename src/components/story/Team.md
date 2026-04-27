@@ -1,4 +1,4 @@
-## Kto przygotował drop?
+## Ekipa
 
 - big idea: [🌻**Kuba Kulesza**](https://kubakulesza.pl/)
 - art direction + design: [🍎**Dawid Prząda**](https://widok.studio/) + [🥕**Maja Starakiewicz**](https://maja.starakiewicz.pl/)

@@ -214,12 +214,12 @@
     },
     {
         "id": "hc-garden-sitodruk",
-        "name": "Print A3",
+        "name": "Sitodruk A3",
         "images": [
             {
                 "url": "/assets/product/hc-garden-sitodruk/print.jpg",
                 "bigUrl": "/assets/product/hc-garden-sitodruk/print.jpg",
-                "alt": "Print A3",
+                "alt": "Sitodruk A3",
                 "width": 1696,
                 "height": 2265
             }
