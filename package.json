@@ -22,6 +22,7 @@
         "@tailwindcss/typography": "^0.5.9",
         "@tailwindcss/vite": "^4.1.11",
         "@types/dinero.js": "^1.9.4",
+        "@types/node": "^25.6.0",
         "astro": "^6.1.9",
         "dinero.js": "^1.9.1",
         "flowbite": "^4.0.1",
@@ -35,6 +36,10 @@
         "node": "^24.15"
     },
     "devDependencies": {
-        "@types/node": "^25.6.0"
+        "prettier": "^3.0.0",
+        "prettier-config-standard": "^7.0.0",
+        "prettier-plugin-astro": "^0.14.1",
+        "prettier-plugin-tailwindcss": "^0.8.0",
+        "prettier-plugin-vue": "^1.1.6"
     }
 }
