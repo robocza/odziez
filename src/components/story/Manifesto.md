@@ -2,7 +2,7 @@
 
 ### 1. GARDENS ARE THE BEST
 
-Nie ma nic lepszego od ogrodów. Jeżeli nie masz pomysłu, co ze sobą zrobić – załóż ogród, zobacz ogród, odwiedź ogród, posprzątaj w ogrodzie. Opowiedz o ogrodzie w pracy. Zaproś do ogrodu  znajomych.
+Nie ma nic lepszego od ogrodów. Jeżeli nie masz pomysłu, co ze sobą zrobić – załóż ogród, zobacz ogród, odwiedź ogród, posprzątaj w ogrodzie. Opowiedz o ogrodzie w pracy. Zaproś do ogrodu znajomych.
 
 Śnią nam się ogrody: angielskie, francuskie, balkonowe, naturalistyczne, warzywne, zimowe, dzikie, magiczne, permakulturowe, wodne, miejskie, leśne, hydroponiczne i inne… Każdy w innym charakterze, o innej porze roku, z innym zapachem i inną barwą.
 

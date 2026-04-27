@@ -4,34 +4,42 @@ import Layout from '@layouts/Layout.astro';
 ---
 
 <Layout title="Odzież Robocza - drop N°.3">
-    <main class="h-screen bg-[url(/assets/hardcore-garden-bg.jpg)] bg-no-repeat bg-center bg-cover text-white font-sans">
+    <main class="h-screen bg-[url(/assets/hardcore-garden-bg.jpg)] bg-cover bg-center bg-no-repeat font-sans text-white">
         <div class="relative mx-auto h-full max-w-screen-xl">
             <Central>
                 <div class="flex flex-col gap-8">
                     <div class="px-8 lg:px-0">
-                        <h1 class="uppercase font-decorative text-lg sm:text-xl lg:text-3xl border-[3px] border-phosphorescent rounded-full py-3 px-5 w-full max-w-xl m-auto flex justify-between font-normal gap-2">
+                        <h1
+                            class="font-decorative border-phosphorescent m-auto flex w-full max-w-xl justify-between gap-2 rounded-full border-[3px] px-5 py-3 text-lg font-normal uppercase sm:text-xl lg:text-3xl"
+                        >
                             <span class="text-left">Odzież Robocza</span>
                             <span class="text-right">drop#3</span>
                         </h1>
                     </div>
                     <div>
                         <img
-                            class="max-w-4xl w-full max-h-screen px-5"
+                            class="max-h-screen w-full max-w-4xl px-5"
                             src="/assets/hardcore-garden-logo.svg"
                             alt="Odzież Robocza - Hardcore Garden - drop N°.3"
                         />
-                        <div class="font-decorative text-center text-lg lg:text-3xl font-normal ml-20 lg:ml-40 lowercase">
-                            Coming soon.<br>
+                        <div class="font-decorative ml-20 text-center text-lg font-normal lowercase lg:ml-40 lg:text-3xl">
+                            Coming soon.<br />
                             Zapisz się do newslettera
                         </div>
                     </div>
                     <div class="px-8 lg:px-0">
-                        <form name="pre-order-hardcore-garden" method="POST" data-netlify="true" action="/zapisano-do-newslettera" class="flex flex-col md:flex-row md:justify-center gap-6">
+                        <form
+                            name="pre-order-hardcore-garden"
+                            method="POST"
+                            data-netlify="true"
+                            action="/zapisano-do-newslettera"
+                            class="flex flex-col gap-6 md:flex-row md:justify-center"
+                        >
                             <div>
                                 <label class="md:inline-block">
                                     <input
                                         id="mail"
-                                        class="w-full md:w-90 rounded-full bg-white border-[3px] border-white py-2 px-6 text-black leading-none  text-sm h-12 text-center lg:text-left"
+                                        class="h-12 w-full rounded-full border-[3px] border-white bg-white px-6 py-2 text-center text-sm leading-none text-black md:w-90 lg:text-left"
                                         name="mail"
                                         type="email"
                                         required
@@ -40,10 +48,13 @@ import Layout from '@layouts/Layout.astro';
                                     />
                                 </label>
                                 <div class="text-center md:text-right lg:pr-6">
-                                    <a class="hover:underline text-xs" href="/polityka-prywatnosci">Polityka prywatności</a>
+                                    <a class="text-xs hover:underline" href="/polityka-prywatnosci">Polityka prywatności</a>
                                 </div>
                             </div>
-                            <button type="submit" class="py-2 px-12 transition-colors uppercase leading-none h-12 text-2xl border-[3px] border-phosphorescent rounded-full font-normal hover:bg-phosphorescent cursor-pointer">
+                            <button
+                                type="submit"
+                                class="border-phosphorescent hover:bg-phosphorescent h-12 cursor-pointer rounded-full border-[3px] px-12 py-2 text-2xl leading-none font-normal uppercase transition-colors"
+                            >
                                 Zapisz się
                             </button>
                         </form>

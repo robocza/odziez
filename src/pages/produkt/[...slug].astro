@@ -39,7 +39,7 @@ const product = getProduct(entry.data.id);
                         <HardcoreGarden />
                         <div class="hidden lg:block">
                             <Story />
-                            <hr class="mt-8 h-px border-phosphorescent bg-phosphorescent" />
+                            <hr class="border-phosphorescent bg-phosphorescent mt-8 h-px" />
                             <Footer />
                         </div>
                     </div>
@@ -49,11 +49,11 @@ const product = getProduct(entry.data.id);
         <div class="z-20 order-1 lg:order-0 lg:hidden">
             <Header showBackButton={true} />
         </div>
-        <div class="order-3 flex flex-col scroll-smooth lg:order-2 lg:h-screen lg:overflow-y-auto text-green">
+        <div class="text-green order-3 flex flex-col scroll-smooth lg:order-2 lg:h-screen lg:overflow-y-auto">
             <div class="hidden lg:block">
                 <Header />
             </div>
-            <div class="flex border-t border-green px-4 pt-2">
+            <div class="border-green flex border-t px-4 pt-2">
                 <div class="hidden h-14 w-14 bg-white lg:flex lg:h-16 lg:w-16">
                     <div class="grid grow content-center">
                         <BackButton />
@@ -72,7 +72,7 @@ const product = getProduct(entry.data.id);
             <ProductSectionDivider />
             <ProductForm product={product} />
             <ProductSectionDivider />
-            <div class="prose mx-auto w-full max-w-xl px-8 leading-normal text-green">
+            <div class="prose text-green mx-auto w-full max-w-xl px-8 leading-normal">
                 <Content />
             </div>
             <ProductSectionDivider />

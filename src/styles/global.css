@@ -1,10 +1,10 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
-@import "flowbite/src/themes/default.css";
+@import 'flowbite/src/themes/default.css';
 
-@plugin "@tailwindcss/typography";
+@plugin '@tailwindcss/typography';
 
-@config "../../tailwind.config.cjs";
+@config '../../tailwind.config.cjs';
 
 @theme {
     --breakpoint-dawid: 120rem;

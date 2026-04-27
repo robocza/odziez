@@ -4,8 +4,9 @@ import Central from '@layouts/elements/arrangement/Central.astro';
 
 const { title } = Astro.props;
 ---
+
 <Layout title={title}>
-    <main class="h-screen bg-[url(/assets/hardcore-garden-bg.jpg)] bg-no-repeat bg-top bg-cover text-white">
+    <main class="h-screen bg-[url(/assets/hardcore-garden-bg.jpg)] bg-cover bg-top bg-no-repeat text-white">
         <div class="relative mx-auto h-full max-w-screen-xl bg-right-top px-10 text-base">
             <Central>
                 <slot />

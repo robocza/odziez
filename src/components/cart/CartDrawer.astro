@@ -6,13 +6,13 @@ import CloseIcon from '@components/CloseIcon.astro';
 
 <div
     id="cart-drawer"
-    class="fixed right-0 top-0 z-40 h-screen w-80 translate-x-full overflow-y-auto bg-white transition-transform"
+    class="fixed top-0 right-0 z-40 h-screen w-80 translate-x-full overflow-y-auto bg-white transition-transform"
     tabindex="-1"
     aria-labelledby="cart-drawer-label"
 >
-    <h5 id="cart-drawer-label" class="mb-4 mt-8 px-4 text-left text-5xl lowercase text-green">Koszyk</h5>
+    <h5 id="cart-drawer-label" class="text-green mt-8 mb-4 px-4 text-left text-5xl lowercase">Koszyk</h5>
     <ProductSectionDivider />
-    <button type="button" data-cart-drawer-hide aria-controls="cart-drawer" class="absolute right-2.5 top-2.5 hover:opacity-50 cursor-pointer">
+    <button type="button" data-cart-drawer-hide aria-controls="cart-drawer" class="absolute top-2.5 right-2.5 cursor-pointer hover:opacity-50">
         <CloseIcon />
         <span class="sr-only">Zamknij koszyk</span>
     </button>

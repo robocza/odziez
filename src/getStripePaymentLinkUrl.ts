@@ -47,13 +47,13 @@ export async function getStripePaymentLinkUrl(cartItems: CartItem[], successUrl:
                 enabled: true,
             },
             business: {
-                enabled: true
-            }
+                enabled: true,
+            },
         },
         currency: 'PLN',
         submit_type: 'pay',
         phone_number_collection: {
-            enabled: true
+            enabled: true,
         },
         shipping_address_collection: {
             allowed_countries: ['PL'],

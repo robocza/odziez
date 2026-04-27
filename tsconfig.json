@@ -6,21 +6,11 @@
         "strictNullChecks": true,
         "baseUrl": "src",
         "paths": {
-            "@components/*": [
-                "components/*"
-            ],
-            "@layouts/*": [
-                "layouts/*"
-            ],
-            "@assets/*": [
-                "assets/*"
-            ],
-            "@pages/*": [
-                "pages/*"
-            ],
-            "@store/*": [
-                "store/*"
-            ]
+            "@components/*": ["components/*"],
+            "@layouts/*": ["layouts/*"],
+            "@assets/*": ["assets/*"],
+            "@pages/*": ["pages/*"],
+            "@store/*": ["store/*"]
         },
         "jsx": "preserve"
     }

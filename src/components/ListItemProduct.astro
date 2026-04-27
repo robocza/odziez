@@ -11,12 +11,12 @@ const { productCollectionEntry } = Astro.props;
 const product = getProduct(productCollectionEntry.data.id);
 ---
 
-<div class="py-8 sm:py-2 text-center">
+<div class="py-8 text-center sm:py-2">
     <a href={`/produkt/${productCollectionEntry.id}`}>
-        <img src={product.images[0].url} alt={product.images[0].alt} class="mx-auto max-h-96 lg:max-h-48 xl:max-h-60 dawid:max-h-96 border border-green" />
+        <img src={product.images[0].url} alt={product.images[0].alt} class="dawid:max-h-96 border-green mx-auto max-h-96 border lg:max-h-48 xl:max-h-60" />
     </a>
-    <h2 class="my-2 text-lg text-green uppercase">{product.name}</h2>
-    <a class="inline-block w-48 rounded-full bg-green px-4 py-2 uppercase text-white hover:opacity-50" href={`/produkt/${productCollectionEntry.id}`}>
+    <h2 class="text-green my-2 text-lg uppercase">{product.name}</h2>
+    <a class="bg-green inline-block w-48 rounded-full px-4 py-2 text-white uppercase hover:opacity-50" href={`/produkt/${productCollectionEntry.id}`}>
         Zobacz szczegóły</a
     >
 </div>
