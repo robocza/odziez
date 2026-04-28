@@ -3,43 +3,43 @@
         {
             "size": "XXS",
             "stripe": {
-                "productId": "prod_O6zJAbKEg6xT6G",
-                "priceId": "price_1NKlKRCvOTfFxYT2S3n33Nwl"
+                "productId": "prod_UQ7aPSKRkucuLY",
+                "priceId": "price_1TRHLGCvOTfFxYT2VnZyP36c"
             }
         },
         {
             "size": "XS",
             "stripe": {
-                "productId": "prod_ODMgYoIdTu9t2c",
-                "priceId": "price_1NQvwvCvOTfFxYT2pFgDVCqo"
+                "productId": "prod_UQ7aD55jZIbTzv",
+                "priceId": "price_1TRHLGCvOTfFxYT2zZVh1Smh"
             }
         },
         {
             "size": "S",
             "stripe": {
-                "productId": "prod_O6zI7Uv5WjI6Cb",
-                "priceId": "price_1NKlJZCvOTfFxYT2IshRHcog"
+                "productId": "prod_UQ7aftcaurMnje",
+                "priceId": "price_1TRHLGCvOTfFxYT2UCLjDvLN"
             }
         },
         {
             "size": "M",
             "stripe": {
-                "productId": "prod_O6zIHJQPaxS7xw",
-                "priceId": "price_1NKlJqCvOTfFxYT2bmKPbMZ0"
+                "productId": "prod_UQ7a3ERZmM0dtg",
+                "priceId": "price_1TRHLHCvOTfFxYT2hX4mOUJ8"
             }
         },
         {
             "size": "L",
             "stripe": {
-                "productId": "prod_O6zIBJENTeDKLA",
-                "priceId": "price_1NKlK4CvOTfFxYT2s2mieehf"
+                "productId": "prod_UQ7aNESgJ3SYiw",
+                "priceId": "price_1TRHLHCvOTfFxYT2HTKiTGW5"
             }
         },
         {
             "size": "XL",
             "stripe": {
-                "productId": "prod_O6zIbH0K6BApVl",
-                "priceId": "price_1NKlKGCvOTfFxYT2HUhQcYTb"
+                "productId": "prod_UQ7a9dob6tsqhi",
+                "priceId": "price_1TRHLICvOTfFxYT2cKKfxpUi"
             }
         }
     ],
@@ -47,43 +47,43 @@
         {
             "size": "XXS",
             "stripe": {
-                "productId": "prod_O6zJAbKEg6xT6G",
-                "priceId": "price_1NKlKRCvOTfFxYT2S3n33Nwl"
+                "productId": "prod_UQ7aNe1vNFwhkT",
+                "priceId": "price_1TRHLICvOTfFxYT293xlkorA"
             }
         },
         {
             "size": "XS",
             "stripe": {
-                "productId": "prod_ODMgYoIdTu9t2c",
-                "priceId": "price_1NQvwvCvOTfFxYT2pFgDVCqo"
+                "productId": "prod_UQ7aNFpdufwvap",
+                "priceId": "price_1TRHLJCvOTfFxYT2ltGHAkHL"
             }
         },
         {
             "size": "S",
             "stripe": {
-                "productId": "prod_O6zI7Uv5WjI6Cb",
-                "priceId": "price_1NKlJZCvOTfFxYT2IshRHcog"
+                "productId": "prod_UQ7aQOioh4iVeV",
+                "priceId": "price_1TRHLJCvOTfFxYT2cuHcNP6o"
             }
         },
         {
             "size": "M",
             "stripe": {
-                "productId": "prod_O6zIHJQPaxS7xw",
-                "priceId": "price_1NKlJqCvOTfFxYT2bmKPbMZ0"
+                "productId": "prod_UQ7aJzh5fUuMBl",
+                "priceId": "price_1TRHLKCvOTfFxYT2SuV7ZBgc"
             }
         },
         {
             "size": "L",
             "stripe": {
-                "productId": "prod_O6zIBJENTeDKLA",
-                "priceId": "price_1NKlK4CvOTfFxYT2s2mieehf"
+                "productId": "prod_UQ7aAVCZ8IyK5S",
+                "priceId": "price_1TRHLKCvOTfFxYT2Adq3DPBy"
             }
         },
         {
             "size": "XL",
             "stripe": {
-                "productId": "prod_O6zIbH0K6BApVl",
-                "priceId": "price_1NKlKGCvOTfFxYT2HUhQcYTb"
+                "productId": "prod_UQ7argii8K9AiP",
+                "priceId": "price_1TRHLLCvOTfFxYT2PdFaT5sT"
             }
         }
     ],
@@ -91,8 +91,8 @@
         {
             "size": "onesize",
             "stripe": {
-                "productId": "prod_ODMgYoIdTu9t2c",
-                "priceId": "price_1NQvwvCvOTfFxYT2pFgDVCqo"
+                "productId": "prod_UQ7apcdJrIyYWb",
+                "priceId": "price_1TRHLLCvOTfFxYT2xCCJLzMi"
             }
         }
     ],
@@ -100,8 +100,8 @@
         {
             "size": "A3",
             "stripe": {
-                "productId": "prod_ODMgYoIdTu9t2c",
-                "priceId": "price_1NQvwvCvOTfFxYT2pFgDVCqo"
+                "productId": "prod_UQ7aaljPo89O2w",
+                "priceId": "price_1TRHLLCvOTfFxYT2WOlucLYA"
             }
         }
     ]
