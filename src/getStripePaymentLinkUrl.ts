@@ -48,6 +48,7 @@ export async function getStripePaymentLinkUrl(cartItems: CartItem[], successUrl:
             },
             business: {
                 enabled: true,
+                optional: true,
             },
         },
         currency: 'PLN',
