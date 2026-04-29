@@ -1,0 +1,66 @@
+---
+import Central from '@layouts/elements/arrangement/Central.astro';
+import Layout from '@layouts/Layout.astro';
+---
+
+<Layout title="Odzież Robocza - drop N°.3">
+    <main class="h-screen bg-[url(/assets/hardcore-garden-bg.jpg)] bg-cover bg-center bg-no-repeat font-sans text-white">
+        <div class="relative mx-auto h-full max-w-screen-xl">
+            <Central>
+                <div class="flex flex-col gap-8">
+                    <div class="px-8 lg:px-0">
+                        <h1
+                            class="font-decorative border-phosphorescent m-auto flex w-full max-w-xl justify-between gap-2 rounded-full border-[3px] px-5 py-3 text-lg font-normal uppercase sm:text-xl lg:text-3xl"
+                        >
+                            <span class="text-left">Odzież Robocza</span>
+                            <span class="text-right">drop#3</span>
+                        </h1>
+                    </div>
+                    <div>
+                        <img
+                            class="max-h-screen w-full max-w-4xl px-5"
+                            src="/assets/hardcore-garden-logo.svg"
+                            alt="Odzież Robocza - Hardcore Garden - drop N°.3"
+                        />
+                        <div class="font-decorative ml-20 text-center text-lg font-normal lowercase lg:ml-40 lg:text-3xl">
+                            Coming soon.<br />
+                            Zapisz się do newslettera
+                        </div>
+                    </div>
+                    <div class="px-8 lg:px-0">
+                        <form
+                            name="pre-order-hardcore-garden"
+                            method="POST"
+                            data-netlify="true"
+                            action="/zapisano-do-newslettera"
+                            class="flex flex-col gap-6 md:flex-row md:justify-center"
+                        >
+                            <div>
+                                <label class="md:inline-block">
+                                    <input
+                                        id="mail"
+                                        class="h-12 w-full rounded-full border-[3px] border-white bg-white px-6 py-2 text-center text-sm leading-none text-black md:w-90 lg:text-left"
+                                        name="mail"
+                                        type="email"
+                                        required
+                                        aria-label="Wpisz adres email, jeśli chcesz dostać info"
+                                        placeholder="Wpisz adres email, jeśli chcesz dostać info…"
+                                    />
+                                </label>
+                                <div class="text-center md:text-right lg:pr-6">
+                                    <a class="text-xs hover:underline" href="/polityka-prywatnosci">Polityka prywatności</a>
+                                </div>
+                            </div>
+                            <button
+                                type="submit"
+                                class="border-phosphorescent hover:bg-phosphorescent h-12 cursor-pointer rounded-full border-[3px] px-12 py-2 text-2xl leading-none font-normal uppercase transition-colors"
+                            >
+                                Zapisz się
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </Central>
+        </div>
+    </main>
+</Layout>

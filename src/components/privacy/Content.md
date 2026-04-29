@@ -8,9 +8,9 @@ Administratorem Twoich danych osobowych jest Fundacja Grupa Robocza z siedzibą 
 
 Przetwarzamy dane w następujących celach:
 
--   realizacja umowy sprzedaży, w tym przygotowanie zamówienia oraz jego dostarczenie na podstawie art. 6 ust. 1 lit. b RODO
--   dokonywanie rozliczeń, w tym rozliczeń podatkowych i prowadzenie dokumentacji księgowej na podstawie art. 6 ust. 1 lit. c RODO
--   ustalenie, dochodzenia lub obrona przed ewentualnymi roszczeniami wynikającymi z umowy sprzedaży na podstawie art. 6 ust. 1 lit. f RODO (prawnie uzasadniony interes polega na zapewnieniu możliwości dochodzenia ewentualnych roszczeń wynikających z umowy zawartej pomiędzy Tobą a Grupą Roboczą lub obrony przed takimi roszczeniami).
+- realizacja umowy sprzedaży, w tym przygotowanie zamówienia oraz jego dostarczenie na podstawie art. 6 ust. 1 lit. b RODO
+- dokonywanie rozliczeń, w tym rozliczeń podatkowych i prowadzenie dokumentacji księgowej na podstawie art. 6 ust. 1 lit. c RODO
+- ustalenie, dochodzenia lub obrona przed ewentualnymi roszczeniami wynikającymi z umowy sprzedaży na podstawie art. 6 ust. 1 lit. f RODO (prawnie uzasadniony interes polega na zapewnieniu możliwości dochodzenia ewentualnych roszczeń wynikających z umowy zawartej pomiędzy Tobą a Grupą Roboczą lub obrony przed takimi roszczeniami).
 
 Dane będą przechowywane przez okres wykonywania umowy, która została zawarta pomiędzy Tobą a Fundacją Grupa Robocza. Następnie, mogą być one przechowywane przez okres do upływu terminu przedawnienia ewentualnych roszczeń wynikających z tej umowy. Dane przetwarzane w celu dokonywania rozliczeń będą przechowywane przez okresy wynikający z odpowiednich przepisów prawa.
 

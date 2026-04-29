@@ -1,4 +1,4 @@
-1. Co to znaczy że do końca preorderu pozostało X czasu?
+1. Co to znaczy, że do końca preorderu pozostało X czasu?
 
     To znaczy, że do tego czasu zbieramy zamówienia na ciuchy. Wyprodukujemy ich tylko tyle, ile zamówicie.
 

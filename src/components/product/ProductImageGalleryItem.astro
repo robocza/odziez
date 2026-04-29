@@ -1,5 +1,5 @@
 ---
-import { Product } from '../../productRepository';
+import { type Product } from '../../productRepository';
 
 interface Props {
     product: Product;
@@ -13,7 +13,7 @@ interface Props {
     position: number;
 }
 
-const { product, position, image } = Astro.props;
+const { position, image } = Astro.props;
 const positionElementId = 'item-' + position;
 ---
 
@@ -24,5 +24,5 @@ const positionElementId = 'item-' + position;
     data-product-image-gallery-item={positionElementId}
     class="hidden duration-700 ease-in-out"
 >
-    <img src={image.url} alt={image.alt} class="absolute left-1/2 top-1/2 block h-full -translate-x-1/2 -translate-y-1/2" />
+    <img src={image.url} alt={image.alt} class="absolute top-1/2 left-1/2 block h-full -translate-x-1/2 -translate-y-1/2" />
 </a>

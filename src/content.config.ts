@@ -2,7 +2,7 @@
 import { defineCollection } from 'astro:content';
 
 // 2. Import loader(s)
-import { glob, file } from 'astro/loaders';
+import { glob } from 'astro/loaders';
 
 // 3. Import Zod
 import { z } from 'astro/zod';
@@ -12,6 +12,7 @@ const product = defineCollection({
     loader: glob({ base: './src/content/product', pattern: '**/*.{md,mdx}' }),
     schema: z.object({
         id: z.string(),
+        order: z.number(),
         info: z.string().array(),
     }),
 });

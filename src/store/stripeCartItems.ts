@@ -1,5 +1,5 @@
 import { computed } from 'nanostores';
-import { cart, CartItem } from './cart';
+import { cart, type CartItem } from './cart';
 import type { CartItem as StripeCartItem } from '../getStripePaymentLinkUrl';
 
 export const stripeCartItems = computed(cart, (cartItems) => cartItems.map((cartItem) => mapCartItemToStripeCartItem(cartItem)));

@@ -1,32 +1,58 @@
 ---
-import CloseIcon from './CloseIcon.astro';
-import DropFaq from './DropFaq.astro';
+import { getPreOrderEndDate } from '../preOrder';
+
+const preOrderEndDate = getPreOrderEndDate();
+
+const now = new Date().getTime();
+const countdownDate = preOrderEndDate.getTime();
+const distance = countdownDate - now;
+
+const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+
+const initialCountdownText = days + 'd:' + hours + 'h:' + minutes + 'm';
 ---
 
-<div class="mx-auto p-2">
-    <div class="inline-block align-middle text-2xl uppercase underline lg:text-xl xl:text-2xl dawid:text-6xl">Drop zakończony</div>
-    <button data-modal-target="drop-faq" data-modal-toggle="drop-faq" class="ml-1 inline-block h-8 w-8 align-middle hover:opacity-50" type="button">
-        <img src="/assets/info.png" class="" alt="FAQ" />
-    </button>
-</div>
-
 <div
-    id="drop-faq"
-    data-modal-backdrop="static"
-    tabindex="-1"
-    aria-hidden="true"
-    class="fixed left-0 right-0 top-0 z-50 hidden h-[calc(100%-1rem)] max-h-full w-full overflow-y-auto overflow-x-hidden p-4 md:inset-0"
+    class="bg-green dawid:text-4xl order-first flex items-center text-5xl text-white sm:col-span-2 sm:px-8 sm:py-2 sm:text-5xl md:text-4xl lg:order-0 lg:text-3xl xl:text-3xl"
 >
-    <div class="min-w-xs relative max-h-full w-full max-w-2xl overflow-y-auto">
-        <div class="relative bg-white p-6">
-            <button type="button" class="absolute right-2.5 top-2.5 hover:opacity-50" data-modal-hide="drop-faq">
-                <CloseIcon />
-                <span class="sr-only">Zamknij podgląd</span>
-            </button>
-            <DropFaq />
-            <div class="my-6 text-center">
-                <button class="inline-block rounded-sm bg-black px-8 py-2 text-white hover:opacity-50" data-modal-hide="drop-faq"> OK, rozumiem</button>
-            </div>
-        </div>
+    <div class="hidden uppercase sm:block">Do zamknięcia preorderu zostało:</div>
+    <div
+        class="font-title text-phosphorescent mx-auto pt-4 pb-2 text-center uppercase sm:ml-4 sm:block sm:pt-2 sm:pb-0 sm:text-left sm:text-white"
+        id="pre-order-timer"
+    >
+        {initialCountdownText}
     </div>
 </div>
+
+<script>
+    import { getPreOrderEndDate } from '../preOrder';
+
+    const countdownTargetDate = getPreOrderEndDate().getTime();
+
+    const preOrderCountdownTimer = setInterval(function () {
+        const preOrderTimerElement = document.getElementById('pre-order-timer');
+
+        if (preOrderTimerElement !== null) {
+            const now = new Date().getTime();
+            const distance = countdownTargetDate - now;
+            if (distance < 0) {
+                preOrderTimerElement.innerHTML = 'Preorder zakończony';
+                clearInterval(preOrderCountdownTimer);
+
+                return;
+            }
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+
+            const timerText = days + 'd:' + hours + 'h:' + minutes + 'm';
+
+            if (preOrderTimerElement.innerHTML !== timerText) {
+                preOrderTimerElement.innerHTML = timerText;
+            }
+        }
+    }, 1000);
+</script>

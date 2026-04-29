@@ -1,8 +1,8 @@
 import { computed } from 'nanostores';
-import { cart, CartItem } from './cart';
+import { cart, type CartItem } from './cart';
 import { getProduct } from '../productRepository';
 import type { Money } from '../money';
-import Dinero, { Currency } from 'dinero.js';
+import Dinero, { type Currency } from 'dinero.js';
 import { formatMoney } from '../money';
 
 type CartProduct = {

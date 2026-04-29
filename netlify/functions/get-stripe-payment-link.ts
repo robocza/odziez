@@ -1,5 +1,5 @@
 import type { Handler, HandlerEvent, HandlerContext } from '@netlify/functions';
-import { getStripePaymentLinkUrl, CartItem } from '../../src/getStripePaymentLinkUrl';
+import { getStripePaymentLinkUrl, type CartItem } from '../../src/getStripePaymentLinkUrl';
 
 declare var process: {
     env: {

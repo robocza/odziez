@@ -42,6 +42,20 @@ export async function getStripePaymentLinkUrl(cartItems: CartItem[], successUrl:
         cancel_url: cancelUrl,
         line_items: lineItems,
         billing_address_collection: 'required',
+        name_collection: {
+            individual: {
+                enabled: true,
+            },
+            business: {
+                enabled: true,
+                optional: true,
+            },
+        },
+        currency: 'PLN',
+        submit_type: 'pay',
+        phone_number_collection: {
+            enabled: true,
+        },
         shipping_address_collection: {
             allowed_countries: ['PL'],
         },
@@ -58,9 +72,9 @@ export async function getStripePaymentLinkUrl(cartItems: CartItem[], successUrl:
             enabled: false,
         },
         custom_text: {
-            shipping_address: {
+            submit: {
                 message:
-                    'Preorder kończy się 17.07.2023 o 20:00 i od tej daty potrzebujemy 3-4 tygodnie na produkcję, pakowanie, umożliwienie odbioru osobistego i wysyłkę zamówień. O postępach prac będziemy informować Cię mailowo.',
+                    'Preorder kończy się 13.05.2026 o 20:00 i od tej daty potrzebujemy 3-4 tygodnie na produkcję, pakowanie, umożliwienie odbioru osobistego i wysyłkę zamówień. O postępach prac będziemy informować Cię mailowo.',
             },
         },
         invoice_creation: {
