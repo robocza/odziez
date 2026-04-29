@@ -12,6 +12,11 @@
             "@pages/*": ["pages/*"],
             "@store/*": ["store/*"]
         },
+        "plugins": [
+            {
+                "name": "@astrojs/ts-plugin"
+            }
+        ],
         "jsx": "preserve"
     }
 }
