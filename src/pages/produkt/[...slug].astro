@@ -1,6 +1,7 @@
 ---
 import { getCollection, render } from 'astro:content';
 import ProductForm from '@components/product/ProductForm.astro';
+import ProductFormPreOrderFinished from '@components/product/ProductFormPreOrderFinished.astro';
 import ProductImageGallery from '@components/product/ProductImageGallery.astro';
 import ProductMaterialsAndManufacturing from '@components/product/ProductMaterialsAndManufacturing.astro';
 import BackButton from '@components/BackButton.astro';
@@ -15,6 +16,7 @@ import Header from '@components/Header.astro';
 import CartDrawer from '@components/cart/CartDrawer.astro';
 import { getProduct } from '../../productRepository';
 import Footer from '@components/Footer.astro';
+import { getPreOrderEndDate } from '../../preOrder.ts';
 
 // 1. Generate a new path for every collection entry
 export async function getStaticPaths() {
@@ -28,6 +30,12 @@ export async function getStaticPaths() {
 const { entry } = Astro.props;
 const { Content } = await render(entry);
 const product = getProduct(entry.data.id);
+
+const countdownTargetDate = getPreOrderEndDate().getTime();
+const now = new Date().getTime();
+const distance = countdownTargetDate - now;
+
+const preOrderIsRunning = distance >= 0;
 ---
 
 <Layout title={`Odzież Robocza - ${product.name}`}>
@@ -70,7 +78,8 @@ const product = getProduct(entry.data.id);
             <ProductSectionDivider />
             <ProductPrice price={product.price} />
             <ProductSectionDivider />
-            <ProductForm product={product} />
+            {preOrderIsRunning && <ProductForm product={product} />}
+            {!preOrderIsRunning && <ProductFormPreOrderFinished />}
             <ProductSectionDivider />
             <div class="prose text-green mx-auto w-full max-w-xl px-8 leading-normal">
                 <Content />
