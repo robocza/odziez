@@ -41,6 +41,13 @@
                 "productId": "prod_UQMgR9seax8YqL",
                 "priceId": "price_1TRVxLEGNnF6WgolHwr70WtI"
             }
+        },
+        {
+            "size": "XXL",
+            "stripe": {
+                "productId": "prod_UVMXyiYMJfIp7C",
+                "priceId": "price_1TWLogEGNnF6WgolDlDsCLrW"
+            }
         }
     ],
     "hc-garden-t-shirt-white": [
@@ -84,6 +91,13 @@
             "stripe": {
                 "productId": "prod_UQMgdAm34CBrsC",
                 "priceId": "price_1TRVxNEGNnF6Wgolgf3Qp54X"
+            }
+        },
+        {
+            "size": "XXL",
+            "stripe": {
+                "productId": "prod_UVMXsH1E6mEIHl",
+                "priceId": "price_1TWLohEGNnF6WgolN6yxEIs6"
             }
         }
     ],
